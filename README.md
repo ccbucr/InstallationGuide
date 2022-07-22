@@ -1,4 +1,4 @@
-# Center for Conservation Biology Administration Guide
+# Center for Conservation Biology Installation Guide
 
-Documentation of UCR &amp; CCB administrative processes and guides
+Documentation for software installation utilized by the UC Riverside CCB team. 
 
