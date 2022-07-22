@@ -1,9 +1,14 @@
 fig:nice-fig
 tab:nice-tab
 intro
+computer-requirements
+software
 bookdown
 primary-reference-resources
 formatting
 citations
 alt-text-for-accessibility
 rendering-bookdown-to-build-publish
+r
+install-or-update-r
+install-or-update-r-studio

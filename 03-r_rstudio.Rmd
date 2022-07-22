@@ -1,0 +1,25 @@
+# R and RStudio Installation {#r}
+
+## Install or Update R 
+
+**R** is a programming language and environment used for statistical computing and grahics. For more information, please visit [What is R](https://www.r-project.org/about.html).
+
+To install R, visit [cloud.r-project.org](https://cloud.r-project.org/) to download the most recent version for your operating system.
+
+## Install or Update R Studio
+
+RStudio is a software (considered an Integrated  Development Environment, or IDE) that provides R programmers with an easy-to-use interface for coding in R. 
+
+**Note:** RStudio will not work without R installed, and you won’t particularly enjoy using R without having RStudio installed. Be sure to install both!
+
+- **New install:** To install RStudio, visit [rstudio.com/products/rstudio/](https://www.rstudio.com/products/rstudio/). Download the free (“Open Source Edition”) Desktop version for your operating system. 
+
+- **Update:** If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.
+
+Open RStudio (logo you’ll click on shown below). If you are prompted to install Command Line Tools, do it.
+
+```{r rstudio, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="Image of R Studio logo, which is a white captial R encased in a light blue circle."}
+
+knitr::include_graphics("images/rstudio.png")
+```
+

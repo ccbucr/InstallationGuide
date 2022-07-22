@@ -2,7 +2,7 @@
 
 The first step to edit and add to this bookdown is to install the **bookdown** package from CRAN or Github:
 
-```{r eval=FALSE}
+```{r, eval=FALSE, echo = TRUE}
 install.packages("bookdown")
 # or the development version
 # devtools::install_github("rstudio/bookdown")
@@ -16,6 +16,10 @@ Here is a list of resources to learn how to use and edit in bookdown
 - [Authoring Books with R Markdown](https://bookdown.org/yihui/bookdown/)
 - [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+__________________________________________________________________________________
+
+**The following information is directly taken from the _bookdown_ package** [@R-bookdown].
 
 ## Formatting
 

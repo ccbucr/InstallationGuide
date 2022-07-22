@@ -1,3 +1,32 @@
 # Introduction {#intro}
 
+This is an installation and account set up reference guide for the Center for Conservation Biology team. Team members may contribute to this reference file as we expand the tools utlizied during research efforts.
 
+## Computer requirements
+
+Work computers (laptop or desktop) operating systems should either be Windows or macOS. Please note that Windows based machine it required to run ESRI ArcDesktop and ArcPro software. Both Windows and macOS may utilize ESRI ArcOnline tools. 
+
+For **Mac** users, update macOS to the newest supported version. Navigate to System Preferences --> Software Update.
+
+For **PC** users, ensure you have Windows 10 or 11 installed. If not, request a Windows key from UCR IT at [UC Riverside ServiceLink](https://ucrsupport.service-now.com/ucr_portal?id=ucr_home)
+
+## Software
+
+Software covered in this reference guide includes:
+
+- git
+- GitHub
+- Google Apps
+- R
+- RStudio
+  - Quarto
+  - Bookdown
+- Slack
+- Trello
+  - Trello 4 Slack
+- Zotero
+
+
+_________________________________________________________
+
+Thank you to UC Santa Barbara's Bren School of Environmental Science & Management and National Center for Ecological Analysis and Synthesis (NCEAS) staff for providing many of the resources listed in this reference guide. Information was made available on the [UCSB-MEDS GitHub page](https://github.com/UCSB-MEDS).
