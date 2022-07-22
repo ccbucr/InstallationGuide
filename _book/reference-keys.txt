@@ -1,0 +1,9 @@
+fig:nice-fig
+tab:nice-tab
+intro
+bookdown
+primary-reference-resources
+formatting
+citations
+alt-text-for-accessibility
+rendering-bookdown-to-build-publish
