@@ -357,9 +357,69 @@ RStudio is a software (considered an Integrated Development Environment, or IDE)
   \textbf{Update:} If you already have RStudio and need to update: Open RStudio, and under `Help' in the top menu, choose `Check for updates.' If you have the most recent release, it will return `No update available. You are running the most recent version of RStudio.' Otherwise, you should follow the instructions to install an updated version.
 \end{itemize}
 
-Open RStudio (logo you'll click on shown below). If you are prompted to install Command Line Tools, do it.
+Open RStudio (logo you'll click on shown below). \textbf{If you are prompted to install Command Line Tools, do it.}
 
 \begin{center}\includegraphics[width=4.97in]{images/rstudio} \end{center}
+
+\textbf{Mac Users}
+
+There may be a need to install command line tools and \href{https://www.xquartz.org/}{XQuartz}:
+
+\begin{itemize}
+\item
+  To install command line tools (if you're not automatically prompted), run in the Terminal tab in RStudio: \texttt{xcode-select\ -\/-install}
+\item
+  Visit \href{https://www.xquartz.org/}{xquartz.org} to download \& install XQuartz.
+\end{itemize}
+
+\hypertarget{install-quarto}{%
+\section{Install Quarto}\label{install-quarto}}
+
+\emph{This is an optional tool within R Studio that is extremely powerful, but not required for your job}
+
+Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.
+
+\begin{itemize}
+\item
+  Download Quarto \href{https://quarto.org/docs/get-started/}{here} and install
+\item
+  To use Quarto through the RStudio IDE, be sure to have at least version v2022.02 installed (see directions in step 2, above)
+\end{itemize}
+
+\hypertarget{git}{%
+\chapter{Git Installation \& GitHub Account}\label{git}}
+
+\hypertarget{git-1}{%
+\section{Git}\label{git-1}}
+
+Check to see if your computer already has git:
+
+\begin{itemize}
+\tightlist
+\item
+  Open RStudio
+\item
+  In the terminal, run the following command:
+\end{itemize}
+
+\texttt{which\ git}
+
+If \texttt{git} is already installed, the return to the above command should return a filepath (ex: \texttt{/usr/local/bin/git}).
+
+\begin{itemize}
+\tightlist
+\item
+  If there is no response, download and install \texttt{git} from here: \href{https://git-scm.com/downloads}{git-scm.com/downloads}. Select the default settings within the prompts \textbf{except} the default to \textbf{master} branch. This branch is being phased out, so select the option that let's you select alternative branches (ex: main).
+\end{itemize}
+
+\hypertarget{github}{%
+\section{GitHub}\label{github}}
+
+GitHub is a internet based code hosting platform for collaboration and \href{https://www.atlassian.com/git/tutorials/what-is-version-control\#:~:text=Version\%20control\%2C\%20also\%20known\%20as,to\%20source\%20code\%20over\%20time.}{version control}. GitHub lets you (and others) work together on projects.
+
+Navigate to \href{https://github.com/}{github.com}, and create an account! Please use either your work or personal email account. You can add several emails to your account, and assign a particular email as the primary email for the account.
+
+Review this article on choosing a GitHub username: \url{happygitwithr.com/github-acct.html}.
 
   \bibliography{book.bib,packages.bib}
 

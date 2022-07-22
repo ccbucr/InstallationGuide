@@ -16,10 +16,30 @@ RStudio is a software (considered an Integrated  Development Environment, or IDE
 
 - **Update:** If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.
 
-Open RStudio (logo you’ll click on shown below). If you are prompted to install Command Line Tools, do it.
+Open RStudio (logo you’ll click on shown below). **If you are prompted to install Command Line Tools, do it.**
 
 ```{r rstudio, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="Image of R Studio logo, which is a white captial R encased in a light blue circle."}
 
 knitr::include_graphics("images/rstudio.png")
 ```
+
+
+**Mac Users**
+
+There may be a need to install command line tools and [XQuartz](https://www.xquartz.org/):
+
+- To install command line tools (if you’re not automatically prompted), run in the Terminal tab in RStudio: `xcode-select --install`
+
+- Visit [xquartz.org](https://www.xquartz.org/) to download & install XQuartz.
+
+## Install Quarto
+
+*This is an optional tool within R Studio that is extremely powerful, but not required for your job*
+
+Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.
+
+- Download Quarto [here](https://quarto.org/docs/get-started/) and install
+
+- To use Quarto through the RStudio IDE, be sure to have at least version v2022.02 installed (see directions in step 2, above)
+
 

@@ -12,3 +12,7 @@ rendering-bookdown-to-build-publish
 r
 install-or-update-r
 install-or-update-r-studio
+install-quarto
+git
+git-1
+github
