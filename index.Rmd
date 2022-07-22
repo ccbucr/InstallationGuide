@@ -15,7 +15,7 @@ github-repo: ccbucr/AdministrationGuide
 description: "Documentation on how to install software and tools utilized by the UC Riverside CCB team to facilitate collaborative research."
 ---
 
-# Informational Resource for CCB Faculty & Staff {-}
+# Informational Resource for Software and Application Installation Utilized by CCB Faculty & Staff {-}
 
 ```{r setup, echo=FALSE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = F, message = F, warning = F,
