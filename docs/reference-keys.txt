@@ -16,3 +16,7 @@ install-quarto
 git
 git-1
 github
+projmgmt
+trello
+slack
+google-apps
