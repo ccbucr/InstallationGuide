@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  29 JUL 2022 15:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  1 AUG 2022 17:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -991,18 +991,22 @@ Chapter 4.
 
 ]
 Chapter 5.
-(./bookdown-demo.bbl [19] [20
+File: images/trello.png Graphic file (type bmp)
+<images/trello.png>
+File: images/slack.png Graphic file (type bmp)
+<images/slack.png>
+[19] (./bookdown-demo.bbl [20]) [21
 
-]) [21] (./bookdown-demo.aux)
+] (./bookdown-demo.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19765 strings out of 476919
- 345251 string characters out of 5821840
+ 19787 strings out of 476919
+ 345612 string characters out of 5821840
  837563 words of memory out of 5000000
- 39403 multiletter control sequences out of 15000+600000
+ 39423 multiletter control sequences out of 15000+600000
  410003 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,518b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
