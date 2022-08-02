@@ -30,6 +30,7 @@ Once Git is installed and your GitHub account has been set up, Git needs to be c
 
   - `git config --global user.name "Jane Doe"`
   - `git config --global user.email janedoe@example.com`
+  
 - Once you have entered the above command line code, check that the configuration was set correctly. In the RStudio Terminal, type the following command and hit enter:
   - `git config --list --global`
   
@@ -74,6 +75,7 @@ knitr::include_graphics("images/pat.png")
 ```
 
 - **Note Field**
+
 Change the PAT name to a meaningful reference (see image for an example). You may end up creating multiple PATs, so you want to ensure that you know which PAT is designated for each computer | server. 
 
 - **Expiration Field**
