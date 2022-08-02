@@ -34,7 +34,7 @@ There may be a need to install command line tools and [XQuartz](https://www.xqua
 
 ## Install Quarto
 
-*This is an optional tool within R Studio that is extremely powerful, but not required for your job*
+*This is an optional tool within R Studio that is extremely powerful, but it is not required.*
 
 Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.
 
