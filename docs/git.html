@@ -1,224 +1,93 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="en">
 <head>
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Git Installation &amp; GitHub Account | Center for Conservation Biology | UC Riverside</title>
-  <meta name="description" content="Documentation on how to install software and tools utilized by the UC Riverside CCB team to facilitate collaborative research." />
-  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
-
-  <meta property="og:title" content="Chapter 4 Git Installation &amp; GitHub Account | Center for Conservation Biology | UC Riverside" />
-  <meta property="og:type" content="book" />
-  
-  <meta property="og:description" content="Documentation on how to install software and tools utilized by the UC Riverside CCB team to facilitate collaborative research." />
-  <meta name="github-repo" content="ccbucr/AdministrationGuide" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Git Installation &amp; GitHub Account | Center for Conservation Biology | UC Riverside" />
-  
-  <meta name="twitter:description" content="Documentation on how to install software and tools utilized by the UC Riverside CCB team to facilitate collaborative research." />
-  
-
-<meta name="author" content="Lynn Sweet | Principal Investigator, Assistant Research Ecologist" />
-<meta name="author" content="Julia Parish | Data Science Intern" />
-
-
-<meta name="date" content="2022-08-02" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="bookdown.html"/>
-<link rel="next" href="projmgmt.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 4 Git Installation &amp; GitHub Account | Center for Conservation Biology | UC Riverside</title>
+<meta name="author" content="Lynn Sweet | Principal Investigator, Assistant Research Ecologist">
+<meta name="author" content="Julia Parish | Data Science Intern">
+<meta name="description" content="4.1 Git Check to see if your computer already has git: Open RStudio In the terminal, run the following command: which git If git is already installed, the return to the above command should return...">
+<meta name="generator" content="bookdown 0.27 with bs4_book()">
+<meta property="og:title" content="Chapter 4 Git Installation &amp; GitHub Account | Center for Conservation Biology | UC Riverside">
+<meta property="og:type" content="book">
+<meta property="og:description" content="4.1 Git Check to see if your computer already has git: Open RStudio In the terminal, run the following command: which git If git is already installed, the return to the above command should return...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 4 Git Installation &amp; GitHub Account | Center for Conservation Biology | UC Riverside">
+<meta name="twitter:description" content="4.1 Git Check to see if your computer already has git: Open RStudio In the terminal, run the following command: which git If git is already installed, the return to the above command should return...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
 <style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
-
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
-
-<link rel="stylesheet" href="style.css" type="text/css" />
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
 </head>
+<body data-spy="scroll" data-target="#toc">
 
-<body>
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li><a href="./">UCR Center for Conservation Biology Administration Guide</a></li>
-
-<li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Informational Resource for Software and Application Installation Utilized by CCB Faculty &amp; Staff</a></li>
-<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
-<ul>
-<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#computer-requirements"><i class="fa fa-check"></i><b>1.1</b> Computer requirements</a></li>
-<li class="chapter" data-level="1.2" data-path="intro.html"><a href="intro.html#software"><i class="fa fa-check"></i><b>1.2</b> Software</a></li>
-</ul></li>
-<li class="chapter" data-level="2" data-path="r.html"><a href="r.html"><i class="fa fa-check"></i><b>2</b> R and RStudio Installation</a>
-<ul>
-<li class="chapter" data-level="2.1" data-path="r.html"><a href="r.html#install-or-update-r"><i class="fa fa-check"></i><b>2.1</b> Install or Update R</a></li>
-<li class="chapter" data-level="2.2" data-path="r.html"><a href="r.html#install-or-update-r-studio"><i class="fa fa-check"></i><b>2.2</b> Install or Update R Studio</a></li>
-<li class="chapter" data-level="2.3" data-path="r.html"><a href="r.html#install-quarto"><i class="fa fa-check"></i><b>2.3</b> Install Quarto</a></li>
-<li class="chapter" data-level="2.4" data-path="r.html"><a href="r.html#learn-how-to-use-r-rstudio"><i class="fa fa-check"></i><b>2.4</b> Learn How to Use R &amp; RStudio</a></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>3</b> Bookdown Guide</a>
-<ul>
-<li class="chapter" data-level="3.1" data-path="bookdown.html"><a href="bookdown.html#primary-reference-resources"><i class="fa fa-check"></i><b>3.1</b> Primary Reference Resources</a></li>
-<li class="chapter" data-level="3.2" data-path="bookdown.html"><a href="bookdown.html#formatting"><i class="fa fa-check"></i><b>3.2</b> Formatting</a></li>
-<li class="chapter" data-level="3.3" data-path="bookdown.html"><a href="bookdown.html#citations"><i class="fa fa-check"></i><b>3.3</b> Citations</a></li>
-<li class="chapter" data-level="3.4" data-path="bookdown.html"><a href="bookdown.html#alt-text-for-accessibility"><i class="fa fa-check"></i><b>3.4</b> Alt Text for Accessibility</a></li>
-<li class="chapter" data-level="3.5" data-path="bookdown.html"><a href="bookdown.html#rendering-bookdown-to-build-publish"><i class="fa fa-check"></i><b>3.5</b> Rendering Bookdown to Build &amp; Publish</a></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="git.html"><a href="git.html"><i class="fa fa-check"></i><b>4</b> Git Installation &amp; GitHub Account</a>
-<ul>
-<li class="chapter" data-level="4.1" data-path="git.html"><a href="git.html#git-1"><i class="fa fa-check"></i><b>4.1</b> Git</a></li>
-<li class="chapter" data-level="4.2" data-path="git.html"><a href="git.html#github"><i class="fa fa-check"></i><b>4.2</b> GitHub</a></li>
-<li class="chapter" data-level="4.3" data-path="git.html"><a href="git.html#configure-git"><i class="fa fa-check"></i><b>4.3</b> Configure Git</a></li>
-<li class="chapter" data-level="4.4" data-path="git.html"><a href="git.html#personal-access-token"><i class="fa fa-check"></i><b>4.4</b> Personal Access Token</a></li>
-</ul></li>
-<li class="chapter" data-level="5" data-path="projmgmt.html"><a href="projmgmt.html"><i class="fa fa-check"></i><b>5</b> Project Management Tools</a>
-<ul>
-<li class="chapter" data-level="5.1" data-path="projmgmt.html"><a href="projmgmt.html#trello"><i class="fa fa-check"></i><b>5.1</b> Trello</a></li>
-<li class="chapter" data-level="5.2" data-path="projmgmt.html"><a href="projmgmt.html#slack"><i class="fa fa-check"></i><b>5.2</b> Slack</a></li>
-<li class="chapter" data-level="5.3" data-path="projmgmt.html"><a href="projmgmt.html#google-apps"><i class="fa fa-check"></i><b>5.3</b> Google Apps</a></li>
-<li class="chapter" data-level="5.4" data-path="projmgmt.html"><a href="projmgmt.html#zotero"><i class="fa fa-check"></i><b>5.4</b> Zotero</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
-<li class="divider"></li>
-<li><a href="https://github.com/ccbucr/AdministrationGuide" target="blank">Published with bookdown</a></li>
-
-</ul>
-
-      </nav>
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Installation Guide">Center for Conservation Biology | UC Riverside</a>:
+        <small class="text-muted">Installation Guide</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Center for Conservation Biology | UC Riverside</a>
-          </h1>
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Informational Resource for Software and Application Installation Utilized by CCB Faculty &amp; Staff</a></li>
+<li><a class="" href="intro.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="r.html"><span class="header-section-number">2</span> R and RStudio Installation</a></li>
+<li><a class="" href="bookdown.html"><span class="header-section-number">3</span> Bookdown Guide</a></li>
+<li><a class="active" href="git.html"><span class="header-section-number">4</span> Git Installation &amp; GitHub Account</a></li>
+<li><a class="" href="projmgmt.html"><span class="header-section-number">5</span> Project Management Tools</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          
         </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="git" class="section level1 hasAnchor" number="4">
-<h1><span class="header-section-number">Chapter 4</span> Git Installation &amp; GitHub Account<a href="git.html#git" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<div id="git-1" class="section level2 hasAnchor" number="4.1">
-<h2><span class="header-section-number">4.1</span> Git<a href="git.html#git-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="git" class="section level1" number="4">
+<h1>
+<span class="header-section-number">4</span> Git Installation &amp; GitHub Account<a class="anchor" aria-label="anchor" href="#git"><i class="fas fa-link"></i></a>
+</h1>
+<div id="git-1" class="section level2" number="4.1">
+<h2>
+<span class="header-section-number">4.1</span> Git<a class="anchor" aria-label="anchor" href="#git-1"><i class="fas fa-link"></i></a>
+</h2>
 <p>Check to see if your computer already has git:</p>
 <ul>
 <li>Open RStudio</li>
@@ -230,26 +99,34 @@ div.csl-indent {
 <li>If there is no response, download and install <code>git</code> from here: <a href="https://git-scm.com/downloads">git-scm.com/downloads</a>. Select the default settings within the prompts <strong>except</strong> the default to <strong>master</strong> branch. This branch is being phased out, so select the option that let’s you select alternative branches (ex: main).</li>
 </ul>
 </div>
-<div id="github" class="section level2 hasAnchor" number="4.2">
-<h2><span class="header-section-number">4.2</span> GitHub<a href="git.html#github" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="github" class="section level2" number="4.2">
+<h2>
+<span class="header-section-number">4.2</span> GitHub<a class="anchor" aria-label="anchor" href="#github"><i class="fas fa-link"></i></a>
+</h2>
 <p>GitHub is a internet based code hosting platform for collaboration and <a href="https://www.atlassian.com/git/tutorials/what-is-version-control#:~:text=Version%20control%2C%20also%20known%20as,to%20source%20code%20over%20time.">version control</a>. GitHub lets you (and others) work together on projects.</p>
 <p>Navigate to <a href="https://github.com/">github.com</a>, and create an account! Please use either your work or personal email account. You can add several emails to your account, and assign a particular email as the primary email for the account.</p>
 <p>Review this article on choosing a GitHub username: <a href="happygitwithr.com/github-acct.html">happygitwithr.com/github-acct.html</a>.</p>
 </div>
-<div id="configure-git" class="section level2 hasAnchor" number="4.3">
-<h2><span class="header-section-number">4.3</span> Configure Git<a href="git.html#configure-git" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="configure-git" class="section level2" number="4.3">
+<h2>
+<span class="header-section-number">4.3</span> Configure Git<a class="anchor" aria-label="anchor" href="#configure-git"><i class="fas fa-link"></i></a>
+</h2>
 <p>Once Git is installed and your GitHub account has been set up, Git needs to be configured on the computer. Configuring Git is required to push &amp; pull commits to GitHub.</p>
 <ul>
 <li><p>In RStudio, open the terminal.</p></li>
-<li><p>Run the following commands separately, pressing <code>Enter</code> after each line. Replace username and email with your GitHub account username and email. Make sure to keep the quotes around the username in the code below:</p>
+<li>
+<p>Run the following commands separately, pressing <code>Enter</code> after each line. Replace username and email with your GitHub account username and email. Make sure to keep the quotes around the username in the code below:</p>
 <ul>
 <li><code>git config --global user.name "Jane Doe"</code></li>
 <li><code>git config --global user.email janedoe@example.com</code></li>
-</ul></li>
-<li><p>Once you have entered the above command line code, check that the configuration was set correctly. In the RStudio Terminal, type the following command and hit enter:</p>
+</ul>
+</li>
+<li>
+<p>Once you have entered the above command line code, check that the configuration was set correctly. In the RStudio Terminal, type the following command and hit enter:</p>
 <ul>
 <li><code>git config --list --global</code></li>
-</ul></li>
+</ul>
+</li>
 </ul>
 <p>In the terminal, it should show code similar to this in the Terminal:</p>
 <p><code>user.name=janedoe</code>
@@ -259,24 +136,26 @@ div.csl-indent {
 <p><code>git config --global init.defaultBranch main</code></p>
 <p>For more information on configuring Git: <a href="https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup">check out this Git reference</a></p>
 </div>
-<div id="personal-access-token" class="section level2 hasAnchor" number="4.4">
-<h2><span class="header-section-number">4.4</span> Personal Access Token<a href="git.html#personal-access-token" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="personal-access-token" class="section level2" number="4.4">
+<h2>
+<span class="header-section-number">4.4</span> Personal Access Token<a class="anchor" aria-label="anchor" href="#personal-access-token"><i class="fas fa-link"></i></a>
+</h2>
 <p>Once Git has been configured to commit to your GitHub account, a <strong>Personal Access Token (PAT)</strong> must be created for <strong>each computer you intend to use</strong>. A PAT is an alternative password authentication method for Git to access GitHub accounts.</p>
 <ul>
 <li>In the RStudio Console, install the <a href="https://usethis.r-lib.org/"><code>usethis</code></a> package in R by running the following code:</li>
 </ul>
 <p><code>install.packages("usethis")</code></p>
 <p>If the <code>usethis</code> package is installed correctly, at the end of the stream of text there should be a message similar to the image below:</p>
-<p><img src="images/usethis.png" title="Installation download message in RStudio console that reads The downloaded binary packages are in this file path." alt="Installation download message in RStudio console that reads The downloaded binary packages are in this file path." width="554" style="display: block; margin: auto auto auto 0;" /></p>
+<div class="inline-figure"><img src="images/usethis.png" title="Installation download message in RStudio console that reads The downloaded binary packages are in this file path." alt="Installation download message in RStudio console that reads The downloaded binary packages are in this file path." width="554" style="display: block; margin: auto auto auto 0;"></div>
 <ul>
 <li>Once the <code>usethis</code> package is installed, run the following in the RStudio Console:</li>
 </ul>
-<p><code>usethis::create_github_token()</code></p>
+<p><code><a href="https://usethis.r-lib.org/reference/github-token.html">usethis::create_github_token()</a></code></p>
 <ul>
 <li>Enter your GitHub password when prompted.</li>
 </ul>
 <p>This should take you to the <strong>Settings/Developer settings</strong> section of your GitHub account:</p>
-<p><img src="images/pat.png" title="Image of GitHub settings webpage." alt="Image of GitHub settings webpage." width="1160" style="display: block; margin: auto auto auto 0;" /></p>
+<div class="inline-figure"><img src="images/pat.png" title="Image of GitHub settings webpage." alt="Image of GitHub settings webpage." width="1160" style="display: block; margin: auto auto auto 0;"></div>
 <ul>
 <li><strong>Note Field</strong></li>
 </ul>
@@ -301,88 +180,62 @@ div.csl-indent {
 <ul>
 <li>Once Scopes are selected, click on the green <code>Generate token</code> button:</li>
 </ul>
-<p><img src="images/generatepat.png" width="530" style="display: block; margin: auto;" /></p>
+<div class="inline-figure"><img src="images/generatepat.png" width="530" style="display: block; margin: auto;"></div>
 <ul>
 <li><p>Copy the generated PAT to your clipboard.</p></li>
 <li><p>Paste and Save this PAT in a text file in a secure folder that will NEVER be accessed by other users or the internet. You can create a <code>private</code> folder on your personal computer to store these files.</p></li>
 <li><p>Return to RStudio Console and run the following command:</p></li>
 </ul>
-<p><code>gitcreds::gitcreds_set()</code>.</p>
+<p><code><a href="https://rdrr.io/pkg/gitcreds/man/gitcreds_get.html">gitcreds::gitcreds_set()</a></code>.</p>
 <p>You will be prompted to paste the PAT into the console:</p>
-<p><img src="images/paste_pat.png" width="519" style="display: block; margin: auto;" /></p>
+<div class="inline-figure"><img src="images/paste_pat.png" width="519" style="display: block; margin: auto;"></div>
 <p>Paste the PAT at the end of the line <code>Enter password or token:</code> and press enter.</p>
 <ul>
 <li>In the console, run:</li>
 </ul>
-<p><code>usethis::git_sitrep()</code></p>
+<p><code><a href="https://usethis.r-lib.org/reference/git_sitrep.html">usethis::git_sitrep()</a></code></p>
 <p>This command should return your GitHub account information (see example below).</p>
-<p><img src="images/gitsitrep.png" width="648" style="display: block; margin: auto;" /></p>
+<div class="inline-figure"><img src="images/gitsitrep.png" width="648" style="display: block; margin: auto;"></div>
 <p>For more information on PATs, check out <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub’s PAT information page</a>.</p>
 
 </div>
 </div>
-            </section>
+  <div class="chapter-nav">
+<div class="prev"><a href="bookdown.html"><span class="header-section-number">3</span> Bookdown Guide</a></div>
+<div class="next"><a href="projmgmt.html"><span class="header-section-number">5</span> Project Management Tools</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#git"><span class="header-section-number">4</span> Git Installation &amp; GitHub Account</a></li>
+<li><a class="nav-link" href="#git-1"><span class="header-section-number">4.1</span> Git</a></li>
+<li><a class="nav-link" href="#github"><span class="header-section-number">4.2</span> GitHub</a></li>
+<li><a class="nav-link" href="#configure-git"><span class="header-section-number">4.3</span> Configure Git</a></li>
+<li><a class="nav-link" href="#personal-access-token"><span class="header-section-number">4.4</span> Personal Access Token</a></li>
+</ul>
 
-          </div>
-        </div>
-      </div>
-<a href="bookdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="projmgmt.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Installation Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Intern. It was last built on 2022-08-02.</p>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/ccbucr/AdministrationGuide/edit/main/04-git_github.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
-});
-});
-</script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -394,7 +247,22 @@ gitbook.start({
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
 </script>
 </body>
-
 </html>
