@@ -60,7 +60,10 @@ There are a lot of resources out there to help you learn how to use R and the RS
 - [R OpenSci](https://ropensci.org/)
 - [RStudio Cloud](https://rstudio.cloud/learn/primers) - interactive tutorials to learn data science basics.
 - [R Studio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) - invaluable tool to learn how to use various R packages. 
-- [Swirl](https://swirlstats.com/) - R package that is a built in tutorial. 
-
+- [Swirl](https://swirlstats.com/) - R package that is a built in tutorial.
+- [Teacups, Giraffes, & Statistics](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) - an interactive tutorial to learn statistics and R coding, plus it is a beautiful!
+- [Data Science in a Box](https://datasciencebox.org/)
+- [Adventures in R](https://www.adventures-in-r.com/)
+- [Data Analysis & Visualization in R for Ecologist](https://datacarpentry.org/R-ecology-lesson/)
 
 
