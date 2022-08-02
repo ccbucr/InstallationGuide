@@ -46,4 +46,21 @@ As of *July 2022*, Quarto comes pre-installed in R Studio (v2022.07). If you hav
 
 Learn more about Quarto [here](https://quarto.org/docs/get-started/hello/rstudio.html).
 
+## Learn How to Use R & RStudio
+
+There are a lot of resources out there to help you learn how to use R and the RStudio IDE (YouTube, Googling, [StackOverflow](https://stackoverflow.com/), etc...). This is a short list of primary resources for you to reference. It is highly recommended to join R community Slack channels, R User community groups (such as [R-Ladies](https://rladies.org/)), and UC Riverside Data Science clubs!
+
+- [ACM at UCR](https://acmucr.org/index.html) - UC Riverside community dedicated to technical, professional, and personal development in the context of computer science.
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+- [Cookbook for R](http://www.cookbook-r.com/)
+- [Advanced R](https://adv-r.hadley.nz/)
+- [R Studio (posit) Book Catalog](https://www.rstudio.com/resources/books/)
+- [R for Data Science Online Learning Community](https://www.rfordatasci.com/)
+- [R OpenSci](https://ropensci.org/)
+- [RStudio Cloud](https://rstudio.cloud/learn/primers) - interactive tutorials to learn data science basics.
+- [R Studio Cheatsheets](https://www.rstudio.com/resources/cheatsheets/) - invaluable tool to learn how to use various R packages. 
+- [Swirl](https://swirlstats.com/) - R package that is a built in tutorial. 
+
+
 

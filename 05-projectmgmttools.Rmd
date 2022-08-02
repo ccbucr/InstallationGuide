@@ -7,7 +7,7 @@
 knitr::include_graphics("images/trello.png")
 ```
 
-[Trello](https://trello.com/en) is a project management app tool that provides teams the opportunity to create task lists, reference & resource lists, and communicate via tagging! Ask the 
+[Trello](https://trello.com/en) is a project management app tool that provides teams the opportunity to create task lists, reference & resource lists, and communicate via tagging! To connect with CCB's Trello Workspace, send a request to CCB's PI. The main board is **CCB Team Projects**.
 
 
 ## Slack
@@ -38,4 +38,39 @@ The CCB team utilizes a number of Google applications for project management, da
 
 **Google Drive:** CCB utilizes *Shared Drive* folders as a file sharing application. You must request access to the shared drive folder from the lab P.I. 
 
-**Google Sites:** TBD
+**Google Sites:** There is a [CCB Google Site](https://sites.google.com/ucr.edu/ccbucr/home) that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future. If you would like edit access, please submit a request to the CCB PI. 
+
+## Zotero
+
+The Center for Conservation Biology shares research references through Zotero software. Zotero is a citation management tool and allows groups to collect and share references easily. The Zotero browser extension makes it easy to copy citations from webpages. 
+
+To install Zotero and the extension, please follow UC Riverside's installation instructions [here](https://guides.lib.ucr.edu/c.php?g=171064). *Note*: These instructions are for a **Windows** machine, but it is a similar process for Macs. 
+
+```{r zotero, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6}
+
+knitr::include_graphics("images/zoteroinstall.png")
+```
+
+
+```{r zoteroextension, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6}
+
+knitr::include_graphics("images/zoteroextension.png")
+```
+
+The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the [CCB Zotero Reference Group](https://www.zotero.org/groups/4734848/ccbucr). Make sure to use your using the UCR email address when setting up the Zotero account. 
+
+```{r zoterosyncing, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6}
+
+knitr::include_graphics("images/zoterosyncing.png")
+```
+
+To connect to the CCB Zotero Reference Group, navigate to [this link](https://www.zotero.org/groups/4734848/ccbucr). If you do not have access to the Group page, please send a request that you be added to the CCB PI.
+
+For more information on how to use Zotero, check out these links:
+
+- [UC Riverside Zotero Tips & Tricks](https://guides.lib.ucr.edu/c.php?g=171064&p=1126842)
+- [Zotero Quick Start Guide](https://www.zotero.org/support/quick_start_guide)
+- [Zotero Groups](https://www.zotero.org/support/groups)
+- [RStudio Citations](https://www.youtube.com/watch?v=zuuOYjE8m98) - add BibTex citation format in Zotero then quickly use .bib files in R to create references in markdown. 
+
+

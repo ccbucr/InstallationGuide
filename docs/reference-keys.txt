@@ -3,16 +3,17 @@ tab:nice-tab
 intro
 computer-requirements
 software
+r
+install-or-update-r
+install-or-update-r-studio
+install-quarto
+learn-how-to-use-r-rstudio
 bookdown
 primary-reference-resources
 formatting
 citations
 alt-text-for-accessibility
 rendering-bookdown-to-build-publish
-r
-install-or-update-r
-install-or-update-r-studio
-install-quarto
 git
 git-1
 github
@@ -22,3 +23,4 @@ projmgmt
 trello
 slack
 google-apps
+zotero

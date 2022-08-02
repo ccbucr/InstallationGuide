@@ -222,10 +222,98 @@ Software covered in this reference guide includes:
 
 Thank you to UC Santa Barbara's Bren School of Environmental Science \& Management and National Center for Ecological Analysis and Synthesis (NCEAS) staff for providing many of the resources listed in this reference guide. Information was made available on the \href{https://github.com/UCSB-MEDS}{UCSB-MEDS GitHub page}.
 
+\hypertarget{r}{%
+\chapter{R and RStudio Installation}\label{r}}
+
+\hypertarget{install-or-update-r}{%
+\section{Install or Update R}\label{install-or-update-r}}
+
+\textbf{R} is a programming language and environment used for statistical computing and grahics. For more information, please visit \href{https://www.r-project.org/about.html}{What is R}.
+
+To install R, visit \href{https://cloud.r-project.org/}{cloud.r-project.org} to download the most recent version for your operating system.
+
+\hypertarget{install-or-update-r-studio}{%
+\section{Install or Update R Studio}\label{install-or-update-r-studio}}
+
+RStudio is a software (considered an Integrated Development Environment, or IDE) that provides R programmers with an easy-to-use interface for coding in R.
+
+\textbf{Note:} RStudio will not work without R installed, and you won't particularly enjoy using R without having RStudio installed. Be sure to install both!
+
+\begin{itemize}
+\item
+  \textbf{New install:} To install RStudio, visit \href{https://www.rstudio.com/products/rstudio/}{rstudio.com/products/rstudio/}. Download the free (``Open Source Edition'') Desktop version for your operating system.
+\item
+  \textbf{Update:} If you already have RStudio and need to update: Open RStudio, and under `Help' in the top menu, choose `Check for updates.' If you have the most recent release, it will return `No update available. You are running the most recent version of RStudio.' Otherwise, you should follow the instructions to install an updated version.
+\end{itemize}
+
+Open RStudio (logo you'll click on shown below). \textbf{If you are prompted to install Command Line Tools, do it.}
+
+\begin{center}\includegraphics[width=4.97in]{images/rstudio} \end{center}
+
+\textbf{Mac Users}
+
+There may be a need to install command line tools and \href{https://www.xquartz.org/}{XQuartz}:
+
+\begin{itemize}
+\item
+  To install command line tools (if you're not automatically prompted), run in the Terminal tab in RStudio: \texttt{xcode-select\ -\/-install}
+\item
+  Visit \href{https://www.xquartz.org/}{xquartz.org} to download \& install XQuartz.
+\end{itemize}
+
+\hypertarget{install-quarto}{%
+\section{Install Quarto}\label{install-quarto}}
+
+\emph{This is an optional tool within R Studio that is extremely powerful, but not required for your job}
+
+Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.
+
+As of \emph{July 2022}, Quarto comes pre-installed in R Studio (v2022.07). If you haven't updated your R Studio IDE (and concerned about doing so), you can install Quarto separately.
+
+\begin{itemize}
+\item
+  Download Quarto \href{https://quarto.org/docs/get-started/}{here} and install
+\item
+  To use Quarto through the RStudio IDE, be sure to have at least version v2022.02 installed (see directions in step 2, above)
+\end{itemize}
+
+Learn more about Quarto \href{https://quarto.org/docs/get-started/hello/rstudio.html}{here}.
+
+\hypertarget{learn-how-to-use-r-rstudio}{%
+\section{Learn How to Use R \& RStudio}\label{learn-how-to-use-r-rstudio}}
+
+There are a lot of resources out there to help you learn how to use R and the RStudio IDE (YouTube, Googling, \href{https://stackoverflow.com/}{StackOverflow}, etc\ldots). This is a short list of primary resources for you to reference. It is highly recommended to join R community Slack channels, R User community groups (such as \href{https://rladies.org/}{R-Ladies}), and UC Riverside Data Science clubs!
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://acmucr.org/index.html}{ACM at UCR} - UC Riverside community dedicated to technical, professional, and personal development in the context of computer science.
+\item
+  \href{https://r4ds.had.co.nz/}{R for Data Science}
+\item
+  \href{https://bookdown.org/yihui/rmarkdown-cookbook/}{R Markdown Cookbook}
+\item
+  \href{http://www.cookbook-r.com/}{Cookbook for R}
+\item
+  \href{https://adv-r.hadley.nz/}{Advanced R}
+\item
+  \href{https://www.rstudio.com/resources/books/}{R Studio (posit) Book Catalog}
+\item
+  \href{https://www.rfordatasci.com/}{R for Data Science Online Learning Community}
+\item
+  \href{https://ropensci.org/}{R OpenSci}
+\item
+  \href{https://rstudio.cloud/learn/primers}{RStudio Cloud} - interactive tutorials to learn data science basics.
+\item
+  \href{https://www.rstudio.com/resources/cheatsheets/}{R Studio Cheatsheets} - invaluable tool to learn how to use various R packages.
+\item
+  \href{https://swirlstats.com/}{Swirl} - R package that is a built in tutorial.
+\end{itemize}
+
 \hypertarget{bookdown}{%
 \chapter{Bookdown Guide}\label{bookdown}}
 
-The first step to edit and add to this bookdown is to install the \textbf{bookdown} package from CRAN or Github:
+The first step to edit and add to this bookdown is to install the \textbf{bookdown} package from CRAN or Github. In the RStudio console, run the following:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -332,63 +420,6 @@ In your Console, type either of these commands depending on which type of render
 \texttt{bookdown::render\_book("index.Rmd",\ "bookdown::pdf\_book")}
 
 To compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
-
-\hypertarget{r}{%
-\chapter{R and RStudio Installation}\label{r}}
-
-\hypertarget{install-or-update-r}{%
-\section{Install or Update R}\label{install-or-update-r}}
-
-\textbf{R} is a programming language and environment used for statistical computing and grahics. For more information, please visit \href{https://www.r-project.org/about.html}{What is R}.
-
-To install R, visit \href{https://cloud.r-project.org/}{cloud.r-project.org} to download the most recent version for your operating system.
-
-\hypertarget{install-or-update-r-studio}{%
-\section{Install or Update R Studio}\label{install-or-update-r-studio}}
-
-RStudio is a software (considered an Integrated Development Environment, or IDE) that provides R programmers with an easy-to-use interface for coding in R.
-
-\textbf{Note:} RStudio will not work without R installed, and you won't particularly enjoy using R without having RStudio installed. Be sure to install both!
-
-\begin{itemize}
-\item
-  \textbf{New install:} To install RStudio, visit \href{https://www.rstudio.com/products/rstudio/}{rstudio.com/products/rstudio/}. Download the free (``Open Source Edition'') Desktop version for your operating system.
-\item
-  \textbf{Update:} If you already have RStudio and need to update: Open RStudio, and under `Help' in the top menu, choose `Check for updates.' If you have the most recent release, it will return `No update available. You are running the most recent version of RStudio.' Otherwise, you should follow the instructions to install an updated version.
-\end{itemize}
-
-Open RStudio (logo you'll click on shown below). \textbf{If you are prompted to install Command Line Tools, do it.}
-
-\begin{center}\includegraphics[width=4.97in]{images/rstudio} \end{center}
-
-\textbf{Mac Users}
-
-There may be a need to install command line tools and \href{https://www.xquartz.org/}{XQuartz}:
-
-\begin{itemize}
-\item
-  To install command line tools (if you're not automatically prompted), run in the Terminal tab in RStudio: \texttt{xcode-select\ -\/-install}
-\item
-  Visit \href{https://www.xquartz.org/}{xquartz.org} to download \& install XQuartz.
-\end{itemize}
-
-\hypertarget{install-quarto}{%
-\section{Install Quarto}\label{install-quarto}}
-
-\emph{This is an optional tool within R Studio that is extremely powerful, but not required for your job}
-
-Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.
-
-As of \emph{July 2022}, Quarto comes pre-installed in R Studio (v2022.07). If you haven't updated your R Studio IDE (and concerned about doing so), you can install Quarto separately.
-
-\begin{itemize}
-\item
-  Download Quarto \href{https://quarto.org/docs/get-started/}{here} and install
-\item
-  To use Quarto through the RStudio IDE, be sure to have at least version v2022.02 installed (see directions in step 2, above)
-\end{itemize}
-
-Learn more about Quarto \href{https://quarto.org/docs/get-started/hello/rstudio.html}{here}.
 
 \hypertarget{git}{%
 \chapter{Git Installation \& GitHub Account}\label{git}}
@@ -576,7 +607,7 @@ For more information on PATs, check out \href{https://docs.github.com/en/authent
 
 \begin{flushleft}\includegraphics[width=3.47in]{images/trello} \end{flushleft}
 
-\href{https://trello.com/en}{Trello} is a project management app tool that provides teams the opportunity to create task lists, reference \& resource lists, and communicate via tagging! Ask the
+\href{https://trello.com/en}{Trello} is a project management app tool that provides teams the opportunity to create task lists, reference \& resource lists, and communicate via tagging! To connect with CCB's Trello Workspace, send a request to CCB's PI. The main board is \textbf{CCB Team Projects}.
 
 \hypertarget{slack}{%
 \section{Slack}\label{slack}}
@@ -608,7 +639,38 @@ The CCB team utilizes a number of Google applications for project management, da
 
 \textbf{Google Drive:} CCB utilizes \emph{Shared Drive} folders as a file sharing application. You must request access to the shared drive folder from the lab P.I.
 
-\textbf{Google Sites:} TBD
+\textbf{Google Sites:} There is a \href{https://sites.google.com/ucr.edu/ccbucr/home}{CCB Google Site} that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future. If you would like edit access, please submit a request to the CCB PI.
+
+\hypertarget{zotero}{%
+\section{Zotero}\label{zotero}}
+
+The Center for Conservation Biology shares research references through Zotero software. Zotero is a citation management tool and allows groups to collect and share references easily. The Zotero browser extension makes it easy to copy citations from webpages.
+
+To install Zotero and the extension, please follow UC Riverside's installation instructions \href{https://guides.lib.ucr.edu/c.php?g=171064}{here}. \emph{Note}: These instructions are for a \textbf{Windows} machine, but it is a similar process for Macs.
+
+\begin{center}\includegraphics[width=24.56in]{images/zoteroinstall} \end{center}
+
+\begin{center}\includegraphics[width=24.64in]{images/zoteroextension} \end{center}
+
+The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the \href{https://www.zotero.org/groups/4734848/ccbucr}{CCB Zotero Reference Group}. Make sure to use your using the UCR email address when setting up the Zotero account.
+
+\begin{center}\includegraphics[width=22.14in]{images/zoterosyncing} \end{center}
+
+To connect to the CCB Zotero Reference Group, navigate to \href{https://www.zotero.org/groups/4734848/ccbucr}{this link}. If you do not have access to the Group page, please send a request that you be added to the CCB PI.
+
+For more information on how to use Zotero, check out these links:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://guides.lib.ucr.edu/c.php?g=171064\&p=1126842}{UC Riverside Zotero Tips \& Tricks}
+\item
+  \href{https://www.zotero.org/support/quick_start_guide}{Zotero Quick Start Guide}
+\item
+  \href{https://www.zotero.org/support/groups}{Zotero Groups}
+\item
+  \href{https://www.youtube.com/watch?v=zuuOYjE8m98}{RStudio Citations} - add BibTex citation format in Zotero then quickly use .bib files in R to create references in markdown.
+\end{itemize}
 
   \bibliography{book.bib,packages.bib}
 

@@ -1,6 +1,6 @@
 # Bookdown Guide {#bookdown}
 
-The first step to edit and add to this bookdown is to install the **bookdown** package from CRAN or Github:
+The first step to edit and add to this bookdown is to install the **bookdown** package from CRAN or Github. In the RStudio console, run the following:
 
 ```{r, eval=FALSE, echo = TRUE}
 install.packages("bookdown")
