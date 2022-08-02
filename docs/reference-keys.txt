@@ -16,6 +16,8 @@ install-quarto
 git
 git-1
 github
+configure-git
+personal-access-token
 projmgmt
 trello
 slack

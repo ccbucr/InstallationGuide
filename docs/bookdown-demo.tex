@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Installation Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Intern}
-\date{2022-08-01}
+\date{2022-08-02}
 
 \begin{document}
 \maketitle
@@ -379,7 +379,7 @@ There may be a need to install command line tools and \href{https://www.xquartz.
 
 Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.
 
-As of July 2022, Quarto comes pre-installed in R Studio (v2022.07). If you haven't updated your R Studio IDE (and concerned about doing so), you can install Quarto separately.
+As of \emph{July 2022}, Quarto comes pre-installed in R Studio (v2022.07). If you haven't updated your R Studio IDE (and concerned about doing so), you can install Quarto separately.
 
 \begin{itemize}
 \item
@@ -424,6 +424,149 @@ GitHub is a internet based code hosting platform for collaboration and \href{htt
 Navigate to \href{https://github.com/}{github.com}, and create an account! Please use either your work or personal email account. You can add several emails to your account, and assign a particular email as the primary email for the account.
 
 Review this article on choosing a GitHub username: \url{happygitwithr.com/github-acct.html}.
+
+\hypertarget{configure-git}{%
+\section{Configure Git}\label{configure-git}}
+
+Once Git is installed and your GitHub account has been set up, Git needs to be configured on the computer. Configuring Git is required to push \& pull commits to GitHub.
+
+\begin{itemize}
+\item
+  In RStudio, open the terminal.
+\item
+  Run the following commands separately, pressing \texttt{Enter} after each line. Replace username and email with your GitHub account username and email. Make sure to keep the quotes around the username in the code below:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{git\ config\ -\/-global\ user.name\ "Jane\ Doe"}
+  \item
+    \texttt{git\ config\ -\/-global\ user.email\ janedoe@example.com}
+  \end{itemize}
+\item
+  Once you have entered the above command line code, check that the configuration was set correctly. In the RStudio Terminal, type the following command and hit enter:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{git\ config\ -\/-list\ -\/-global}
+  \end{itemize}
+\end{itemize}
+
+In the terminal, it should show code similar to this in the Terminal:
+
+\texttt{user.name=janedoe}
+\texttt{user.email=janedoe@ucr.edu}
+\texttt{core.excludesfile=/Users/janedoe/.gitignore}
+
+If when installing or updating Git, the default branch was not set to \texttt{main} (it is defaulting to the old \texttt{master} branch), you can change this setting globally. In the Terminal again, enter the line below:
+
+\texttt{git\ config\ -\/-global\ init.defaultBranch\ main}
+
+For more information on configuring Git: \href{https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup}{check out this Git reference}
+
+\hypertarget{personal-access-token}{%
+\section{Personal Access Token}\label{personal-access-token}}
+
+Once Git has been configured to commit to your GitHub account, a \textbf{Personal Access Token (PAT)} must be created for \textbf{each computer you intend to use}. A PAT is an alternative password authentication method for Git to access GitHub accounts.
+
+\begin{itemize}
+\tightlist
+\item
+  In the RStudio Console, install the \href{https://usethis.r-lib.org/}{\texttt{usethis}} package in R by running the following code:
+\end{itemize}
+
+\texttt{install.packages("usethis")}
+
+If the \texttt{usethis} package is installed correctly, at the end of the stream of text there should be a message similar to the image below:
+
+\begin{flushleft}\includegraphics[width=15.39in]{images/usethis} \end{flushleft}
+
+\begin{itemize}
+\tightlist
+\item
+  Once the \texttt{usethis} package is installed, run the following in the RStudio Console:
+\end{itemize}
+
+\texttt{usethis::create\_github\_token()}
+
+\begin{itemize}
+\tightlist
+\item
+  Enter your GitHub password when prompted.
+\end{itemize}
+
+This should take you to the \textbf{Settings/Developer settings} section of your GitHub account:
+
+\begin{flushleft}\includegraphics[width=32.22in]{images/pat} \end{flushleft}
+
+\begin{itemize}
+\item
+  \textbf{Note Field}
+  Change the PAT name to a meaningful reference (see image for an example). You may end up creating multiple PATs, so you want to ensure that you know which PAT is designated for each computer \textbar{} server.
+\item
+  \textbf{Expiration Field}
+\end{itemize}
+
+This is to select a set expiration timeframe for your PAT. Setting an expiration is highly recommended, and GitHub will send you \emph{SEVERAL} emails prior to it expiring to remind you to renew it. Use the drop down to select a set time frame (7 days to 90 days) or create a custom expiration time frame (exactly a year or particular date).
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Select Scopes Field}
+\end{itemize}
+
+Define access for the Personal Access Token being generated.
+
+It is recommended to select at least the following scopes:
+- repo
+- workflow
+- write:packages
+- notifications
+- delete repo
+- write:discussions
+- project
+
+To learn more about Scopes, visit \href{https://docs.github.com/en/developers/apps/building-oauth-apps/scopes-for-oauth-apps}{the GitHub Scopes for OAUth Apps page}.
+
+\begin{itemize}
+\tightlist
+\item
+  Once Scopes are selected, click on the green \texttt{Generate\ token} button:
+\end{itemize}
+
+\begin{center}\includegraphics[width=14.72in]{images/generatepat} \end{center}
+
+\begin{itemize}
+\item
+  Copy the generated PAT to your clipboard.
+\item
+  Paste and Save this PAT in a text file in a secure folder that will NEVER be accessed by other users or the internet. You can create a \texttt{private} folder on your personal computer to store these files.
+\item
+  Return to RStudio Console and run the following command:
+\end{itemize}
+
+\texttt{gitcreds::gitcreds\_set()}.
+
+You will be prompted to paste the PAT into the console:
+
+\begin{center}\includegraphics[width=14.42in]{images/paste_pat} \end{center}
+
+Paste the PAT at the end of the line \texttt{Enter\ password\ or\ token:} and press enter.
+
+\begin{itemize}
+\tightlist
+\item
+  In the console, run:
+\end{itemize}
+
+\texttt{usethis::git\_sitrep()}
+
+This command should return your GitHub account information (see example below).
+
+\begin{center}\includegraphics[width=18in]{images/gitsitrep} \end{center}
+
+For more information on PATs, check out \href{https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token}{GitHub's PAT information page}.
 
 \hypertarget{projmgmt}{%
 \chapter{Project Management Tools}\label{projmgmt}}

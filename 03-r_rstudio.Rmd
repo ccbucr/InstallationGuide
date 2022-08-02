@@ -38,7 +38,7 @@ There may be a need to install command line tools and [XQuartz](https://www.xqua
 
 Quarto is a scientific publishing tool built on Pandoc that allows R, Python, Julia, and ObservableJS users to create dynamic documents, websites, books and more.
 
-As of July 2022, Quarto comes pre-installed in R Studio (v2022.07). If you haven't updated your R Studio IDE (and concerned about doing so), you can install Quarto separately. 
+As of *July 2022*, Quarto comes pre-installed in R Studio (v2022.07). If you haven't updated your R Studio IDE (and concerned about doing so), you can install Quarto separately. 
 
 - Download Quarto [here](https://quarto.org/docs/get-started/) and install
 
