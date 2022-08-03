@@ -21,6 +21,8 @@ Navigate to [github.com](https://github.com/), and create an account! Please use
 
 Review this article on choosing a GitHub username: [happygitwithr.com/github-acct.html](happygitwithr.com/github-acct.html). 
 
+Once you have created a GitHub account, join the [CCB's GitHub Organization](https://github.com/ccbucr). Please email the CCB PI to request they invite you to the organization. 
+
 ## Configure Git 
 
 Once Git is installed and your GitHub account has been set up, Git needs to be configured on the computer. Configuring Git is required to push & pull commits to GitHub. 

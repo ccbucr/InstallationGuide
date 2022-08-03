@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  2 AUG 2022 18:34
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  3 AUG 2022 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -988,7 +988,7 @@ Chapter 4.
 [17
 
 ]
-Overfull \hbox (110.94pt too wide) in paragraph at lines 497--500
+Overfull \hbox (110.94pt too wide) in paragraph at lines 499--502
 []\TU/lmtt/m/n/10 user.name=janedoe user.email=janedoe@ucr.edu core.excludesfil
 e=/Users/janedoe/.gitignore 
  []
@@ -996,7 +996,7 @@ e=/Users/janedoe/.gitignore
 File: images/usethis.png Graphic file (type bmp)
 <images/usethis.png>
 
-Overfull \hbox (211.14714pt too wide) in paragraph at lines 522--522
+Overfull \hbox (211.14714pt too wide) in paragraph at lines 524--524
 []  
  []
 
@@ -1004,7 +1004,7 @@ Overfull \hbox (211.14714pt too wide) in paragraph at lines 522--522
 File: images/pat.png Graphic file (type bmp)
 <images/pat.png>
 
-Overfull \hbox (563.87563pt too wide) in paragraph at lines 540--540
+Overfull \hbox (563.87563pt too wide) in paragraph at lines 542--542
 []  
  []
 
@@ -1015,14 +1015,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/generatepat.png Graphic file (type bmp)
 <images/generatepat.png>
 
-Overfull \hbox (187.03789pt too wide) in paragraph at lines 583--583
+Overfull \hbox (187.03789pt too wide) in paragraph at lines 585--585
  [] 
  []
 
 File: images/paste_pat.png Graphic file (type bmp)
 <images/paste_pat.png>
 
-Overfull \hbox (175.97174pt too wide) in paragraph at lines 598--598
+Overfull \hbox (175.97174pt too wide) in paragraph at lines 600--600
  [] 
  []
 
@@ -1030,7 +1030,7 @@ Overfull \hbox (175.97174pt too wide) in paragraph at lines 598--598
 File: images/gitsitrep.png Graphic file (type bmp)
 <images/gitsitrep.png>
 
-Overfull \hbox (305.50154pt too wide) in paragraph at lines 612--612
+Overfull \hbox (305.50154pt too wide) in paragraph at lines 614--614
  [] 
  []
 
@@ -1049,7 +1049,7 @@ File: images/slack.png Graphic file (type bmp)
 File: images/zoteroinstall.png Graphic file (type bmp)
 <images/zoteroinstall.png>
 
-Overfull \hbox (542.3855pt too wide) in paragraph at lines 665--665
+Overfull \hbox (542.3855pt too wide) in paragraph at lines 667--667
  [] 
  []
 
@@ -1060,7 +1060,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoteroextension.png Graphic file (type bmp)
 <images/zoteroextension.png>
 
-Overfull \hbox (545.3834pt too wide) in paragraph at lines 667--667
+Overfull \hbox (545.3834pt too wide) in paragraph at lines 669--669
  [] 
  []
 
@@ -1071,7 +1071,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoterosyncing.png Graphic file (type bmp)
 <images/zoterosyncing.png>
 
-Overfull \hbox (306.3899pt too wide) in paragraph at lines 671--671
+Overfull \hbox (306.3899pt too wide) in paragraph at lines 673--673
  [] 
  []
 
