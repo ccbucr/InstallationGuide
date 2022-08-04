@@ -26,3 +26,7 @@ trello
 zotero
 zoom
 slack
+organization
+file-naming
+folder-organization
+data-management

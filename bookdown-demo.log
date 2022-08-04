@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  4 AUG 2022 08:35
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  4 AUG 2022 09:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -928,13 +928,11 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 6.99925pt on input line 3.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 4.99947pt on input line 3.
-)
+[3])
 \tf@toc=\write4
 \openout4 = `bookdown-demo.toc'.
 
-[3] [4
-
-]
+[4]
 File: images/cvmc_billhavert.jpeg Graphic file (type bmp)
 <images/cvmc_billhavert.jpeg>
 
@@ -952,7 +950,9 @@ Overfull \hbox (583.55148pt too wide) in paragraph at lines 166--166
 
 Underfull \vbox (badness 1675) has occurred while \output is active []
 
-[5] [6]
+[5
+
+] [6]
 Chapter 1.
 [7
 
@@ -1123,20 +1123,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [33] [34]
 File: images/slack.png Graphic file (type bmp)
 <images/slack.png>
-(./bookdown-demo.bbl [35] [36
+[35] [36
 
-]) [37] (./bookdown-demo.aux)
+]
+Chapter 6.
+
+Overfull \hbox (114.12698pt too wide) in paragraph at lines 791--792
+[]\TU/lmr/m/n/10 Examples: \TU/lmr/m/it/10 CVStormwaterVAP20170217.csv\TU/lmr/m
+/n/10 , \TU/lmr/m/it/10 CVMC_CRCA01_Proposal_LCS_20221231.doc\TU/lmr/m/n/10 ; 
+ []
+
+
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 794--795
+[]\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
+me_rev20230131.doc). 
+ []
+
+
+Underfull \vbox (badness 4967) has occurred while \output is active []
+
+[37] (./bookdown-demo.bbl [38]) [39
+
+] (./bookdown-demo.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19931 strings out of 476919
- 348476 string characters out of 5821840
- 837822 words of memory out of 5000000
- 39555 multiletter control sequences out of 15000+600000
+ 19939 strings out of 476919
+ 348565 string characters out of 5821840
+ 838002 words of memory out of 5000000
+ 39563 multiletter control sequences out of 15000+600000
  410003 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,523b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (37 pages).
+Output written on bookdown-demo.pdf (39 pages).
