@@ -15,7 +15,7 @@ The CCB team utilizes a number of Google applications for project management, da
 UCR provides free access to Microsoft Office 365 Pro Plus for faculty, staff, and students! Please note that the available applications differ between PC and Mac OS. To learn more about downloading Microsoft applications, please visit the 
 [UC Riverside Microsoft 360 information page](https://ucrsupport.service-now.com/ucr_portal/?id=kb_article&sys_id=0868da980f602f0086b7c7dce1050ee0). 
 
-Microsoft 360 training resources can be found [here](https://support.microsoft.com/en-us/office?ui=en-us&rs=en-us&ad=us).
+Microsoft 360 training resources can be found [here](https://support.microsoft.com/en-us/training).
 
 ## Trello
 
