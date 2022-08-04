@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  3 AUG 2022 12:48
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  4 AUG 2022 08:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1043,13 +1043,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 5.
 File: images/trello.png Graphic file (type bmp)
 <images/trello.png>
-File: images/slack.png Graphic file (type bmp)
-<images/slack.png>
+
+Underfull \vbox (badness 4279) has occurred while \output is active []
+
 [25]
 File: images/zoteroinstall.png Graphic file (type bmp)
 <images/zoteroinstall.png>
 
-Overfull \hbox (542.3855pt too wide) in paragraph at lines 667--667
+Overfull \hbox (542.3855pt too wide) in paragraph at lines 654--654
  [] 
  []
 
@@ -1060,7 +1061,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoteroextension.png Graphic file (type bmp)
 <images/zoteroextension.png>
 
-Overfull \hbox (545.3834pt too wide) in paragraph at lines 669--669
+Overfull \hbox (545.3834pt too wide) in paragraph at lines 656--656
  [] 
  []
 
@@ -1071,27 +1072,71 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoterosyncing.png Graphic file (type bmp)
 <images/zoterosyncing.png>
 
-Overfull \hbox (306.3899pt too wide) in paragraph at lines 673--673
+Overfull \hbox (306.3899pt too wide) in paragraph at lines 660--660
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[28] [29] (./bookdown-demo.bbl [30]) [31
+[28] [29]
+File: images/zoomdownload.png Graphic file (type bmp)
+<images/zoomdownload.png>
 
-] (./bookdown-demo.aux)
+Overfull \hbox (89.65828pt too wide) in paragraph at lines 689--689
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[30]
+File: images/zoomsso.png Graphic file (type bmp)
+<images/zoomsso.png>
+
+Overfull \hbox (25.40186pt too wide) in paragraph at lines 698--698
+ [] 
+ []
+
+[31]
+File: images/zoomdomain.png Graphic file (type bmp)
+<images/zoomdomain.png>
+
+Overfull \hbox (258.30165pt too wide) in paragraph at lines 700--700
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[32]
+File: images/zoomcred.png Graphic file (type bmp)
+<images/zoomcred.png>
+
+Overfull \hbox (8.07811pt too wide) in paragraph at lines 708--708
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[33] [34]
+File: images/slack.png Graphic file (type bmp)
+<images/slack.png>
+(./bookdown-demo.bbl [35] [36
+
+]) [37] (./bookdown-demo.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19883 strings out of 476919
- 347550 string characters out of 5821840
- 837743 words of memory out of 5000000
- 39511 multiletter control sequences out of 15000+600000
+ 19931 strings out of 476919
+ 348476 string characters out of 5821840
+ 837822 words of memory out of 5000000
+ 39555 multiletter control sequences out of 15000+600000
  410003 words of font info for 83 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,9n,122p,518b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,9n,122p,523b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (31 pages).
+Output written on bookdown-demo.pdf (37 pages).

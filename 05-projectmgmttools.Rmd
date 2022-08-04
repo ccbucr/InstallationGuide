@@ -1,35 +1,5 @@
 # Project Management Tools {#projmgmt}
 
-## Trello
-
-```{r trello, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Image of Trello logo, blue 3 bold blue lines and trello in black font."}
-
-knitr::include_graphics("images/trello.png")
-```
-
-[Trello](https://trello.com/en) is a project management app tool that provides teams the opportunity to create task lists, reference & resource lists, and communicate via tagging! To connect with CCB's Trello Workspace, send a request to CCB's PI. The main board is **CCB Team Projects**.
-
-
-## Slack
-
-```{r slack, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 0.5, fig.alt="Image of Slack logo, light blue, bright green, red, and mustard yellow symbol with lower case slack spelled out in black font."}
-
-knitr::include_graphics("images/slack.png")
-```
-
-Slack is a messaging app that connects teams via channels and direct messages (DMs). 
-To join the CCB Slack workspace, follow [this link](https://join.slack.com/t/ccbucr/shared_invite/zt-1dfpaguqs-F4CAPCI4ILMvT0JOcSpnag). 
-
-There is a Trello app incorporated in the CCB UCR slack workspace. You can create cards in Slack for the CCB Team Projects Trello workspace. To learn how, [follow this Slack connect tool](https://slack.com/help/articles/231967387-Trello-for-Slack).
-
-Other cool Slack workspaces to join:
-
-- [EcoDataScience](https://eco-data-science.github.io/) - an environmental data science study group that started at UC Santa Barbara, but now has an international following!
-
-- [R4DS Online Learning Community](https://www.rfordatasci.com)
-
-- [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://www.sortee.org)
-
 ## Google Apps
 
 The CCB team utilizes a number of Google applications for project management, data & file sharing, and communicating with colleagues. 
@@ -39,6 +9,23 @@ The CCB team utilizes a number of Google applications for project management, da
 **Google Drive:** CCB utilizes *Shared Drive* folders as a file sharing application. You must request access to the shared drive folder from the lab P.I. 
 
 **Google Sites:** There is a [CCB Google Site](https://sites.google.com/ucr.edu/ccbucr/home) that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future. If you would like edit access, please submit a request to the CCB PI. 
+
+## Microsoft 360 Suite
+
+UCR provides free access to Microsoft Office 365 Pro Plus for faculty, staff, and students! Please note that the available applications differ between PC and Mac OS. To learn more about downloading Microsoft applications, please visit the 
+[UC Riverside Microsoft 360 information page](https://ucrsupport.service-now.com/ucr_portal/?id=kb_article&sys_id=0868da980f602f0086b7c7dce1050ee0). 
+
+Microsoft 360 training resources can be found [here](https://support.microsoft.com/en-us/office?ui=en-us&rs=en-us&ad=us).
+
+## Trello
+
+```{r trello, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Image of Trello logo, blue 3 bold blue lines and trello in black font."}
+
+knitr::include_graphics("images/trello.png")
+```
+
+[Trello](https://trello.com/en) is a project management app tool that provides teams the opportunity to create task lists, reference & resource lists, and communicate via tagging! To connect with CCB's Trello Workspace, send a request to CCB's PI. The main board is **CCB Team Projects**.
+
 
 ## Zotero
 
@@ -73,4 +60,65 @@ For more information on how to use Zotero, check out these links:
 - [Zotero Groups](https://www.zotero.org/support/groups)
 - [RStudio Citations](https://www.youtube.com/watch?v=zuuOYjE8m98) - add BibTex citation format in Zotero then quickly use .bib files in R to create references in markdown. 
 
+## Zoom
 
+Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based team meeting regularly. UC Riverside provides all faculty, staff, and students a free premium account. In order to utilize this service, download the application and sign in via Single Sign-ON (SS0). For the most current installation and log in information, visit UC Riverside's [Information Technology Systems Zoom account page](https://its.ucr.edu/blog/2019/12/17/changes-ucr-zoom-account-access).
+
+- **Step 1**: Download the Zoom application via [UC Riverside's Zoom service page](https://ucr.zoom.us/) - just select the **Download** button!
+
+```{r zoomdownload, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2, fig.alt="Image of UC Riverside's Zoom Service page that has 4 buttons that prompts users to either Sign In, Sign In, Download, Join, Host."}
+
+knitr::include_graphics("images/zoomdownload.png")
+```
+
+
+- **Step 2**: Once the application is downloading, Zoom will automatically open. You will be prompted to either *Join a Meeting* or *Sign In*. Select *Sign In* and set up your UCR Zoom account using your NetId information. 
+
+- **Step 3**: Click the *Sign In with SSO* button, then enter `ucr` in the *company domain* section. 
+
+```{r sso, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2, fig.alt="Image of Zoom Account Sign In prompt displaying 4 buttons: SSO, Apple, Google, Facebook"}
+
+knitr::include_graphics("images/zoomsso.png")
+```
+
+```{r domain, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2}
+
+knitr::include_graphics("images/zoomdomain.png")
+```
+
+- **Step 4**: You will then be prompted to sign in, this time using your UCR NetId. The program may open up an authentication window requesting your UCR NetId as shown below:
+
+```{r zoomcred, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2}
+
+knitr::include_graphics("images/zoomcred.png")
+```
+
+- **Step 5**: Personalize your Zoom account! You can add your name, pronouns, and an image to your profile, create a *personal Zoom room* to utilize as a default meeting space, and set settings like *mute all participants when they join a meeting* or turn off settings such as *start meetings with participant video on. Participants can change this during the meeting.*
+
+Happy Zooming! 
+
+**Zoom Resources:**
+
+- [Zoom Help Desk](https://support.zoom.us/hc/en-us)
+- [Zoom meetings trainings](https://livetraining.zoom.us/rec/play/6Zx8f-j7qDw3GNeQswSDAPJ-W9S4J6qshiYfqfcNyk20WyIHNFChb7pHZuClKrDVR76R1BxgtMF4txaS?continueMode=true)
+- [UC Riverside Zoom Services](https://ucr.zoom.us/)
+
+## Slack
+
+```{r slack, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 0.5, fig.alt="Image of Slack logo, light blue, bright green, red, and mustard yellow symbol with lower case slack spelled out in black font."}
+
+knitr::include_graphics("images/slack.png")
+```
+
+Slack is a messaging app that connects teams via channels and direct messages (DMs). 
+To join the CCB Slack workspace, follow [this link](https://join.slack.com/t/ccbucr/shared_invite/zt-1dfpaguqs-F4CAPCI4ILMvT0JOcSpnag). 
+
+There is a Trello app incorporated in the CCB UCR slack workspace. You can create cards in Slack for the CCB Team Projects Trello workspace. To learn how, [follow this Slack connect tool](https://slack.com/help/articles/231967387-Trello-for-Slack).
+
+Other cool Slack workspaces to join:
+
+- [EcoDataScience](https://eco-data-science.github.io/) - an environmental data science study group that started at UC Santa Barbara, but now has an international following!
+
+- [R4DS Online Learning Community](https://www.rfordatasci.com)
+
+- [Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)](https://www.sortee.org)

@@ -20,7 +20,9 @@ github
 configure-git
 personal-access-token
 projmgmt
-trello
-slack
 google-apps
+microsoft-360-suite
+trello
 zotero
+zoom
+slack
