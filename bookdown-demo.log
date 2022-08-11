@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  11 AUG 2022 14:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  11 AUG 2022 16:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,21 +973,20 @@ Overfull \hbox (14.21pt too wide) in paragraph at lines 261--261
 ]
 Chapter 3.
 
-Underfull \hbox (badness 1552) in paragraph at lines 362--362
+Underfull \hbox (badness 1552) in paragraph at lines 367--367
 []\TU/lmr/bx/n/14.4 Render, Build & Publish the Resource
  []
 
-
-Overfull \hbox (124.47pt too wide) in paragraph at lines 368--370
+[15]
+Overfull \hbox (124.47pt too wide) in paragraph at lines 373--375
 []\TU/lmtt/m/n/10 bookdown::render_book("index.Rmd", "bookdown::gitbook") bookd
 own::render_book("index.Rmd",
  []
 
-[15]
 File: images/build.png Graphic file (type bmp)
 <images/build.png>
 
-Overfull \hbox (470.09273pt too wide) in paragraph at lines 391--391
+Overfull \hbox (470.09273pt too wide) in paragraph at lines 396--396
  [] 
  []
 
@@ -998,7 +997,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/select.png Graphic file (type bmp)
 <images/select.png>
 
-Overfull \hbox (463.71193pt too wide) in paragraph at lines 393--393
+Overfull \hbox (463.71193pt too wide) in paragraph at lines 398--398
  [] 
  []
 
@@ -1006,7 +1005,7 @@ Overfull \hbox (463.71193pt too wide) in paragraph at lines 393--393
 File: images/commit.png Graphic file (type bmp)
 <images/commit.png>
 
-Overfull \hbox (524.24538pt too wide) in paragraph at lines 395--395
+Overfull \hbox (524.24538pt too wide) in paragraph at lines 400--400
  [] 
  []
 
@@ -1015,7 +1014,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [18]
 
-LaTeX Warning: Reference `methods' on page 19 undefined on input line 408.
+LaTeX Warning: Reference `methods' on page 19 undefined on input line 413.
 
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
@@ -1024,23 +1023,23 @@ File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 ]
 Chapter 4.
 [23]
-Overfull \hbox (110.94pt too wide) in paragraph at lines 535--538
+Overfull \hbox (110.94pt too wide) in paragraph at lines 539--542
 []\TU/lmtt/m/n/10 user.name=janedoe user.email=janedoe@ucr.edu core.excludesfil
 e=/Users/janedoe/.gitignore 
  []
 
+[24]
 File: images/usethis.png Graphic file (type bmp)
 <images/usethis.png>
 
-Overfull \hbox (211.14714pt too wide) in paragraph at lines 560--560
+Overfull \hbox (211.14714pt too wide) in paragraph at lines 564--564
 []  
  []
 
-[24]
 File: images/pat.png Graphic file (type bmp)
 <images/pat.png>
 
-Overfull \hbox (563.87563pt too wide) in paragraph at lines 578--578
+Overfull \hbox (563.87563pt too wide) in paragraph at lines 582--582
 []  
  []
 
@@ -1051,14 +1050,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/generatepat.png Graphic file (type bmp)
 <images/generatepat.png>
 
-Overfull \hbox (187.03789pt too wide) in paragraph at lines 621--621
+Overfull \hbox (187.03789pt too wide) in paragraph at lines 625--625
  [] 
  []
 
 File: images/paste_pat.png Graphic file (type bmp)
 <images/paste_pat.png>
 
-Overfull \hbox (175.97174pt too wide) in paragraph at lines 636--636
+Overfull \hbox (175.97174pt too wide) in paragraph at lines 640--640
  [] 
  []
 
@@ -1066,7 +1065,7 @@ Overfull \hbox (175.97174pt too wide) in paragraph at lines 636--636
 File: images/gitsitrep.png Graphic file (type bmp)
 <images/gitsitrep.png>
 
-Overfull \hbox (305.50154pt too wide) in paragraph at lines 650--650
+Overfull \hbox (305.50154pt too wide) in paragraph at lines 654--654
  [] 
  []
 
@@ -1083,7 +1082,7 @@ File: images/trello.png Graphic file (type bmp)
 File: images/zoteroinstall.png Graphic file (type bmp)
 <images/zoteroinstall.png>
 
-Overfull \hbox (542.3855pt too wide) in paragraph at lines 697--697
+Overfull \hbox (542.3855pt too wide) in paragraph at lines 701--701
  [] 
  []
 
@@ -1094,7 +1093,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoteroextension.png Graphic file (type bmp)
 <images/zoteroextension.png>
 
-Overfull \hbox (545.3834pt too wide) in paragraph at lines 699--699
+Overfull \hbox (545.3834pt too wide) in paragraph at lines 703--703
  [] 
  []
 
@@ -1105,7 +1104,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoterosyncing.png Graphic file (type bmp)
 <images/zoterosyncing.png>
 
-Overfull \hbox (306.3899pt too wide) in paragraph at lines 703--703
+Overfull \hbox (306.3899pt too wide) in paragraph at lines 707--707
  [] 
  []
 
@@ -1116,7 +1115,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoomdownload.png Graphic file (type bmp)
 <images/zoomdownload.png>
 
-Overfull \hbox (89.65828pt too wide) in paragraph at lines 732--732
+Overfull \hbox (89.65828pt too wide) in paragraph at lines 736--736
  [] 
  []
 
@@ -1127,7 +1126,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoomsso.png Graphic file (type bmp)
 <images/zoomsso.png>
 
-Overfull \hbox (25.40186pt too wide) in paragraph at lines 741--741
+Overfull \hbox (25.40186pt too wide) in paragraph at lines 745--745
  [] 
  []
 
@@ -1135,7 +1134,7 @@ Overfull \hbox (25.40186pt too wide) in paragraph at lines 741--741
 File: images/zoomdomain.png Graphic file (type bmp)
 <images/zoomdomain.png>
 
-Overfull \hbox (258.30165pt too wide) in paragraph at lines 743--743
+Overfull \hbox (258.30165pt too wide) in paragraph at lines 747--747
  [] 
  []
 
@@ -1146,7 +1145,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/zoomcred.png Graphic file (type bmp)
 <images/zoomcred.png>
 
-Overfull \hbox (8.07811pt too wide) in paragraph at lines 751--751
+Overfull \hbox (8.07811pt too wide) in paragraph at lines 755--755
  [] 
  []
 
@@ -1161,7 +1160,7 @@ Chapter 6.
 File: images/ServiceLink.png Graphic file (type bmp)
 <images/ServiceLink.png>
 
-Overfull \hbox (491.16pt too wide) in paragraph at lines 881--881
+Overfull \hbox (491.16pt too wide) in paragraph at lines 885--885
  [] 
  []
 
@@ -1177,7 +1176,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/requestsubmit.png Graphic file (type bmp)
 <images/requestsubmit.png>
 
-Overfull \hbox (533.20482pt too wide) in paragraph at lines 897--897
+Overfull \hbox (533.20482pt too wide) in paragraph at lines 901--901
  [] 
  []
 
@@ -1189,18 +1188,31 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 Chapter 7.
 
-Overfull \hbox (36.09503pt too wide) in paragraph at lines 946--948
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 950--952
 []\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
 me_rev20230131.doc). 
  []
 
 [49]
-Overfull \hbox (114.12698pt too wide) in paragraph at lines 961--962
+Overfull \hbox (114.12698pt too wide) in paragraph at lines 965--966
 []\TU/lmr/m/n/10 Examples: \TU/lmr/m/it/10 CVStormwaterVAP20170217.csv\TU/lmr/m
 /n/10 , \TU/lmr/m/it/10 CVMC_CRCA01_Proposal_LCS_20221231.doc\TU/lmr/m/n/10 ; 
  []
 
-(./bookdown-demo.bbl [50]) [51
+[50]
+Chapter 8.
+[51
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[52]
+Overfull \hbox (87.14124pt too wide) has occurred while \output is active
+\TU/lmr/m/sl/10 8.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AND
+ TIRING. \TU/lmr/m/n/10 53
+ []
+
+[53] (./bookdown-demo.bbl [54]) [55
 
 ] (./bookdown-demo.aux)
 
@@ -1208,12 +1220,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20019 strings out of 476919
- 350020 string characters out of 5821840
- 837401 words of memory out of 5000000
- 39636 multiletter control sequences out of 15000+600000
+ 20041 strings out of 476919
+ 350858 string characters out of 5821840
+ 840331 words of memory out of 5000000
+ 39658 multiletter control sequences out of 15000+600000
  410011 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,9n,122p,559b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,9n,122p,1032b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (51 pages).
+Output written on bookdown-demo.pdf (55 pages).

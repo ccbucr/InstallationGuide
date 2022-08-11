@@ -12,7 +12,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: ccbucr/AdministrationGuide
-description: "Documentation on how to install software and tools utilized by the UC Riverside CCB team to facilitate collaborative research."
+description: "Documentation on processes utilized by the UC Riverside CCB team to facilitate collaborative research."
 ---
 
 # Welcome to the CCB Research Unit Resource Guide {-}

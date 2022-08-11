@@ -1,12 +1,6 @@
 # Bookdown Guide {#bookdown}
 
-The first step to edit and add to this Resource Guide is to install the **bookdown** package from CRAN or Github. In the RStudio console, run the following:
-
-```{r, eval=FALSE, echo = TRUE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
-```
+This Resource Guide was created using the [`bookdown` package](https://github.com/rstudio/bookdown). `bookdown` provides a platform to publish references using various output formats (PDF, HTML, Word) and allows for interactivity, insertion of code chunks, and supports a variety of languages (R, Python, Julia, SQL, etc.). 
 
 ## Primary Reference Resources
 
@@ -17,6 +11,14 @@ Here is a list of resources to learn how to use and edit in bookdown
 - [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 
+## Install the Bookdown package 
+The first step to edit and add to this Resource Guide is to install the **bookdown** package from CRAN or Github. In the RStudio console, run the following:
+
+```{r, eval=FALSE, echo = TRUE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
 
 ## Render, Build & Publish the Resource Guide 
 

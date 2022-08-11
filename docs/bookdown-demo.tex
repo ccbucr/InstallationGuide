@@ -331,15 +331,7 @@ There are many resources out there to help you learn how to use R and the RStudi
 \hypertarget{bookdown}{%
 \chapter{Bookdown Guide}\label{bookdown}}
 
-The first step to edit and add to this Resource Guide is to install the \textbf{bookdown} package from CRAN or Github. In the RStudio console, run the following:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
-\CommentTok{\# or the development version}
-\CommentTok{\# devtools::install\_github(\textquotesingle{}rstudio/bookdown\textquotesingle{})}
-\end{Highlighting}
-\end{Shaded}
+This Resource Guide was created using the \href{https://github.com/rstudio/bookdown}{\texttt{bookdown} package}. \texttt{bookdown} provides a platform to publish references using various output formats (PDF, HTML, Word) and allows for interactivity, insertion of code chunks, and supports a variety of languages (R, Python, Julia, SQL, etc.).
 
 \hypertarget{primary-reference-resources}{%
 \section{Primary Reference Resources}\label{primary-reference-resources}}
@@ -357,6 +349,19 @@ Here is a list of resources to learn how to use and edit in bookdown
 \item
   \href{https://bookdown.org/yihui/rmarkdown/}{R Markdown: The Definitive Guide}
 \end{itemize}
+
+\hypertarget{install-the-bookdown-package}{%
+\section{Install the Bookdown package}\label{install-the-bookdown-package}}
+
+The first step to edit and add to this Resource Guide is to install the \textbf{bookdown} package from CRAN or Github. In the RStudio console, run the following:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"bookdown"}\NormalTok{)}
+\CommentTok{\# or the development version}
+\CommentTok{\# devtools::install\_github(\textquotesingle{}rstudio/bookdown\textquotesingle{})}
+\end{Highlighting}
+\end{Shaded}
 
 \hypertarget{render-build-publish-the-resource-guide}{%
 \section{Render, Build \& Publish the Resource Guide}\label{render-build-publish-the-resource-guide}}
@@ -468,8 +473,21 @@ You can easily write citations using .bib files within this repository formatted
 \hypertarget{git}{%
 \chapter{Git Installation \& GitHub Account}\label{git}}
 
+\hypertarget{github}{%
+\section{GitHub}\label{github}}
+
+GitHub is a internet based code hosting platform for collaboration and \href{https://www.atlassian.com/git/tutorials/what-is-version-control\#:~:text=Version\%20control\%2C\%20also\%20known\%20as,to\%20source\%20code\%20over\%20time.}{version control}. GitHub lets you (and others) work together on projects.
+
+Navigate to \href{https://github.com/}{github.com}, and create an account! Please use either your work or personal email account. You can add several emails to your account, and assign a particular email as the primary email for the account.
+
+Review this article on choosing a GitHub username: \url{happygitwithr.com/github-acct.html}.
+
+Once you have created a GitHub account, join the \href{https://github.com/ccbucr}{CCB's GitHub Organization}. Please email the CCB PI to request they invite you to the organization.
+
 \hypertarget{git-1}{%
 \section{Git}\label{git-1}}
+
+Git is a tool utilized for source code management. It tracks changes and updates to code and allows for multiple users to work together within the same repository. Recommended reading for \href{https://towardsdatascience.com/what-is-git-and-why-is-it-so-important-dce559b27833}{background information on Git and its utility} \citep{Yıldırım_2020}.
 
 Check to see if your computer already has git:
 
@@ -490,20 +508,6 @@ If \texttt{git} is already installed, the return to the above command should ret
 \item
   If there is no response, download and install \texttt{git} from here: \href{https://git-scm.com/downloads}{git-scm.com/downloads}. Select the default settings within the prompts \textbf{except} the default to \textbf{master} branch. This branch is being phased out, so select the option that let's you select alternative branches (ex: main).
 \end{itemize}
-
-\hypertarget{github}{%
-\section{GitHub}\label{github}}
-
-GitHub is a internet based code hosting platform for collaboration and \href{https://www.atlassian.com/git/tutorials/what-is-version-control\#:~:text=Version\%20control\%2C\%20also\%20known\%20as,to\%20source\%20code\%20over\%20time.}{version control}. GitHub lets you (and others) work together on projects.
-
-Navigate to \href{https://github.com/}{github.com}, and create an account! Please use either your work or personal email account. You can add several emails to your account, and assign a particular email as the primary email for the account.
-
-Review this article on choosing a GitHub username: \url{happygitwithr.com/github-acct.html}.
-
-Once you have created a GitHub account, join the \href{https://github.com/ccbucr}{CCB's GitHub Organization}. Please email the CCB PI to request they invite you to the organization.
-
-\hypertarget{configure-git}{%
-\section{Configure Git}\label{configure-git}}
 
 Once Git is installed and your GitHub account has been set up, Git needs to be configured on the computer. Configuring Git is required to push \& pull commits to GitHub.
 
@@ -967,6 +971,87 @@ When creating file names, best practices dictate that you should:
 
 \hypertarget{data-management}{%
 \section{Data Management}\label{data-management}}
+
+\hypertarget{codeofconduct}{%
+\chapter{Code of Conduct}\label{codeofconduct}}
+
+The Center of Conservation Biology's Code of Conduct adapted from \citep{Perry_2018}
+
+\hypertarget{we-are-committed-to-working-as-a-team.}{%
+\section{We are committed to working as a team.}\label{we-are-committed-to-working-as-a-team.}}
+
+All aspects of our professional contributions to the project are discussed and agreed upon together, and all tasks - although they might be led by individual team members - are developed through collaborative practice. Devotion to supporting the team, working as a team player, providing constructive critique to your team members, and respecting the interests of the team as a successful working group (without compromising their safety or security, as described below), are paramount.
+
+\hypertarget{we-are-committed-to-prioritizing-and-championing-the-people-and-communities-that-host-us.}{%
+\section{We are committed to prioritizing and championing the people and communities that host us.}\label{we-are-committed-to-prioritizing-and-championing-the-people-and-communities-that-host-us.}}
+
+Our work is driven by local needs, and decision-making is grounded in evidence and robust data gathered in local contexts. We are critically aware of the existing evidence. We attend events and participate in activities that are organised by our host communities. We respect, care for and create long-lasting friendships with our hosts. We aim to abide by local expectations around dress and custom, and if working in communities where the primary language is not our own, we are committed to learning the language. We maintain links with our hosts after the project ends and we support their future professional endeavors.
+
+\hypertarget{we-are-committed-to-the-working-hours-professional-expectations-and-responsibilities-defined-by-the-overall-project-directors.}{%
+\section{We are committed to the working hours, professional expectations and responsibilities defined by the overall project directors.}\label{we-are-committed-to-the-working-hours-professional-expectations-and-responsibilities-defined-by-the-overall-project-directors.}}
+
+We typically work as part of a larger project team guided by wider goals than ours alone. We are aware of their responsibilities, we have read the necessary guidance documents, we have understood and signed the necessary insurance and risk assessment documentation, and in all cases, we respect and abide by the instructions given by the directors. This includes zero tolerance in relation to behavior that compromises the well being, equality, security or dignity of other human beings, as described below.
+
+\hypertarget{we-are-representatives-and-extensions-of-the-university-of-california-riverside-and-its-staff-and-of-the-professional-bodies-to-which-we-and-our-project-leaders-are-subscribed.}{%
+\section{We are representatives and extensions of the University of California, Riverside and its staff, and of the professional bodies to which we and our project leaders are subscribed.}\label{we-are-representatives-and-extensions-of-the-university-of-california-riverside-and-its-staff-and-of-the-professional-bodies-to-which-we-and-our-project-leaders-are-subscribed.}}
+
+We recognize our duty of care to, and our responsibility for professionalism in, not only the communities where we work and reside, but the university and surrounding organisations to which we and our project leaders are accountable. Our behaviors reflect on these institutions and we acknowledge that our direct supervisor is (and therefore we too are) bound by the ethical and professional codes of both UC Riverside and other institutional affiliations.
+
+Considering these obligations, you agree with the following:
+
+\begin{itemize}
+\tightlist
+\item
+  I will come to my direct supervisor the moment that I experience problems, challenges or trouble of any kind. I will keep her informed of any issues that I feel may manifest themselves in relation to myself, my teammates or affiliates while in the field. If I feel I need support beyond my direct supervisor, I will turn to the 2nd identified lead for their advice. I have already disclosed to my direct supervisor any potential matters of concern (which may include matters relating to health, psychological and physical wellbeing, security, equality, confidence, interpersonal relations, previous travel or fieldwork experiences, etc.) so that they are aware of them and can mitigate them prior to departing for - and during - fieldwork. If I have not yet disclosed such matters, I agree to do so as soon as possible. I have shared this information in confidence, with an expectation of complete privacy unless urgent medical, safety, security, or other legal intervention is required.
+\end{itemize}
+
+\hypertarget{we-recognize-that-fieldwork-can-be-intense-emotional-and-tiring.}{%
+\section{We recognize that fieldwork can be intense, emotional and tiring.}\label{we-recognize-that-fieldwork-can-be-intense-emotional-and-tiring.}}
+
+We understand that things can go wrong, that we may need to compromise, and that in exceptional circumstances, we made need to shorten or modify your work on site to help manage these circumstances. In such cases, we will have a series of conversations about how to deal with difficulties, led by your direct supervisor and/or other lead. If the difficulties are not resolved within 7 days of identification, we will consult with the university for their guidance. If it is agreed with the University that the difficulties are unresolvable in the field, we will help you to organize your safe return home.
+
+\hypertarget{we-have-the-right-to-a-safe-secure-and-non-threatening-working-and-living-environment.}{%
+\section{We have the right to a safe, secure and non-threatening working and living environment.}\label{we-have-the-right-to-a-safe-secure-and-non-threatening-working-and-living-environment.}}
+
+We do not tolerate any form of discriminatory, abusive, aggressive, harassing, threatening, sexually- or physically-intimidating, or related problematic behaviors that compromise the wellbeing, equality, security or dignity of other human beings (whether those humans are our peers, colleagues, supervisors, collaborators, local community members or any persons at all). Our supervisors are trained in supporting those who have experienced or are experiencing harassment. They are obliged to investigate and respond to observed, implied or directly reported harassment. Considering this zero-tolerance policy, you agree to the following:
+
+\begin{itemize}
+\tightlist
+\item
+  I will not engage in behavior that compromises the wellbeing, equality, security or dignity of other human beings. I recognize that if I am implicated in such behavior I will be required to leave the project at my own expense and may be subject to criminal investigation.
+\end{itemize}
+
+If I witness others being subjected to such behavior, I will report it immediately to my direct supervisor. If I feel I cannot speak to my direct supervisor, I will report it to the 2nd identified lead. If I feel I cannot report it to either my direct supervisor or the 2nd lead, then I will contact the \href{https://compliance.ucr.edu/investigations-complaint-resolution}{University of California, Riverside Compliance office}.
+
+\begin{itemize}
+\item
+  If I myself feel unsafe or uncomfortable, I will report it immediately to my direct supervisor. My supervisor will support me and will implement actions to keep me safe while working to stop the behavior. If I feel I cannot speak to my direct supervisor, I will report it to the 2nd identified lead. If I feel I cannot report it to either my direct supervisor or the 2nd lead, then I will contact the \href{https://compliance.ucr.edu/investigations-complaint-resolution}{University of California, Riverside Compliance office}.
+\item
+  My commitment to creating and maintaining safety and security for all extends to my online (web and social media) and mobile phone interactions, and I recognize that the process for reporting and acting on threatening online/mobile phone behaviors is the same as above.
+\end{itemize}
+
+\hypertarget{important-university-of-california-riverside-links}{%
+\section{Important University of California, Riverside Links}\label{important-university-of-california-riverside-links}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://tartansoul.ucr.edu/}{UCR Values}
+\item
+  \href{https://compliance.ucr.edu/ethics-compliance-program}{Ethics \& Compliance Program}
+\item
+  \href{https://titleix.ucr.edu/}{Equal Opportunity and Affirmative Action}
+\item
+  \href{https://fboapps.ucr.edu/policies/index.php?path=printPolicies.php\&policy=650-75}{Discrimination, Harassment, and Retaliation Complaint and Resolution}
+\item
+  \href{https://conduct.ucr.edu/policies/standards-of-conduct}{Standards of Conduct}
+\item
+  \href{https://ehs.ucr.edu/}{Environmental Heath \& Safety}
+\item
+  \href{https://fboapps.ucr.edu/policies/index.php?path=viewPolicies.php\&policy=650-83}{Alcohol and Drug Policy}
+\item
+  \href{https://fboapps.ucr.edu/policies/index.php?path=viewPolicies.php\&policy=650-74}{Personal Relationship Policy}
+\end{itemize}
 
   \bibliography{book.bib,packages.bib}
 
