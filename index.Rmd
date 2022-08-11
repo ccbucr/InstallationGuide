@@ -1,9 +1,9 @@
 --- 
 title: "Center for Conservation Biology | UC Riverside"
-subtitle: "Installation Guide"
+subtitle: "Research Unit Resource Guide"
 author: 
    - Lynn Sweet | Principal Investigator, Assistant Research Ecologist
-   - Julia Parish | Data Science Intern
+   - Julia Parish | Data Science Fellow
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -15,7 +15,7 @@ github-repo: ccbucr/AdministrationGuide
 description: "Documentation on how to install software and tools utilized by the UC Riverside CCB team to facilitate collaborative research."
 ---
 
-# Informational Resource for Software and Application Installation Utilized by CCB Faculty & Staff {-}
+# Welcome to the CCB Research Unit Resource Guide {-}
 
 ```{r setup, echo=FALSE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = F, message = F, warning = F,
@@ -38,13 +38,19 @@ knitr::write_bib(c(
 
 ```
 
-```{r chinocanyon, auto_pdf = TRUE, fig.height = 6, fig.alt="Image of China Canyon filled with yellow, pink, red wildflowers in the foreground with snowcapped Coachella Valley mountains in background"}
+The Center for Conservation Biology (the Center, or CCB) is a University of California Riverside (UCR) organized research unit. Our mission is to assist in the conservation and restoration of species and ecosystems by facilitating the collection, evaluation, and dissemination of scientific information.
 
-knitr::include_graphics("images/cvmc_billhavert.jpeg")
+This Resource Guide provides an overview of the the UC Riverside CCB research team work processes and expectations. It hosts documentation on how to install software and project management tools utilized by the CCB team to facilitate collaborative research.
+
+If you have suggestions for additions or changes, please make a pull request  or contact Lynn Sweet (lynn.sweet AT ucr.edu).
+
+```{r cima, auto_pdf = TRUE, fig.height = 4,fig.alt="Joshua Tree forest with a cloudless light blue daytime sky with waxing gibbous moon and mountains in the background."}
+
+knitr::include_graphics("images/cima2019.jpeg")
 ```
 
-Chino Canyon Wildflowers, Coachella Valley, California. <br>
-**Image Credit:** Coachella Valley Mountains Conservancy: *Bill Havert*
+East of Cima Dome in the Mojave National Preserve, California. <br>
+**Image Credit:** Center for Conservation Biology 
 
 
 ```{r logos, auto_pdf = TRUE, fig.align = 'center', fig.height = 4, fig.alt="Logo for the University of California Riverside and the Center for Conservation Biology UC Riverside Palm Desert"}

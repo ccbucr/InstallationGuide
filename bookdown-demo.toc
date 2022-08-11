@@ -1,0 +1,39 @@
+\contentsline {chapter}{Welcome to the CCB Research Unit Resource Guide}{5}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Computer requirements}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Software}{9}{section.1.2}%
+\contentsline {chapter}{\numberline {2}R and RStudio Installation}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Install or Update R}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Install or Update R Studio}{11}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Install Quarto}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Learn How to Use R \& RStudio}{13}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Bookdown Guide}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Primary Reference Resources}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Formatting}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Citations}{16}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Alt Text for Accessibility}{16}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Rendering Bookdown to Build \& Publish}{16}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Git Installation \& GitHub Account}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Git}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}GitHub}{19}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Configure Git}{20}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Personal Access Token}{20}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Project Management Tools}{27}{chapter.5}%
+\contentsline {section}{\numberline {5.1}UCR VPN - GlobalProtect}{27}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Google Apps}{27}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Microsoft 360 Suite}{27}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Trello}{28}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Zotero}{28}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Zoom}{32}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Slack}{37}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Download the Slack app}{37}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Join the CCB\_UCR Slack Workspace}{37}{subsection.5.7.2}%
+\contentsline {subsection}{\numberline {5.7.3}Slack Resources}{38}{subsection.5.7.3}%
+\contentsline {chapter}{\numberline {6}ESRI GIS Platform}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}ESRI ArcGIS}{39}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Install ESRI ArcGIS software}{39}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}ESRI Resources}{43}{subsection.6.1.2}%
+\contentsline {chapter}{\numberline {7}File Directory Organization}{45}{chapter.7}%
+\contentsline {section}{\numberline {7.1}File Naming}{45}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Folder Organization}{46}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Data Management}{46}{section.7.3}%

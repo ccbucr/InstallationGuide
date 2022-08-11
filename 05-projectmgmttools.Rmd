@@ -137,7 +137,7 @@ Follow [this link](https://join.slack.com/t/ccbucr/shared_invite/zt-1dfpaguqs-F4
 
 Check out Slack's [**Top 5 tips for getting started in Slack**](https://slack.com/intl/en-in/resources/using-slack/top-5-tips-for-getting-started-in-slack) (5 min read) to learn the app's basic functions and communication workflows. The [Slack help center](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide) has useful *how to* guides and [tutorials](https://slack.com/help/articles/360059976673-Slack-video-tutorials) to facilitate working in Slack. 
 
-#### Slack Apps
+**Slack Apps**
 
 - A **Trello app** is incorporated in the CCB_UCR Slack workspace. You can create cards in Slack for the CCB Team Projects Trello workspace. To learn how, [follow this Slack connect tool](https://slack.com/help/articles/231967387-Trello-for-Slack).
 - The **Zoom app** can be added to Slack that allows your to start or join a Zoom Meeting or Zoom Phone call by using the **“/zoom”** slash command in any Slack channel or message.
