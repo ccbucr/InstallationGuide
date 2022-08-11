@@ -973,23 +973,11 @@ Overfull \hbox (14.21pt too wide) in paragraph at lines 257--257
 ]
 Chapter 3.
 
-Package natbib Warning: Citation `R-bookdown' on page 15 undefined on input lin
-e 359.
-
-
 LaTeX Warning: Reference `methods' on page 15 undefined on input line 368.
 
 [15]
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
-
-Package natbib Warning: Citation `R-bookdown' on page 16 undefined on input lin
-e 421.
-
-
-Package natbib Warning: Citation `xie2015' on page 16 undefined on input line 4
-21.
-
 
 Overfull \hbox (124.47pt too wide) in paragraph at lines 433--435
 []\TU/lmtt/m/n/10 bookdown::render_book("index.Rmd", "bookdown::gitbook") bookd
@@ -1068,4 +1056,132 @@ Overfull \hbox (542.3855pt too wide) in paragraph at lines 667--667
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [28]
-File: i
+File: images/zoteroextension.png Graphic file (type bmp)
+<images/zoteroextension.png>
+
+Overfull \hbox (545.3834pt too wide) in paragraph at lines 669--669
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[29]
+File: images/zoterosyncing.png Graphic file (type bmp)
+<images/zoterosyncing.png>
+
+Overfull \hbox (306.3899pt too wide) in paragraph at lines 673--673
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[30] [31]
+File: images/zoomdownload.png Graphic file (type bmp)
+<images/zoomdownload.png>
+
+Overfull \hbox (89.65828pt too wide) in paragraph at lines 702--702
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[32]
+File: images/zoomsso.png Graphic file (type bmp)
+<images/zoomsso.png>
+
+Overfull \hbox (25.40186pt too wide) in paragraph at lines 711--711
+ [] 
+ []
+
+[33]
+File: images/zoomdomain.png Graphic file (type bmp)
+<images/zoomdomain.png>
+
+Overfull \hbox (258.30165pt too wide) in paragraph at lines 713--713
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[34]
+File: images/zoomcred.png Graphic file (type bmp)
+<images/zoomcred.png>
+
+Overfull \hbox (8.07811pt too wide) in paragraph at lines 721--721
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[35] [36]
+File: images/slack.png Graphic file (type bmp)
+<images/slack.png>
+[37] [38]
+Chapter 6.
+File: images/ServiceLink.png Graphic file (type bmp)
+<images/ServiceLink.png>
+
+Overfull \hbox (491.16pt too wide) in paragraph at lines 851--851
+ [] 
+ []
+
+[39
+
+]
+File: images/softwarerequest.png Graphic file (type bmp)
+<images/softwarerequest.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[40]
+File: images/requestsubmit.png Graphic file (type bmp)
+<images/requestsubmit.png>
+
+Overfull \hbox (533.20482pt too wide) in paragraph at lines 867--867
+ [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[41] [42] [43] [44
+
+]
+Chapter 7.
+
+Overfull \hbox (114.12698pt too wide) in paragraph at lines 930--931
+[]\TU/lmr/m/n/10 Examples: \TU/lmr/m/it/10 CVStormwaterVAP20170217.csv\TU/lmr/m
+/n/10 , \TU/lmr/m/it/10 CVMC_CRCA01_Proposal_LCS_20221231.doc\TU/lmr/m/n/10 ; 
+ []
+
+
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 933--934
+[]\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
+me_rev20230131.doc). 
+ []
+
+
+Underfull \vbox (badness 4967) has occurred while \output is active []
+
+[45] (./bookdown-demo.bbl [46]) [47
+
+] (./bookdown-demo.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 19986 strings out of 476919
+ 349456 string characters out of 5821840
+ 838383 words of memory out of 5000000
+ 39606 multiletter control sequences out of 15000+600000
+ 410011 words of font info for 84 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 98i,9n,122p,559b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on bookdown-demo.pdf (47 pages).
