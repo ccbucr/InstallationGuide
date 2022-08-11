@@ -7,18 +7,20 @@ When creating file names, best practices dictate that you should:
 - Create meaningful but brief names;
 - Use file names to classify types of files (ex: DTLA_RA_20230131.csv);
 - Avoid using spaces, dots and special characters (& or ? or !);
-- Use capital letters to delimit words, not spaces or underscores for data files, *as much as possible* (ex: CVStormwaterMasterVAP20170217.csv);
+- Use capital letters to delimit words, not spaces or underscores for data files, *as much as possible* (ex: CVStormwaterVAP20170217.csv);
 - Use hyphens (-) or underscores (_) to separate elements in a file name for documents;
 - Always use the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format in file names: **YYYYMMDD**. For example, in the file name *DTLA_RA_20230131.csv* January 31, 2023 is represented as **20230131**;
 - Preserve the 3-letter file extension for application-specific codes of file format (e.g. .doc, .xls, .mov, .tif);
 - With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;
+- Include versioning of file names where appropriate (ex: filename_rev20230131.doc).
+
 - Order the elements in a file name in the most appropriate way to retrieve the record. For example, 
   - the project name (or acronym) or project location should be first, 
   - then the type of data or file (either RA or Report),
   - then version or author,
   - end file name with the date,
   - Examples: *CVStormwaterVAP20170217.csv*, *CVMC_CRCA01_Proposal_LCS_20221231.doc*;
-- Include versioning of file names where appropriate (ex: filename_rev20230131.doc).
+
 
 
 ## Folder Organization

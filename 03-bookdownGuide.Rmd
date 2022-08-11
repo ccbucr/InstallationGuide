@@ -17,6 +17,42 @@ Here is a list of resources to learn how to use and edit in bookdown
 - [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
 - [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
 
+
+## Render, Build & Publish the Resource Guide 
+
+When updates are made to the Resource Guide, it needs to be render, built, and then the updates published. 
+
+In your Console, type either of these commands depending on which type of render you prefer:
+
+`bookdown::render_book("index.Rmd", "bookdown::gitbook")`
+`bookdown::render_book("index.Rmd", "bookdown::pdf_book")`
+
+- *Note*: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+
+Once you have rendered updates using the console commands above:
+
+- navigate to the **Environment, Connections, Build, Git** panel, 
+- select the **Build** tab,
+- select **Build Bookdown**
+- once the build is complete (the final line should read `Output created: docs/index/html`), commit, pull and push updates to GitHub via the **Git** tab. 
+
+```{r bookdown, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+
+knitr::include_graphics("images/build.png")
+```
+
+
+```{r gitselect, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+
+knitr::include_graphics("images/select.png")
+```
+
+```{r gitcommit, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+
+knitr::include_graphics("images/commit.png")
+```
+
+
 __________________________________________________________________________________
 
 **The following information is directly taken from the _bookdown_ package** [@R-bookdown].
@@ -53,33 +89,3 @@ You can easily write citations using .bib files within this repository formatted
 
 [Use the knitr package to add alt text to graphics in R Markdown files](https://www.rstudio.com/blog/knitr-fig-alt/)
 
-## Rendering Bookdown to Build & Publish
-
-In your Console, type either of these commands depending on which type of render you prefer:
-
-`bookdown::render_book("index.Rmd", "bookdown::gitbook")`
-`bookdown::render_book("index.Rmd", "bookdown::pdf_book")`
-
-- *Note*: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
-
-Once you have rendered updates using the console commands above:
-- navigate to the **Environment, Connections, Build, Git*`** panel, 
-- select the **Build** tab,
-- select **Build Bookdown**
-- once the build is complete (the final line should read `Output created: docs/index/html`), commit, pull and push updates to GitHub via the **Git** tab. 
-
-```{r bookdown, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
-
-knitr::include_graphics("images/build.png")
-```
-
-
-```{r gitselect, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
-
-knitr::include_graphics("images/select.png")
-```
-
-```{r gitcommit, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
-
-knitr::include_graphics("images/commit.png")
-```

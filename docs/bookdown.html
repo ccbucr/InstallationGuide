@@ -102,12 +102,36 @@
 <li><a href="https://bookdown.org/yihui/rmarkdown-cookbook/">R Markdown Cookbook</a></li>
 <li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a></li>
 </ul>
+</div>
+<div id="render-build-publish-the-resource-guide" class="section level2" number="3.2">
+<h2>
+<span class="header-section-number">3.2</span> Render, Build &amp; Publish the Resource Guide<a class="anchor" aria-label="anchor" href="#render-build-publish-the-resource-guide"><i class="fas fa-link"></i></a>
+</h2>
+<p>When updates are made to the Resource Guide, it needs to be render, built, and then the updates published.</p>
+<p>In your Console, type either of these commands depending on which type of render you prefer:</p>
+<p><code>bookdown::render_book("index.Rmd", "bookdown::gitbook")</code>
+<code>bookdown::render_book("index.Rmd", "bookdown::pdf_book")</code></p>
+<ul>
+<li>
+<em>Note</em>: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</li>
+</ul>
+<p>Once you have rendered updates using the console commands above:</p>
+<ul>
+<li>navigate to the <strong>Environment, Connections, Build, Git</strong> panel,</li>
+<li>select the <strong>Build</strong> tab,</li>
+<li>select <strong>Build Bookdown</strong>
+</li>
+<li>once the build is complete (the final line should read <code>Output created: docs/index/html</code>), commit, pull and push updates to GitHub via the <strong>Git</strong> tab.</li>
+</ul>
+<div class="inline-figure"><img src="images/build.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="406" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/select.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="403" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/commit.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="433" style="display: block; margin: auto;"></div>
 <hr>
 <p><strong>The following information is directly taken from the <em>bookdown</em> package</strong> <span class="citation">(<a href="references.html#ref-R-bookdown" role="doc-biblioref">Xie 2022</a>)</span>.</p>
 </div>
-<div id="formatting" class="section level2" number="3.2">
+<div id="formatting" class="section level2" number="3.3">
 <h2>
-<span class="header-section-number">3.2</span> Formatting<a class="anchor" aria-label="anchor" href="#formatting"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.3</span> Formatting<a class="anchor" aria-label="anchor" href="#formatting"><i class="fas fa-link"></i></a>
 </h2>
 <p>You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
 <p>Remember each Rmd file contains one and only one chapter, and <strong>a chapter</strong> is defined by the first-level heading <code>#</code>.</p>
@@ -485,34 +509,17 @@ setosa
 </tbody>
 </table></div>
 </div>
-<div id="citations" class="section level2" number="3.3">
+<div id="citations" class="section level2" number="3.4">
 <h2>
-<span class="header-section-number">3.3</span> Citations<a class="anchor" aria-label="anchor" href="#citations"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.4</span> Citations<a class="anchor" aria-label="anchor" href="#citations"><i class="fas fa-link"></i></a>
 </h2>
 <p>You can easily write citations using .bib files within this repository formatted using <a href="http://www.bibtex.org/">BibTEX</a>. For example, the <strong>bookdown</strong> package <span class="citation">(<a href="references.html#ref-R-bookdown" role="doc-biblioref">Xie 2022</a>)</span> in this reference book, which was built on top of R Markdown and <strong>knitr</strong> <span class="citation">(<a href="references.html#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>.</p>
 </div>
-<div id="alt-text-for-accessibility" class="section level2" number="3.4">
+<div id="alt-text-for-accessibility" class="section level2" number="3.5">
 <h2>
-<span class="header-section-number">3.4</span> Alt Text for Accessibility<a class="anchor" aria-label="anchor" href="#alt-text-for-accessibility"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.5</span> Alt Text for Accessibility<a class="anchor" aria-label="anchor" href="#alt-text-for-accessibility"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="https://www.rstudio.com/blog/knitr-fig-alt/">Use the knitr package to add alt text to graphics in R Markdown files</a></p>
-</div>
-<div id="rendering-bookdown-to-build-publish" class="section level2" number="3.5">
-<h2>
-<span class="header-section-number">3.5</span> Rendering Bookdown to Build &amp; Publish<a class="anchor" aria-label="anchor" href="#rendering-bookdown-to-build-publish"><i class="fas fa-link"></i></a>
-</h2>
-<p>In your Console, type either of these commands depending on which type of render you prefer:</p>
-<p><code>bookdown::render_book("index.Rmd", "bookdown::gitbook")</code>
-<code>bookdown::render_book("index.Rmd", "bookdown::pdf_book")</code></p>
-<ul>
-<li>
-<em>Note</em>: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</li>
-</ul>
-<p>Once you have rendered updates using the console commands above:
-- navigate to the **Environment, Connections, Build, Git*<code>** panel,  - select the **Build** tab, - select **Build Bookdown** - once the build is complete (the final line should read</code>Output created: docs/index/html`), commit, pull and push updates to GitHub via the <strong>Git</strong> tab.</p>
-<div class="inline-figure"><img src="images/build.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="406" style="display: block; margin: auto;"></div>
-<div class="inline-figure"><img src="images/select.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="403" style="display: block; margin: auto;"></div>
-<div class="inline-figure"><img src="images/commit.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="433" style="display: block; margin: auto;"></div>
 
 </div>
 </div>
@@ -524,10 +531,10 @@ setosa
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#bookdown"><span class="header-section-number">3</span> Bookdown Guide</a></li>
 <li><a class="nav-link" href="#primary-reference-resources"><span class="header-section-number">3.1</span> Primary Reference Resources</a></li>
-<li><a class="nav-link" href="#formatting"><span class="header-section-number">3.2</span> Formatting</a></li>
-<li><a class="nav-link" href="#citations"><span class="header-section-number">3.3</span> Citations</a></li>
-<li><a class="nav-link" href="#alt-text-for-accessibility"><span class="header-section-number">3.4</span> Alt Text for Accessibility</a></li>
-<li><a class="nav-link" href="#rendering-bookdown-to-build-publish"><span class="header-section-number">3.5</span> Rendering Bookdown to Build &amp; Publish</a></li>
+<li><a class="nav-link" href="#render-build-publish-the-resource-guide"><span class="header-section-number">3.2</span> Render, Build &amp; Publish the Resource Guide</a></li>
+<li><a class="nav-link" href="#formatting"><span class="header-section-number">3.3</span> Formatting</a></li>
+<li><a class="nav-link" href="#citations"><span class="header-section-number">3.4</span> Citations</a></li>
+<li><a class="nav-link" href="#alt-text-for-accessibility"><span class="header-section-number">3.5</span> Alt Text for Accessibility</a></li>
 </ul>
 
       <div class="book-extra">

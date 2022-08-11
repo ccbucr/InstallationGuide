@@ -358,6 +358,42 @@ Here is a list of resources to learn how to use and edit in bookdown
   \href{https://bookdown.org/yihui/rmarkdown/}{R Markdown: The Definitive Guide}
 \end{itemize}
 
+\hypertarget{render-build-publish-the-resource-guide}{%
+\section{Render, Build \& Publish the Resource Guide}\label{render-build-publish-the-resource-guide}}
+
+When updates are made to the Resource Guide, it needs to be render, built, and then the updates published.
+
+In your Console, type either of these commands depending on which type of render you prefer:
+
+\texttt{bookdown::render\_book("index.Rmd",\ "bookdown::gitbook")}
+\texttt{bookdown::render\_book("index.Rmd",\ "bookdown::pdf\_book")}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{Note}: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
+\end{itemize}
+
+Once you have rendered updates using the console commands above:
+
+\begin{itemize}
+\tightlist
+\item
+  navigate to the \textbf{Environment, Connections, Build, Git} panel,
+\item
+  select the \textbf{Build} tab,
+\item
+  select \textbf{Build Bookdown}
+\item
+  once the build is complete (the final line should read \texttt{Output\ created:\ docs/index/html}), commit, pull and push updates to GitHub via the \textbf{Git} tab.
+\end{itemize}
+
+\begin{center}\includegraphics[width=11.28in]{images/build} \end{center}
+
+\begin{center}\includegraphics[width=11.19in]{images/select} \end{center}
+
+\begin{center}\includegraphics[width=12.03in]{images/commit} \end{center}
+
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
 \textbf{The following information is directly taken from the \emph{bookdown} package} \citep{R-bookdown}.
@@ -428,29 +464,6 @@ You can easily write citations using .bib files within this repository formatted
 \section{Alt Text for Accessibility}\label{alt-text-for-accessibility}}
 
 \href{https://www.rstudio.com/blog/knitr-fig-alt/}{Use the knitr package to add alt text to graphics in R Markdown files}
-
-\hypertarget{rendering-bookdown-to-build-publish}{%
-\section{Rendering Bookdown to Build \& Publish}\label{rendering-bookdown-to-build-publish}}
-
-In your Console, type either of these commands depending on which type of render you prefer:
-
-\texttt{bookdown::render\_book("index.Rmd",\ "bookdown::gitbook")}
-\texttt{bookdown::render\_book("index.Rmd",\ "bookdown::pdf\_book")}
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{Note}: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
-\end{itemize}
-
-Once you have rendered updates using the console commands above:
-- navigate to the **Environment, Connections, Build, Git*\texttt{**\ panel,\ \ -\ select\ the\ **Build**\ tab,\ -\ select\ **Build\ Bookdown**\ -\ once\ the\ build\ is\ complete\ (the\ final\ line\ should\ read}Output created: docs/index/html`), commit, pull and push updates to GitHub via the \textbf{Git} tab.
-
-\begin{center}\includegraphics[width=11.28in]{images/build} \end{center}
-
-\begin{center}\includegraphics[width=11.19in]{images/select} \end{center}
-
-\begin{center}\includegraphics[width=12.03in]{images/commit} \end{center}
 
 \hypertarget{git}{%
 \chapter{Git Installation \& GitHub Account}\label{git}}
@@ -913,7 +926,6 @@ Here are few resources that provide tutorials and workshops on how to use ESRI s
 When creating file names, best practices dictate that you should:
 
 \begin{itemize}
-\tightlist
 \item
   Create meaningful but brief names;
 \item
@@ -921,7 +933,7 @@ When creating file names, best practices dictate that you should:
 \item
   Avoid using spaces, dots and special characters (\& or ? or !);
 \item
-  Use capital letters to delimit words, not spaces or underscores for data files, \emph{as much as possible} (ex: CVStormwaterMasterVAP20170217.csv);
+  Use capital letters to delimit words, not spaces or underscores for data files, \emph{as much as possible} (ex: CVStormwaterVAP20170217.csv);
 \item
   Use hyphens (-) or underscores (\_) to separate elements in a file name for documents;
 \item
@@ -930,6 +942,8 @@ When creating file names, best practices dictate that you should:
   Preserve the 3-letter file extension for application-specific codes of file format (e.g.~.doc, .xls, .mov, .tif);
 \item
   With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;
+\item
+  Include versioning of file names where appropriate (ex: filename\_rev20230131.doc).
 \item
   Order the elements in a file name in the most appropriate way to retrieve the record. For example,
 
@@ -946,8 +960,6 @@ When creating file names, best practices dictate that you should:
   \item
     Examples: \emph{CVStormwaterVAP20170217.csv}, \emph{CVMC\_CRCA01\_Proposal\_LCS\_20221231.doc};
   \end{itemize}
-\item
-  Include versioning of file names where appropriate (ex: filename\_rev20230131.doc).
 \end{itemize}
 
 \hypertarget{folder-organization}{%

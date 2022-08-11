@@ -10,10 +10,10 @@ install-quarto
 learn-how-to-use-r-rstudio
 bookdown
 primary-reference-resources
+render-build-publish-the-resource-guide
 formatting
 citations
 alt-text-for-accessibility
-rendering-bookdown-to-build-publish
 git
 git-1
 github
