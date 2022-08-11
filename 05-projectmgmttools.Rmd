@@ -1,5 +1,11 @@
 # Project Management Tools {#projmgmt}
 
+## UCR VPN - GlobalProtect
+
+UC Riverside provides free access to a Virtual Private Network (VPN), GlobalProtect, that allows you to access the CCB NAS Server or campus resources (ex: library services) when working remotely.
+
+To install and use the GlobalProtect VPN, navigate to the UCR ServiceLink [GlobalProtect Connection Installation Instructions](https://ucrsupport.service-now.com/ucr_portal/?id=kb_article&sys_id=8a264d791b5f0c149c0b844fdd4bcb34).
+
 ## Google Apps
 
 The CCB team utilizes a number of Google applications for project management, data & file sharing, and communicating with colleagues. 
@@ -8,7 +14,7 @@ The CCB team utilizes a number of Google applications for project management, da
 
 **Google Drive:** CCB utilizes *Shared Drive* folders as a file sharing application. You must request access to the shared drive folder from the lab P.I. 
 
-**Google Sites:** There is a [CCB Google Site](https://sites.google.com/ucr.edu/ccbucr/home) that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future. If you would like edit access, please submit a request to the CCB PI. 
+**Google Sites:** There is a [CCB Google Site](https://sites.google.com/ucr.edu/ccbucr/home) that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future. 
 
 ## Microsoft 360 Suite
 
@@ -110,10 +116,37 @@ Happy Zooming!
 knitr::include_graphics("images/slack.png")
 ```
 
-Slack is a messaging app that connects teams via channels and direct messages (DMs). 
-To join the CCB Slack workspace, follow [this link](https://join.slack.com/t/ccbucr/shared_invite/zt-1dfpaguqs-F4CAPCI4ILMvT0JOcSpnag). 
+Slack is a messaging app that connects teams via channels and direct messages (DMs). To make the most of this team communication tool, you will need to download the application to your desktop, have the application open throughout the workday, and adjust the notification settings to your preferences to receive timely alerts.
 
-There is a Trello app incorporated in the CCB UCR slack workspace. You can create cards in Slack for the CCB Team Projects Trello workspace. To learn how, [follow this Slack connect tool](https://slack.com/help/articles/231967387-Trello-for-Slack).
+### Download the Slack app
+
+- For Windows: download Slack [here](https://slack.com/downloads/windows).
+- For Macs: download Slack [here](https://slack.com/downloads/mac).
+- Consider adding the app to your Android or iOS device(s) for mobile communication with the CCB team! 
+
+### Join the CCB_UCR Slack Workspace
+
+Follow [this link](https://join.slack.com/t/ccbucr/shared_invite/zt-1dfpaguqs-F4CAPCI4ILMvT0JOcSpnag) to join the CCB Slack workspace. Once you have joined, you will be automatically be added to several workspace channels: 
+
+- `#general`: a channel for general announcements and team-wide conversations
+- `#how_to_slack`: a channel for tips for how to best use Slack and its apps, as well as a space for the team to ask questions re: how to best utilize this communication tool. Check out the `pinned` messages and `bookmarked` websites.
+- `#meetings`: a channel for announcing meetings and sharing resources for team meetings.
+- `#random`: a channel to share random news, updates, ideas, jokes, etc.
+
+### Slack Resources 
+
+Check out Slack's [**Top 5 tips for getting started in Slack**](https://slack.com/intl/en-in/resources/using-slack/top-5-tips-for-getting-started-in-slack) (5 min read) to learn the app's basic functions and communication workflows. The [Slack help center](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide) has useful *how to* guides and [tutorials](https://slack.com/help/articles/360059976673-Slack-video-tutorials) to facilitate working in Slack. 
+
+#### Slack Apps
+
+- A **Trello app** is incorporated in the CCB_UCR Slack workspace. You can create cards in Slack for the CCB Team Projects Trello workspace. To learn how, [follow this Slack connect tool](https://slack.com/help/articles/231967387-Trello-for-Slack).
+- The **Zoom app** can be added to Slack that allows your to start or join a Zoom Meeting or Zoom Phone call by using the **“/zoom”** slash command in any Slack channel or message.
+- Add the **Google Drive app** to Slack to share resources from the CCB Shared Drive. 
+- There is an app for **Microsoft Teams** which allows a Teams video call from Slack. 
+  - Start a Teams video call right from Slack
+Launch a call in Slack with the /teams-calls slash command. Before joining, get a quick glance at who’s already on the call and when the call kicked off.
+  - Jump from Slack straight into a meeting — join Teams meetings directly from calendar reminders in Slack, using the Outlook or Google Calendar apps.
+  - Customize call settings for your team. Set Microsoft Teams Calls as your default calling provider, so anyone can start a video call in Teams with a quick click of the phone button in Slack.
 
 Other cool Slack workspaces to join:
 

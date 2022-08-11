@@ -1,0 +1,47 @@
+# ESRI GIS Platform {#esri}
+
+## ESRI ArcGIS
+
+UC Riverside provides free access to ESRI ArcGIS software and platforms for faculty, staff, and students. Learn more about these data analysis and visualization tools [here](https://ucrsupport.service-now.com/ucr_portal?id=sc_category&sys_id=e9b36a7e1b691c10eab58734ec4bcb78&catalog_id=-1).
+
+**ESRI Platform Software**
+
+- ESRI ArcGIS Desktop: a proprietary desktop GIS software suite that allows you to create maps, perform spatial analysis and manage data. Required software for installation: Microsoft .NET (aka a PC machine), Python 2.7+. 
+- ESRI ArcGIS Pro: ArcGIS Desktop is transitioning to ArcGIS Pro, an interactive spatial data visualization tool that allows users to create 2D maps, 3D scenes, and share projects on ArcGIS Online. Training resources for ArcGIS Pro are [here](https://www.esri.com/en-us/arcgis/products/arcgis-pro/resources).
+- ESRI ArcGIS Online: This is cloud-based software that runs on any device with an internet connection. It allows users to easily publish maps on-line, access other UCR spatial products, and create spatial data dashboards and hubs. Check out [UCR ArcGIS Online](https://ucr.maps.arcgis.com/home/index.html).
+
+
+### Install ESRI ArcGIS software
+
+- Step 1: Navigate to the [UCR Portal ServiceLink Software Catalog](https://ucrsupport.service-now.com/ucr_portal). 
+
+- Step 2: Under the Information Technology section, select **Request Services & Software** link.
+
+```{r servicelink, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3, fig.alt="Screen shot of UCR ServiceLink homepage information technology section."}
+
+knitr::include_graphics("images/ServiceLink.png")
+```
+
+- Step 3: Scroll down to the **Software Request** card and select link.  
+
+```{r softwarerequest, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+
+knitr::include_graphics("images/softwarerequest.png")
+```
+
+- Step 4: Complete the Software Request form using your UCR NetId and UCR email, then select **Submit**. 
+
+```{r requestsubmit, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3}
+
+knitr::include_graphics("images/requestsubmit.png")
+```
+
+- Step 5: The UC IT team will send email notifications to provide further instructions. 
+
+### ESRI Resources
+
+Here are few resources that provide tutorials and workshops on how to use ESRI software:
+
+- **ESRI Academy**: Search the ESRI Acadmey [Course Catalog](https://www.esri.com/training/) for MOOCs, Tutorials, and Web Courses. 
+- **UC ANR IGIS** - the [UC Agriculture and Natural Resources Informatics & GIS Program](https://igis.ucanr.edu/Training/) host ESRI ArcGIS training webinars and virtual workshops throughout the year. 
+- **LinkedIn Learning** - Through [UCR LinkedIn Learning](https://www.linkedin.com/learning/topics/arcgis?u=26135898), users may take ESRI ArcGIS courses and learning paths.
