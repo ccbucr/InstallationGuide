@@ -48,7 +48,7 @@ Learn more about Quarto [here](https://quarto.org/docs/get-started/hello/rstudio
 
 ## Learn How to Use R & RStudio
 
-There are a lot of resources out there to help you learn how to use R and the RStudio IDE (YouTube, Googling, [StackOverflow](https://stackoverflow.com/), etc...). This is a short list of primary resources for you to reference. It is highly recommended to join R community Slack channels, R User community groups (such as [R-Ladies](https://rladies.org/)), and UC Riverside Data Science clubs!
+There are many resources out there to help you learn how to use R and the RStudio IDE (YouTube, Googling, [StackOverflow](https://stackoverflow.com/), etc...). This is a short list of primary resources for you to reference. We encourage you to join R community Slack workspaces, R User community groups (such as [R-Ladies](https://rladies.org/)), and UC Riverside Data Science clubs!
 
 - [ACM at UCR](https://acmucr.org/index.html) - UC Riverside community dedicated to technical, professional, and personal development in the context of computer science.
 - [R for Data Science](https://r4ds.had.co.nz/)

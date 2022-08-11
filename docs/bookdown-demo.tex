@@ -160,10 +160,6 @@
 
 The Center for Conservation Biology (the Center, or CCB) is a University of California Riverside (UCR) organized research unit. Our mission is to assist in the conservation and restoration of species and ecosystems by facilitating the collection, evaluation, and dissemination of scientific information.
 
-This Resource Guide provides an overview of the the UC Riverside CCB research team work processes and expectations. It hosts documentation on how to install software and project management tools utilized by the CCB team to facilitate collaborative research.
-
-If you have suggestions for additions or changes, please make a pull request or contact Lynn Sweet (lynn.sweet AT ucr.edu).
-
 \includegraphics[width=25.22in]{images/cima2019}
 
 East of Cima Dome in the Mojave National Preserve, California.
@@ -174,24 +170,38 @@ East of Cima Dome in the Mojave National Preserve, California.
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
 
-This is an installation and account set up reference guide for the Center for Conservation Biology team. Team members may contribute to this reference file as we expand the tools utlizied during research efforts.
+This Resource Guide provides an overview of the the UC Riverside CCB research team work processes and expectations. It hosts documentation on how to install software and project management tools utilized by the CCB team to facilitate collaborative research.
+
+If you have suggestions for additions or changes, please make a pull request or contact Lynn Sweet (lynn.sweet AT ucr.edu).
 
 \hypertarget{computer-requirements}{%
 \section{Computer requirements}\label{computer-requirements}}
 
-Work computers (laptop or desktop) operating systems should either be Windows or macOS. Please note that Windows based machine it required to run ESRI ArcDesktop and ArcPro software. Both Windows and macOS may utilize ESRI ArcOnline tools.
+CCB work computers (laptop or desktop) operating systems should either be Windows or macOS. Please note that Windows based machine it required to run ESRI ArcDesktop and ArcPro software. Both Windows and macOS may utilize ESRI ArcOnline tools.
 
 For \textbf{Mac} users, update macOS to the newest supported version. Navigate to System Preferences --\textgreater{} Software Update.
 
 For \textbf{PC} users, ensure you have Windows 10 or 11 installed. If not, request a Windows key from UCR IT at \href{https://ucrsupport.service-now.com/ucr_portal?id=ucr_home}{UC Riverside ServiceLink}
 
-\hypertarget{software}{%
-\section{Software}\label{software}}
+\hypertarget{software-installation}{%
+\section{Software Installation}\label{software-installation}}
 
-Software covered in this reference guide includes:
+Software installation covered in this resource guide includes:
 
 \begin{itemize}
 \tightlist
+\item
+  ESRI Platform
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ArcGIS Desktop
+  \item
+    ArcGIS Pro
+  \item
+    ArcGIS Online
+  \end{itemize}
 \item
   git
 \item
@@ -214,12 +224,6 @@ Software covered in this reference guide includes:
   Slack
 \item
   Trello
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Trello 4 Slack
-  \end{itemize}
 \item
   Zotero
 \end{itemize}
@@ -288,7 +292,7 @@ Learn more about Quarto \href{https://quarto.org/docs/get-started/hello/rstudio.
 \hypertarget{learn-how-to-use-r-rstudio}{%
 \section{Learn How to Use R \& RStudio}\label{learn-how-to-use-r-rstudio}}
 
-There are a lot of resources out there to help you learn how to use R and the RStudio IDE (YouTube, Googling, \href{https://stackoverflow.com/}{StackOverflow}, etc\ldots). This is a short list of primary resources for you to reference. It is highly recommended to join R community Slack channels, R User community groups (such as \href{https://rladies.org/}{R-Ladies}), and UC Riverside Data Science clubs!
+There are many resources out there to help you learn how to use R and the RStudio IDE (YouTube, Googling, \href{https://stackoverflow.com/}{StackOverflow}, etc\ldots). This is a short list of primary resources for you to reference. We encourage you to join R community Slack workspaces, R User community groups (such as \href{https://rladies.org/}{R-Ladies}), and UC Riverside Data Science clubs!
 
 \begin{itemize}
 \tightlist
@@ -327,7 +331,7 @@ There are a lot of resources out there to help you learn how to use R and the RS
 \hypertarget{bookdown}{%
 \chapter{Bookdown Guide}\label{bookdown}}
 
-The first step to edit and add to this bookdown is to install the \textbf{bookdown} package from CRAN or Github. In the RStudio console, run the following:
+The first step to edit and add to this Resource Guide is to install the \textbf{bookdown} package from CRAN or Github. In the RStudio console, run the following:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -433,7 +437,20 @@ In your Console, type either of these commands depending on which type of render
 \texttt{bookdown::render\_book("index.Rmd",\ "bookdown::gitbook")}
 \texttt{bookdown::render\_book("index.Rmd",\ "bookdown::pdf\_book")}
 
-To compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
+\begin{itemize}
+\tightlist
+\item
+  \emph{Note}: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
+\end{itemize}
+
+Once you have rendered updates using the console commands above:
+- navigate to the **Environment, Connections, Build, Git*\texttt{**\ panel,\ \ -\ select\ the\ **Build**\ tab,\ -\ select\ **Build\ Bookdown**\ -\ once\ the\ build\ is\ complete\ (the\ final\ line\ should\ read}Output created: docs/index/html`), commit, pull and push updates to GitHub via the \textbf{Git} tab.
+
+\begin{center}\includegraphics[width=11.28in]{images/build} \end{center}
+
+\begin{center}\includegraphics[width=11.19in]{images/select} \end{center}
+
+\begin{center}\includegraphics[width=12.03in]{images/commit} \end{center}
 
 \hypertarget{git}{%
 \chapter{Git Installation \& GitHub Account}\label{git}}
@@ -843,9 +860,9 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
 
 \begin{itemize}
 \item
-  Step 1: Navigate to the \href{https://ucrsupport.service-now.com/ucr_portal}{UCR Portal ServiceLink Software Catalog}.
+  \textbf{Step 1:} Navigate to the \href{https://ucrsupport.service-now.com/ucr_portal}{UCR Portal ServiceLink Software Catalog}.
 \item
-  Step 2: Under the Information Technology section, select \textbf{Request Services \& Software} link.
+  \textbf{Step 2:} Under the Information Technology section, select \textbf{Request Services \& Software} link.
 \end{itemize}
 
 \begin{center}\includegraphics[width=11.57in]{images/ServiceLink} \end{center}
@@ -853,7 +870,7 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
 \begin{itemize}
 \tightlist
 \item
-  Step 3: Scroll down to the \textbf{Software Request} card and select link.
+  \textbf{Step 3:} Scroll down to the \textbf{Software Request} card and select link.
 \end{itemize}
 
 \begin{flushleft}\includegraphics[width=3.81in]{images/softwarerequest} \end{flushleft}
@@ -861,7 +878,7 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
 \begin{itemize}
 \tightlist
 \item
-  Step 4: Complete the Software Request form using your UCR NetId and UCR email, then select \textbf{Submit}.
+  \textbf{Step 4:} Complete the Software Request form using your UCR NetId and UCR email, then select \textbf{Submit}.
 \end{itemize}
 
 \begin{center}\includegraphics[width=13.19in]{images/requestsubmit} \end{center}
@@ -869,7 +886,7 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
 \begin{itemize}
 \tightlist
 \item
-  Step 5: The UC IT team will send email notifications to provide further instructions.
+  \textbf{Step 5:} The UC IT team will send email notifications to provide further instructions.
 \end{itemize}
 
 \hypertarget{esri-resources}{%

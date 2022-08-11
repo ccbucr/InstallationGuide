@@ -1,19 +1,25 @@
 # Introduction {#intro}
 
-This is an installation and account set up reference guide for the Center for Conservation Biology team. Team members may contribute to this reference file as we expand the tools utlizied during research efforts.
+This Resource Guide provides an overview of the the UC Riverside CCB research team work processes and expectations. It hosts documentation on how to install software and project management tools utilized by the CCB team to facilitate collaborative research.
+
+If you have suggestions for additions or changes, please make a pull request  or contact Lynn Sweet (lynn.sweet AT ucr.edu).
 
 ## Computer requirements
 
-Work computers (laptop or desktop) operating systems should either be Windows or macOS. Please note that Windows based machine it required to run ESRI ArcDesktop and ArcPro software. Both Windows and macOS may utilize ESRI ArcOnline tools. 
+CCB work computers (laptop or desktop) operating systems should either be Windows or macOS. Please note that Windows based machine it required to run ESRI ArcDesktop and ArcPro software. Both Windows and macOS may utilize ESRI ArcOnline tools. 
 
 For **Mac** users, update macOS to the newest supported version. Navigate to System Preferences --> Software Update.
 
 For **PC** users, ensure you have Windows 10 or 11 installed. If not, request a Windows key from UCR IT at [UC Riverside ServiceLink](https://ucrsupport.service-now.com/ucr_portal?id=ucr_home)
 
-## Software
+## Software Installation
 
-Software covered in this reference guide includes:
+Software installation covered in this resource guide includes:
 
+- ESRI Platform
+  - ArcGIS Desktop
+  - ArcGIS Pro
+  - ArcGIS Online 
 - git
 - GitHub
 - Google Apps
@@ -23,7 +29,6 @@ Software covered in this reference guide includes:
   - Bookdown
 - Slack
 - Trello
-  - Trello 4 Slack
 - Zotero
 
 

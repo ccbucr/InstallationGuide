@@ -7,14 +7,14 @@
 <title>Chapter 3 Bookdown Guide | Center for Conservation Biology | UC Riverside</title>
 <meta name="author" content="Lynn Sweet | Principal Investigator, Assistant Research Ecologist">
 <meta name="author" content="Julia Parish | Data Science Fellow">
-<meta name="description" content='The first step to edit and add to this bookdown is to install the bookdown package from CRAN or Github. In the RStudio console, run the following: install.packages("bookdown") # or the development...'>
+<meta name="description" content='The first step to edit and add to this Resource Guide is to install the bookdown package from CRAN or Github. In the RStudio console, run the following: install.packages("bookdown") # or the...'>
 <meta name="generator" content="bookdown 0.27 with bs4_book()">
 <meta property="og:title" content="Chapter 3 Bookdown Guide | Center for Conservation Biology | UC Riverside">
 <meta property="og:type" content="book">
-<meta property="og:description" content='The first step to edit and add to this bookdown is to install the bookdown package from CRAN or Github. In the RStudio console, run the following: install.packages("bookdown") # or the development...'>
+<meta property="og:description" content='The first step to edit and add to this Resource Guide is to install the bookdown package from CRAN or Github. In the RStudio console, run the following: install.packages("bookdown") # or the...'>
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 3 Bookdown Guide | Center for Conservation Biology | UC Riverside">
-<meta name="twitter:description" content='The first step to edit and add to this bookdown is to install the bookdown package from CRAN or Github. In the RStudio console, run the following: install.packages("bookdown") # or the development...'>
+<meta name="twitter:description" content='The first step to edit and add to this Resource Guide is to install the bookdown package from CRAN or Github. In the RStudio console, run the following: install.packages("bookdown") # or the...'>
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -86,7 +86,7 @@
 <h1>
 <span class="header-section-number">3</span> Bookdown Guide<a class="anchor" aria-label="anchor" href="#bookdown"><i class="fas fa-link"></i></a>
 </h1>
-<p>The first step to edit and add to this bookdown is to install the <strong>bookdown</strong> package from CRAN or Github. In the RStudio console, run the following:</p>
+<p>The first step to edit and add to this Resource Guide is to install the <strong>bookdown</strong> package from CRAN or Github. In the RStudio console, run the following:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"bookdown"</span><span class="op">)</span></span>
 <span><span class="co"># or the development version</span></span>
@@ -504,7 +504,15 @@ setosa
 <p>In your Console, type either of these commands depending on which type of render you prefer:</p>
 <p><code>bookdown::render_book("index.Rmd", "bookdown::gitbook")</code>
 <code>bookdown::render_book("index.Rmd", "bookdown::pdf_book")</code></p>
-<p>To compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</p>
+<ul>
+<li>
+<em>Note</em>: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</li>
+</ul>
+<p>Once you have rendered updates using the console commands above:
+- navigate to the **Environment, Connections, Build, Git*<code>** panel,  - select the **Build** tab, - select **Build Bookdown** - once the build is complete (the final line should read</code>Output created: docs/index/html`), commit, pull and push updates to GitHub via the <strong>Git</strong> tab.</p>
+<div class="inline-figure"><img src="images/build.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="406" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/select.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="403" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/commit.png" title="environment panel in RStudio with the build tab selected" alt="environment panel in RStudio with the build tab selected" width="433" style="display: block; margin: auto;"></div>
 
 </div>
 </div>

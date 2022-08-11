@@ -2,7 +2,7 @@ fig:nice-fig
 tab:nice-tab
 intro
 computer-requirements
-software
+software-installation
 r
 install-or-update-r
 install-or-update-r-studio

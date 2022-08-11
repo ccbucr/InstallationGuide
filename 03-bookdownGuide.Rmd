@@ -1,6 +1,6 @@
 # Bookdown Guide {#bookdown}
 
-The first step to edit and add to this bookdown is to install the **bookdown** package from CRAN or Github. In the RStudio console, run the following:
+The first step to edit and add to this Resource Guide is to install the **bookdown** package from CRAN or Github. In the RStudio console, run the following:
 
 ```{r, eval=FALSE, echo = TRUE}
 install.packages("bookdown")
@@ -60,4 +60,26 @@ In your Console, type either of these commands depending on which type of render
 `bookdown::render_book("index.Rmd", "bookdown::gitbook")`
 `bookdown::render_book("index.Rmd", "bookdown::pdf_book")`
 
-To compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+- *Note*: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+
+Once you have rendered updates using the console commands above:
+- navigate to the **Environment, Connections, Build, Git*`** panel, 
+- select the **Build** tab,
+- select **Build Bookdown**
+- once the build is complete (the final line should read `Output created: docs/index/html`), commit, pull and push updates to GitHub via the **Git** tab. 
+
+```{r bookdown, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+
+knitr::include_graphics("images/build.png")
+```
+
+
+```{r gitselect, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+
+knitr::include_graphics("images/select.png")
+```
+
+```{r gitcommit, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+
+knitr::include_graphics("images/commit.png")
+```

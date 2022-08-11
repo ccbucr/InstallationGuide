@@ -13,30 +13,30 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
 
 ### Install ESRI ArcGIS software
 
-- Step 1: Navigate to the [UCR Portal ServiceLink Software Catalog](https://ucrsupport.service-now.com/ucr_portal). 
+- **Step 1:** Navigate to the [UCR Portal ServiceLink Software Catalog](https://ucrsupport.service-now.com/ucr_portal). 
 
-- Step 2: Under the Information Technology section, select **Request Services & Software** link.
+- **Step 2:** Under the Information Technology section, select **Request Services & Software** link.
 
 ```{r servicelink, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3, fig.alt="Screen shot of UCR ServiceLink homepage information technology section."}
 
 knitr::include_graphics("images/ServiceLink.png")
 ```
 
-- Step 3: Scroll down to the **Software Request** card and select link.  
+- **Step 3:** Scroll down to the **Software Request** card and select link.  
 
 ```{r softwarerequest, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
 
 knitr::include_graphics("images/softwarerequest.png")
 ```
 
-- Step 4: Complete the Software Request form using your UCR NetId and UCR email, then select **Submit**. 
+- **Step 4:** Complete the Software Request form using your UCR NetId and UCR email, then select **Submit**. 
 
 ```{r requestsubmit, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3}
 
 knitr::include_graphics("images/requestsubmit.png")
 ```
 
-- Step 5: The UC IT team will send email notifications to provide further instructions. 
+- **Step 5:** The UC IT team will send email notifications to provide further instructions. 
 
 ### ESRI Resources
 
