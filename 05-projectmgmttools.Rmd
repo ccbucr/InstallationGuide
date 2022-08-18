@@ -135,9 +135,32 @@ Follow [this link](https://join.slack.com/t/ccbucr/shared_invite/zt-1dfpaguqs-F4
 
 ### Slack Resources 
 
-Check out Slack's [**Top 5 tips for getting started in Slack**](https://slack.com/intl/en-in/resources/using-slack/top-5-tips-for-getting-started-in-slack) (5 min read) to learn the app's basic functions and communication workflows. The [Slack help center](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide) has useful *how to* guides and [tutorials](https://slack.com/help/articles/360059976673-Slack-video-tutorials) to facilitate working in Slack. 
+The [Slack help center](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide) has useful *how to* guides and [tutorials](https://slack.com/help/articles/360059976673-Slack-video-tutorials) to facilitate working in Slack. 
+
+**Slack Trainings**
+
+Check out Slack's [**Top 5 tips for getting started in Slack**](https://slack.com/intl/en-in/resources/using-slack/top-5-tips-for-getting-started-in-slack) (5 min read) to learn the app's basic functions and communication workflows. 
+
+The [Slack help center's "how to" guide](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide) has several sections:
+
+- [Quick Reference Guide](https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide#sidebar) (20 min read)
+- [Using Slack](https://slack.com/help/categories/200111606): recommended Sections to review
+  - Format & style messages (5 min read)
+  - Message features & tools (15 min read)
+  - Audio & video (10 min read)
+- [Your Profile](https://slack.com/help/categories/360000047906)
+  - Adjust your notifications: [configure your notifications](https://slack.com/help/articles/201355156-Configure-your-Slack-notifications) (5 min read)
+  - Change your settings & preferences: 
+    - [set your Slack status & availability](https://slack.com/help/articles/201864558-Set-your-Slack-status-and-availability) (3 min read)
+    - [adjust your sidebar preferences](https://slack.com/help/articles/212596808-Adjust-your-sidebar-preferences) (3 min read)
+- Connect Tools
+  - Connect tools from the Slack app directory: [add apps to your Slack workspace](https://slack.com/help/articles/202035138-Add-apps-to-your-Slack-workspace) (3 min read)
+- [Tutorials](https://slack.com/help/categories/360000049063) - a long list of tutorials to review as needed and as time allows
+
 
 **Slack Apps**
+
+Slack apps are available for premium (aka not free) accounts.
 
 - A **Trello app** is incorporated in the CCB_UCR Slack workspace. You can create cards in Slack for the CCB Team Projects Trello workspace. To learn how, [follow this Slack connect tool](https://slack.com/help/articles/231967387-Trello-for-Slack).
 - The **Zoom app** can be added to Slack that allows your to start or join a Zoom Meeting or Zoom Phone call by using the **“/zoom”** slash command in any Slack channel or message.
@@ -148,7 +171,7 @@ Launch a call in Slack with the /teams-calls slash command. Before joining, get 
   - Jump from Slack straight into a meeting — join Teams meetings directly from calendar reminders in Slack, using the Outlook or Google Calendar apps.
   - Customize call settings for your team. Set Microsoft Teams Calls as your default calling provider, so anyone can start a video call in Teams with a quick click of the phone button in Slack.
 
-Other cool Slack workspaces to join:
+**Other cool Slack workspaces to join:**
 
 - [EcoDataScience](https://eco-data-science.github.io/) - an environmental data science study group that started at UC Santa Barbara, but now has an international following!
 

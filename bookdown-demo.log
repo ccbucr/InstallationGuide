@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  11 AUG 2022 16:36
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  18 AUG 2022 12:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1155,64 +1155,64 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [39] [40]
 File: images/slack.png Graphic file (type bmp)
 <images/slack.png>
-[41] [42]
+[41] [42] [43] [44
+
+]
 Chapter 6.
 File: images/ServiceLink.png Graphic file (type bmp)
 <images/ServiceLink.png>
 
-Overfull \hbox (491.16pt too wide) in paragraph at lines 885--885
+Overfull \hbox (491.16pt too wide) in paragraph at lines 939--939
  [] 
  []
 
-[43
-
-]
+[45]
 File: images/softwarerequest.png Graphic file (type bmp)
 <images/softwarerequest.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[44]
+[46]
 File: images/requestsubmit.png Graphic file (type bmp)
 <images/requestsubmit.png>
 
-Overfull \hbox (533.20482pt too wide) in paragraph at lines 901--901
+Overfull \hbox (533.20482pt too wide) in paragraph at lines 955--955
  [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[45] [46] [47] [48
+[47] [48] [49] [50
 
 ]
 Chapter 7.
 
-Overfull \hbox (36.09503pt too wide) in paragraph at lines 950--952
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 1004--1006
 []\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
 me_rev20230131.doc). 
  []
 
-[49]
-Overfull \hbox (114.12698pt too wide) in paragraph at lines 965--966
+[51]
+Overfull \hbox (114.12698pt too wide) in paragraph at lines 1019--1020
 []\TU/lmr/m/n/10 Examples: \TU/lmr/m/it/10 CVStormwaterVAP20170217.csv\TU/lmr/m
 /n/10 , \TU/lmr/m/it/10 CVMC_CRCA01_Proposal_LCS_20221231.doc\TU/lmr/m/n/10 ; 
  []
 
-[50]
+[52]
 Chapter 8.
-[51
+[53
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[52]
+[54]
 Overfull \hbox (87.14124pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 8.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AND
- TIRING. \TU/lmr/m/n/10 53
+ TIRING. \TU/lmr/m/n/10 55
  []
 
-[53] (./bookdown-demo.bbl [54]) [55
+[55] (./bookdown-demo.bbl [56]) [57
 
 ] (./bookdown-demo.aux)
 
@@ -1222,10 +1222,10 @@ LaTeX Warning: There were undefined references.
 Here is how much of TeX's memory you used:
  20041 strings out of 476919
  350858 string characters out of 5821840
- 840331 words of memory out of 5000000
+ 841331 words of memory out of 5000000
  39658 multiletter control sequences out of 15000+600000
  410011 words of font info for 84 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,1032b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (55 pages).
+Output written on bookdown-demo.pdf (57 pages).
