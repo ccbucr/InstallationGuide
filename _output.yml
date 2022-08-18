@@ -3,10 +3,10 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="./">UCR Center for Conservation Biology Administration Guide</a></li>
+        <li><a href="./">UCR Center for Conservation Biology Resource Guide</a></li>
       after: |
         <li><a href="https://github.com/ccbucr/AdministrationGuide" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/ccbucr/AdministrationGuide/edit/main/%s
+    edit: https://github.com/ccbucr/ResourceGuide/edit/main/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
