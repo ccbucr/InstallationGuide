@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  18 AUG 2022 12:19
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  7 SEP 2022 10:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,95 +935,75 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 [4]
 File: images/cima2019.jpeg Graphic file (type bmp)
 <images/cima2019.jpeg>
-
-Overfull \hbox (387.28189pt too wide) in paragraph at lines 163--164
-[][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+File: images/ucrccb.png Graphic file (type bmp)
+<images/ucrccb.png>
 [5
 
 ] [6]
-File: images/ucrccb.png Graphic file (type bmp)
-<images/ucrccb.png>
+Chapter 1.
+[7
 
-Overfull \hbox (583.55148pt too wide) in paragraph at lines 168--168
- [] 
- []
+] [8]
+Chapter 2.
+File: images/rupdate.png Graphic file (type bmp)
+<images/rupdate.png>
 
-[7] [8
+Underfull \vbox (badness 3568) has occurred while \output is active []
+
+[9
 
 ]
-Chapter 1.
-[9] [10]
-Chapter 2.
-File: images/rstudio.png Graphic file (type bmp)
-<images/rstudio.png>
+File: images/renv.png Graphic file (type bmp)
+<images/renv.png>
 
-Overfull \hbox (14.21pt too wide) in paragraph at lines 261--261
- [] 
+Overfull \hbox (12.0pt too wide) in paragraph at lines 269--270
+\TU/lmtt/m/n/10 [1] "/Library/Frameworks/R.framework/Versions/4.2/Resources/lib
+rary" 
  []
 
-[11
-
-] [12] [13] [14
+[10] [11]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 349.
+[12]
+File: images/rstudio.png Graphic file (type bmp)
+<images/rstudio.png>
+[13] [14] [15] [16
 
 ]
 Chapter 3.
 
-Underfull \hbox (badness 1552) in paragraph at lines 367--367
+Underfull \hbox (badness 1552) in paragraph at lines 490--490
 []\TU/lmr/bx/n/14.4 Render, Build & Publish the Resource
  []
 
-[15]
-Overfull \hbox (124.47pt too wide) in paragraph at lines 373--375
+[17]
+Overfull \hbox (124.47pt too wide) in paragraph at lines 496--498
 []\TU/lmtt/m/n/10 bookdown::render_book("index.Rmd", "bookdown::gitbook") bookd
 own::render_book("index.Rmd",
  []
 
 File: images/build.png Graphic file (type bmp)
 <images/build.png>
-
-Overfull \hbox (470.09273pt too wide) in paragraph at lines 396--396
- [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[16]
 File: images/select.png Graphic file (type bmp)
 <images/select.png>
-
-Overfull \hbox (463.71193pt too wide) in paragraph at lines 398--398
- [] 
- []
-
-[17]
-File: images/commit.png Graphic file (type bmp)
-<images/commit.png>
-
-Overfull \hbox (524.24538pt too wide) in paragraph at lines 400--400
- [] 
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [18]
+File: images/commit.png Graphic file (type bmp)
+<images/commit.png>
 
-LaTeX Warning: Reference `methods' on page 19 undefined on input line 413.
+LaTeX Warning: Reference `methods' on page 19 undefined on input line 536.
 
+[19]
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
-[19] [20] [21] [22
+[20] [21] [22
 
 ]
 Chapter 4.
 [23]
-Overfull \hbox (110.94pt too wide) in paragraph at lines 539--542
+Overfull \hbox (110.94pt too wide) in paragraph at lines 689--692
 []\TU/lmtt/m/n/10 user.name=janedoe user.email=janedoe@ucr.edu core.excludesfil
 e=/Users/janedoe/.gitignore 
  []
@@ -1031,188 +1011,103 @@ e=/Users/janedoe/.gitignore
 [24]
 File: images/usethis.png Graphic file (type bmp)
 <images/usethis.png>
-
-Overfull \hbox (211.14714pt too wide) in paragraph at lines 564--564
-[]  
- []
-
 File: images/pat.png Graphic file (type bmp)
 <images/pat.png>
-
-Overfull \hbox (563.87563pt too wide) in paragraph at lines 582--582
-[]  
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[25] [26]
+[25]
 File: images/generatepat.png Graphic file (type bmp)
 <images/generatepat.png>
-
-Overfull \hbox (187.03789pt too wide) in paragraph at lines 625--625
- [] 
- []
-
 File: images/paste_pat.png Graphic file (type bmp)
 <images/paste_pat.png>
-
-Overfull \hbox (175.97174pt too wide) in paragraph at lines 640--640
- [] 
- []
-
-[27]
+[26]
 File: images/gitsitrep.png Graphic file (type bmp)
 <images/gitsitrep.png>
-
-Overfull \hbox (305.50154pt too wide) in paragraph at lines 654--654
- [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[28] [29] [30
+[27] [28
 
 ]
 Chapter 5.
-[31]
+[29]
 File: images/trello.png Graphic file (type bmp)
 <images/trello.png>
 File: images/zoteroinstall.png Graphic file (type bmp)
 <images/zoteroinstall.png>
+File: images/zoteroextension.png Graphic file (type bmp)
+<images/zoteroextension.png>
 
-Overfull \hbox (542.3855pt too wide) in paragraph at lines 701--701
- [] 
- []
+Underfull \vbox (badness 1515) has occurred while \output is active []
 
+[30]
+File: images/zoterosyncing.png Graphic file (type bmp)
+<images/zoterosyncing.png>
+[31]
+File: images/zoomdownload.png Graphic file (type bmp)
+<images/zoomdownload.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [32]
-File: images/zoteroextension.png Graphic file (type bmp)
-<images/zoteroextension.png>
-
-Overfull \hbox (545.3834pt too wide) in paragraph at lines 703--703
- [] 
- []
-
+File: images/zoomsso.png Graphic file (type bmp)
+<images/zoomsso.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [33]
-File: images/zoterosyncing.png Graphic file (type bmp)
-<images/zoterosyncing.png>
-
-Overfull \hbox (306.3899pt too wide) in paragraph at lines 707--707
- [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[34] [35]
-File: images/zoomdownload.png Graphic file (type bmp)
-<images/zoomdownload.png>
-
-Overfull \hbox (89.65828pt too wide) in paragraph at lines 736--736
- [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[36]
-File: images/zoomsso.png Graphic file (type bmp)
-<images/zoomsso.png>
-
-Overfull \hbox (25.40186pt too wide) in paragraph at lines 745--745
- [] 
- []
-
-[37]
 File: images/zoomdomain.png Graphic file (type bmp)
 <images/zoomdomain.png>
-
-Overfull \hbox (258.30165pt too wide) in paragraph at lines 747--747
- [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[38]
 File: images/zoomcred.png Graphic file (type bmp)
 <images/zoomcred.png>
 
-Overfull \hbox (8.07811pt too wide) in paragraph at lines 755--755
- [] 
- []
+Underfull \vbox (badness 7869) has occurred while \output is active []
 
-
+[34]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39] [40]
+[35]
 File: images/slack.png Graphic file (type bmp)
 <images/slack.png>
-[41] [42] [43] [44
-
-]
+[36] [37] [38]
 Chapter 6.
 File: images/ServiceLink.png Graphic file (type bmp)
 <images/ServiceLink.png>
+[39
 
-Overfull \hbox (491.16pt too wide) in paragraph at lines 939--939
- [] 
- []
-
-[45]
+]
 File: images/softwarerequest.png Graphic file (type bmp)
 <images/softwarerequest.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[46]
 File: images/requestsubmit.png Graphic file (type bmp)
 <images/requestsubmit.png>
 
-Overfull \hbox (533.20482pt too wide) in paragraph at lines 955--955
- [] 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[47] [48] [49] [50
+[40] [41] [42
 
 ]
 Chapter 7.
 
-Overfull \hbox (36.09503pt too wide) in paragraph at lines 1004--1006
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 1154--1156
 []\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
 me_rev20230131.doc). 
  []
 
-[51]
-Overfull \hbox (114.12698pt too wide) in paragraph at lines 1019--1020
+[43]
+Overfull \hbox (114.12698pt too wide) in paragraph at lines 1169--1170
 []\TU/lmr/m/n/10 Examples: \TU/lmr/m/it/10 CVStormwaterVAP20170217.csv\TU/lmr/m
 /n/10 , \TU/lmr/m/it/10 CVMC_CRCA01_Proposal_LCS_20221231.doc\TU/lmr/m/n/10 ; 
  []
 
-[52]
+[44]
 Chapter 8.
-[53
+[45
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[54]
+[46]
 Overfull \hbox (87.14124pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 8.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AND
- TIRING. \TU/lmr/m/n/10 55
+ TIRING. \TU/lmr/m/n/10 47
  []
 
-[55] (./bookdown-demo.bbl [56]) [57
+[47] (./bookdown-demo.bbl [48]) [49
 
 ] (./bookdown-demo.aux)
 
@@ -1220,12 +1115,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20041 strings out of 476919
- 350858 string characters out of 5821840
- 841331 words of memory out of 5000000
- 39658 multiletter control sequences out of 15000+600000
- 410011 words of font info for 84 fonts, out of 8000000 for 9000
+ 20073 strings out of 476919
+ 351451 string characters out of 5821840
+ 841650 words of memory out of 5000000
+ 39686 multiletter control sequences out of 15000+600000
+ 410019 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,1032b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (57 pages).
+Output written on bookdown-demo.pdf (49 pages).

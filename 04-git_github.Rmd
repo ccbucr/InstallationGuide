@@ -13,27 +13,33 @@ Once you have created a GitHub account, join the [CCB's GitHub Organization](htt
 ## Git 
 
 Git is a tool utilized for source code management. It tracks changes and updates to code and allows for multiple users to work together within the same repository. Recommended reading for [background information on Git and its utility](https://towardsdatascience.com/what-is-git-and-why-is-it-so-important-dce559b27833) [@Yıldırım_2020].
-
+ 
 Check to see if your computer already has git:
 
-- Open RStudio
-- In the terminal, run the following command:
+1. Open RStudio
+2. In the terminal, run the following command:
 
-`which git`
+  - `which git` (Mac, Linux)
+  - `where git` (Windows)
 
-If `git` is already installed, the return to the above command should return a filepath (ex: `/usr/local/bin/git`). 
+If `git` is already installed, the return to the above command should return a filepath  similar to: 
 
-- If there is no response, download and install `git` from here: [git-scm.com/downloads](https://git-scm.com/downloads). Select the default settings within the prompts **except** the default to **master** branch. This branch is being phased out, so select the option that let's you select alternative branches (ex: main).
+  - MacOS `/usr/local/bin/git`
+  - Windows `C:/Program Files/Git/bin/git.exe`
+
+3. If there is no response, download and install `git` from here: [git-scm.com/downloads](https://git-scm.com/downloads). Select the default settings within the prompts **except** the default to **master** branch. This branch is being phased out, so select the option that let's you select alternative branches (ex: main).
 
 Once Git is installed and your GitHub account has been set up, Git needs to be configured on the computer. Configuring Git is required to push & pull commits to GitHub. 
 
-- In RStudio, open the terminal. 
-- Run the following commands separately, pressing `Enter` after each line. Replace username and email with your GitHub account username and email. Make sure to keep the quotes around the username in the code below: 
+Configuring Git:
+
+1. In RStudio, open the terminal. 
+2. Run the following commands separately, pressing `Enter` after each line. Replace username and email with your GitHub account username and email. Make sure to keep the quotes around the username in the code below: 
 
   - `git config --global user.name "Jane Doe"`
   - `git config --global user.email janedoe@example.com`
   
-- Once you have entered the above command line code, check that the configuration was set correctly. In the RStudio Terminal, type the following command and hit enter:
+3. Once you have entered the above command line code, check that the configuration was set correctly. In the RStudio Terminal, type the following command and hit enter:
   - `git config --list --global`
   
 In the terminal, it should show code similar to this in the Terminal:

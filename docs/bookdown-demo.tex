@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Research Unit Resource Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Fellow}
-\date{2022-08-18}
+\date{2022-09-07}
 
 \begin{document}
 \maketitle
@@ -160,12 +160,12 @@
 
 The Center for Conservation Biology (the Center, or CCB) is a University of California Riverside (UCR) organized research unit. Our mission is to assist in the conservation and restoration of species and ecosystems by facilitating the collection, evaluation, and dissemination of scientific information.
 
-\includegraphics[width=25.22in]{images/cima2019}
+\includegraphics{images/cima2019}
 
 East of Cima Dome in the Mojave National Preserve, California.
 \textbf{Image Credit:} Center for Conservation Biology
 
-\begin{center}\includegraphics[width=12.85in]{images/ucrccb} \end{center}
+\begin{center}\includegraphics{images/ucrccb} \end{center}
 
 \hypertarget{intro}{%
 \chapter{Introduction}\label{intro}}
@@ -235,12 +235,124 @@ Thank you to UC Santa Barbara's Bren School of Environmental Science \& Manageme
 \hypertarget{r}{%
 \chapter{R and RStudio Installation}\label{r}}
 
-\hypertarget{install-or-update-r}{%
-\section{Install or Update R}\label{install-or-update-r}}
+\hypertarget{install-r}{%
+\section{Install R}\label{install-r}}
 
 \textbf{R} is a programming language and environment used for statistical computing and grahics. For more information, please visit \href{https://www.r-project.org/about.html}{What is R}.
 
 To install R, visit \href{https://cloud.r-project.org/}{cloud.r-project.org} to download the most recent version for your operating system.
+
+Would you like a visual guide for install R and R Studio? Check out this YouTube R for Ecologist
+
+\hypertarget{updating-r}{%
+\subsection{Updating R}\label{updating-r}}
+
+If you already have R installed, you may want to update the version of R you are using. Usually this occurs with a major version upgrades versus minor updates.
+
+\textbf{Please be aware that when you update R, it means re-installing all of the packages you have previously installed.} It is worth updating R when major updates are released, especially if new packages you are attempting to install are not compatible with the version of R currently installed.
+
+In order to update R, you have to find your installed version of R and run it on its own, outside of RStudio. This is easy if you have an R desktop shortcut, but not too hard if you hunt around a bit in your Applications folder.
+
+\begin{flushleft}\includegraphics{images/rupdate} \end{flushleft}
+
+\emph{Please see details below in Section 2.1.2 to save all R packages currently installed PRIOR to updating R, so you won't have to reinstall them individually after the update}
+
+Double click the R icon to start up R. It will open the R Console and a menu. Click on the R menu at top left, and select Check for R Updates. If you are up to date, the R Console will report ``Your version of R is up to date''. If not, this process will provide windows and buttons to click to upgrade to the latest version of R. When done, quit R and start RStudio to make sure the update has carried over. You should see the new version number when RStudio starts.
+
+\hypertarget{bulk-save-r-packages-prior-to-updates}{%
+\subsection{Bulk Save R Packages Prior to Updates}\label{bulk-save-r-packages-prior-to-updates}}
+
+In order to follow the bulk save R package instructions, you will need to have R Studio installed, and be familiar with the terminal and console panels.**
+
+\begin{flushleft}\includegraphics{images/renv} \end{flushleft}
+
+Before updating R, check out where your current package library is saved by entering \texttt{.libPaths()} in the console of RStudio. This should look something like: \texttt{{[}1{]}\ "/Library/Frameworks/R.framework/Versions/4.2/Resources/library"}
+
+Note that this package library is specific to the most recent major and minor version of R. If you upgrade from 4.1.x to 4.2.x, you will have a new library path to a new 4.2 folder, and will need to re-install packages in this folder.
+
+You can do this from scratch, and install packages individually as needed (which is not a bad way to clean out packages you are not using), but you may prefer to re-install all packages in an organized way, rather than when you need to use one
+
+You can see a dataframe of all currently installed packages by running the base R function \texttt{installed.packages()} in the R Studio console. This will help make a list of packages prior to updating R.
+
+There is also a package for \textbf{Windows}, \{installr\}, which will pull the list of your current packages and install these in the correct folder for the new version of R. If you are on a Windows OS, and have installed the \{installr\} package, the \texttt{installr::updateR()} command in the console performs the following:
+
+\begin{itemize}
+\tightlist
+\item
+  finding the latest R version
+\item
+  downloading it
+\item
+  running the installer
+\item
+  deleting the installation file
+\item
+  copy old packages to the new R installation
+\item
+  updating old packages as needed for the new R installation
+\end{itemize}
+
+But for MacOS and UnixOS folks, this must be done manually.
+
+\hypertarget{saving-a-list-of-r-packages-manually}{%
+\subsubsection{Saving a List of R Packages Manually}\label{saving-a-list-of-r-packages-manually}}
+
+The short script below will save a vector of your current packages to a file in your root (home) directory, named \texttt{installed.packages.rda}. Copy this code chunk below into your Console pane in RStudio and run it. Then reopen RStudio, go to the Files tab, click on Home , and check your root (home) directory for the installed.packages.rda file. You can click on this file to load it into your Environment tab (answer yes to load). In your Environment tab, it should look like a character vector with the names of all of your packages in quotes.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# save list to tmp as a matrix object}
+\NormalTok{tmp }\OtherTok{=} \FunctionTok{installed.packages}\NormalTok{()}
+
+\CommentTok{\# filter for all rows where the \textquotesingle{}Priority\textquotesingle{} column is NA,}
+\CommentTok{\# and select just (column 1) the package names in quotes,}
+\CommentTok{\# and then assign this vector to the installedpackages}
+\CommentTok{\# object}
+\NormalTok{installedpackages }\OtherTok{=} \FunctionTok{as.vector}\NormalTok{(tmp[}\FunctionTok{is.na}\NormalTok{(tmp[, }\StringTok{"Priority"}\NormalTok{]), }\DecValTok{1}\NormalTok{])}
+
+\CommentTok{\# save this vector as an *.rda file in your root (home)}
+\CommentTok{\# directory}
+\FunctionTok{save}\NormalTok{(installedpackages, }\AttributeTok{file =} \StringTok{"\textasciitilde{}/installed\_packages.rda"}\NormalTok{)}
+
+\CommentTok{\# remove the tmp matrix and the installedpackages vector}
+\CommentTok{\# from your Environment}
+\FunctionTok{rm}\NormalTok{(tmp)}
+\FunctionTok{rm}\NormalTok{(installedpackages)}
+\end{Highlighting}
+\end{Shaded}
+
+Now that you have your saved list of packages stored in a file, you are ready to upgrade R. Quit RStudio, and go to \href{https://www.r-project.org/}{r-project.org}.
+
+\hypertarget{reinstalling-list-of-r-packages}{%
+\subsubsection{Reinstalling list of R Packages}\label{reinstalling-list-of-r-packages}}
+
+First, let's check your new R version with \texttt{R.Version()} - run this in the Console pane. This should be the new version.
+
+Now let's check your library path with \texttt{.libPaths()} - run this in the Console Pane - this should match your R version.
+
+Now run \texttt{installed.packages()}. This should show that your new library is mostly empty, except for the base R packages. We will now fix that.
+
+Now you need to take advantage of your nicely-stored list of packages to reinstall all of your packages in your new (mostly empty) library.
+
+Use the short script below to load the file \texttt{installed.packages.rda} to open a vector of your previous packages in your Environment pane, and then re-install all of these packages. Copy the code chunk below into your Console pane in RStudio and run it. This will take a while, especially if you have a lot of packages installed.
+
+While you are waiting, check out the code chunk below. The first step is to load the installedpackages.rda file from your root (home) directory into your Environment pane. Then it starts taking action on this vector of package names. See what it does in the next step, the for loop, and think about how it works. - It measures the length of the vector, installedpackages. - Then it counts from 1 to the length of installedpackages. - For each count, it installs the package at position {[}count{]} in the vector - Then it goes to the next {[}count{]} value, and installs the next package in the vector - Until it reaches the full length of the vector (installs the last package), and then stops.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\# loads vector into your Environment pane}
+\FunctionTok{load}\NormalTok{(}\StringTok{"\textasciitilde{}/installed\_packages.rda"}\NormalTok{)}
+
+\CommentTok{\# For each package in this vector of length [count],}
+\CommentTok{\# install them one by one until the last one is installed.}
+
+\ControlFlowTok{for}\NormalTok{ (count }\ControlFlowTok{in} \DecValTok{1}\SpecialCharTok{:}\FunctionTok{length}\NormalTok{(installedpackages)) \{}
+    \FunctionTok{install.packages}\NormalTok{(installedpackages[count])}
+\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+When all of the installation is complete, you can check your work by running \texttt{installed.packages()} again in the R Studio console. You should see a full list of your packages, and you are updated and ready to go!
 
 \hypertarget{install-or-update-r-studio}{%
 \section{Install or Update R Studio}\label{install-or-update-r-studio}}
@@ -258,7 +370,7 @@ RStudio is a software (considered an Integrated Development Environment, or IDE)
 
 Open RStudio (logo you'll click on shown below). \textbf{If you are prompted to install Command Line Tools, do it.}
 
-\begin{center}\includegraphics[width=4.97in]{images/rstudio} \end{center}
+\begin{center}\includegraphics{images/rstudio} \end{center}
 
 \textbf{Mac Users}
 
@@ -269,6 +381,17 @@ There may be a need to install command line tools and \href{https://www.xquartz.
   To install command line tools (if you're not automatically prompted), run in the Terminal tab in RStudio: \texttt{xcode-select\ -\/-install}
 \item
   Visit \href{https://www.xquartz.org/}{xquartz.org} to download \& install XQuartz.
+\end{itemize}
+
+\hypertarget{update-r-packages-in-r-studio}{%
+\subsection{Update R Packages in R Studio}\label{update-r-packages-in-r-studio}}
+
+You will want to periodically update R packages to ensure you have the most up to date version. You can do this within RStudio by navigating via the Task Bar to \texttt{Tools/Check\ for\ Package\ Updates}.
+
+\begin{itemize}
+\tightlist
+\item
+  Select All, and let the updates begin.
 \end{itemize}
 
 \hypertarget{install-quarto}{%
@@ -393,11 +516,11 @@ Once you have rendered updates using the console commands above:
   once the build is complete (the final line should read \texttt{Output\ created:\ docs/index/html}), commit, pull and push updates to GitHub via the \textbf{Git} tab.
 \end{itemize}
 
-\begin{center}\includegraphics[width=11.28in]{images/build} \end{center}
+\begin{center}\includegraphics{images/build} \end{center}
 
-\begin{center}\includegraphics[width=11.19in]{images/select} \end{center}
+\begin{center}\includegraphics{images/select} \end{center}
 
-\begin{center}\includegraphics[width=12.03in]{images/commit} \end{center}
+\begin{center}\includegraphics{images/commit} \end{center}
 
 \begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
 
@@ -491,47 +614,74 @@ Git is a tool utilized for source code management. It tracks changes and updates
 
 Check to see if your computer already has git:
 
-\begin{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
   Open RStudio
 \item
   In the terminal, run the following command:
-\end{itemize}
-
-\texttt{which\ git}
-
-If \texttt{git} is already installed, the return to the above command should return a filepath (ex: \texttt{/usr/local/bin/git}).
+\end{enumerate}
 
 \begin{itemize}
 \tightlist
 \item
-  If there is no response, download and install \texttt{git} from here: \href{https://git-scm.com/downloads}{git-scm.com/downloads}. Select the default settings within the prompts \textbf{except} the default to \textbf{master} branch. This branch is being phased out, so select the option that let's you select alternative branches (ex: main).
+  \texttt{which\ git} (Mac, Linux)
+\item
+  \texttt{where\ git} (Windows)
 \end{itemize}
+
+If \texttt{git} is already installed, the return to the above command should return a filepath similar to:
+
+\begin{itemize}
+\tightlist
+\item
+  MacOS \texttt{/usr/local/bin/git}
+\item
+  Windows \texttt{C:/Program\ Files/Git/bin/git.exe}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  If there is no response, download and install \texttt{git} from here: \href{https://git-scm.com/downloads}{git-scm.com/downloads}. Select the default settings within the prompts \textbf{except} the default to \textbf{master} branch. This branch is being phased out, so select the option that let's you select alternative branches (ex: main).
+\end{enumerate}
 
 Once Git is installed and your GitHub account has been set up, Git needs to be configured on the computer. Configuring Git is required to push \& pull commits to GitHub.
 
-\begin{itemize}
+Configuring Git:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
   In RStudio, open the terminal.
 \item
   Run the following commands separately, pressing \texttt{Enter} after each line. Replace username and email with your GitHub account username and email. Make sure to keep the quotes around the username in the code below:
+\end{enumerate}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \texttt{git\ config\ -\/-global\ user.name\ "Jane\ Doe"}
-  \item
-    \texttt{git\ config\ -\/-global\ user.email\ janedoe@example.com}
-  \end{itemize}
+\begin{itemize}
+\tightlist
+\item
+  \texttt{git\ config\ -\/-global\ user.name\ "Jane\ Doe"}
+\item
+  \texttt{git\ config\ -\/-global\ user.email\ janedoe@example.com}
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
 \item
   Once you have entered the above command line code, check that the configuration was set correctly. In the RStudio Terminal, type the following command and hit enter:
+\end{enumerate}
 
-  \begin{itemize}
-  \tightlist
-  \item
-    \texttt{git\ config\ -\/-list\ -\/-global}
-  \end{itemize}
+\begin{itemize}
+\tightlist
+\item
+  \texttt{git\ config\ -\/-list\ -\/-global}
 \end{itemize}
 
 In the terminal, it should show code similar to this in the Terminal:
@@ -561,7 +711,7 @@ Once Git has been configured to commit to your GitHub account, a \textbf{Persona
 
 If the \texttt{usethis} package is installed correctly, at the end of the stream of text there should be a message similar to the image below:
 
-\begin{flushleft}\includegraphics[width=15.39in]{images/usethis} \end{flushleft}
+\begin{flushleft}\includegraphics{images/usethis} \end{flushleft}
 
 \begin{itemize}
 \tightlist
@@ -579,7 +729,7 @@ If the \texttt{usethis} package is installed correctly, at the end of the stream
 
 This should take you to the \textbf{Settings/Developer settings} section of your GitHub account:
 
-\begin{flushleft}\includegraphics[width=32.22in]{images/pat} \end{flushleft}
+\begin{flushleft}\includegraphics{images/pat} \end{flushleft}
 
 \begin{itemize}
 \tightlist
@@ -622,7 +772,7 @@ To learn more about Scopes, visit \href{https://docs.github.com/en/developers/ap
   Once Scopes are selected, click on the green \texttt{Generate\ token} button:
 \end{itemize}
 
-\begin{center}\includegraphics[width=14.72in]{images/generatepat} \end{center}
+\begin{center}\includegraphics{images/generatepat} \end{center}
 
 \begin{itemize}
 \item
@@ -637,7 +787,7 @@ To learn more about Scopes, visit \href{https://docs.github.com/en/developers/ap
 
 You will be prompted to paste the PAT into the console:
 
-\begin{center}\includegraphics[width=14.42in]{images/paste_pat} \end{center}
+\begin{center}\includegraphics{images/paste_pat} \end{center}
 
 Paste the PAT at the end of the line \texttt{Enter\ password\ or\ token:} and press enter.
 
@@ -651,7 +801,7 @@ Paste the PAT at the end of the line \texttt{Enter\ password\ or\ token:} and pr
 
 This command should return your GitHub account information (see example below).
 
-\begin{center}\includegraphics[width=18in]{images/gitsitrep} \end{center}
+\begin{center}\includegraphics{images/gitsitrep} \end{center}
 
 For more information on PATs, check out \href{https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token}{GitHub's PAT information page}.
 
@@ -687,7 +837,7 @@ Microsoft 360 training resources can be found \href{https://support.microsoft.co
 \hypertarget{trello}{%
 \section{Trello}\label{trello}}
 
-\begin{flushleft}\includegraphics[width=3.47in]{images/trello} \end{flushleft}
+\begin{flushleft}\includegraphics{images/trello} \end{flushleft}
 
 \href{https://trello.com/en}{Trello} is a project management app tool that provides teams the opportunity to create task lists, reference \& resource lists, and communicate via tagging! To connect with CCB's Trello Workspace, send a request to CCB's PI. The main board is \textbf{CCB Team Projects}.
 
@@ -698,13 +848,13 @@ The Center for Conservation Biology shares research references through Zotero so
 
 To install Zotero and the extension, please follow UC Riverside's installation instructions \href{https://guides.lib.ucr.edu/c.php?g=171064}{here}. \emph{Note}: These instructions are for a \textbf{Windows} machine, but it is a similar process for Macs.
 
-\begin{center}\includegraphics[width=24.56in]{images/zoteroinstall} \end{center}
+\begin{center}\includegraphics{images/zoteroinstall} \end{center}
 
-\begin{center}\includegraphics[width=24.64in]{images/zoteroextension} \end{center}
+\begin{center}\includegraphics{images/zoteroextension} \end{center}
 
 The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the \href{https://www.zotero.org/groups/4734848/ccbucr}{CCB Zotero Reference Group}. Make sure to use your using the UCR email address when setting up the Zotero account.
 
-\begin{center}\includegraphics[width=22.14in]{images/zoterosyncing} \end{center}
+\begin{center}\includegraphics{images/zoterosyncing} \end{center}
 
 To connect to the CCB Zotero Reference Group, navigate to \href{https://www.zotero.org/groups/4734848/ccbucr}{this link}. If you do not have access to the Group page, please send a request that you be added to the CCB PI.
 
@@ -733,7 +883,7 @@ Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based 
   \textbf{Step 1}: Download the Zoom application via \href{https://ucr.zoom.us/}{UC Riverside's Zoom service page} - just select the \textbf{Download} button!
 \end{itemize}
 
-\begin{center}\includegraphics[width=12.03in]{images/zoomdownload} \end{center}
+\begin{center}\includegraphics{images/zoomdownload} \end{center}
 
 \begin{itemize}
 \item
@@ -742,9 +892,9 @@ Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based 
   \textbf{Step 3}: Click the \emph{Sign In with SSO} button, then enter \texttt{ucr} in the \emph{company domain} section.
 \end{itemize}
 
-\begin{center}\includegraphics[width=10.25in]{images/zoomsso} \end{center}
+\begin{center}\includegraphics{images/zoomsso} \end{center}
 
-\begin{center}\includegraphics[width=16.69in]{images/zoomdomain} \end{center}
+\begin{center}\includegraphics{images/zoomdomain} \end{center}
 
 \begin{itemize}
 \tightlist
@@ -752,7 +902,7 @@ Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based 
   \textbf{Step 4}: You will then be prompted to sign in, this time using your UCR NetId. The program may open up an authentication window requesting your UCR NetId as shown below:
 \end{itemize}
 
-\begin{center}\includegraphics[width=10.81in]{images/zoomcred} \end{center}
+\begin{center}\includegraphics{images/zoomcred} \end{center}
 
 \begin{itemize}
 \tightlist
@@ -777,7 +927,7 @@ Happy Zooming!
 \hypertarget{slack}{%
 \section{Slack}\label{slack}}
 
-\begin{flushleft}\includegraphics[width=5.19in]{images/slack} \end{flushleft}
+\begin{flushleft}\includegraphics{images/slack} \end{flushleft}
 
 Slack is a messaging app that connects teams via channels and direct messages (DMs). To make the most of this team communication tool, you will need to download the application to your desktop, have the application open throughout the workday, and adjust the notification settings to your preferences to receive timely alerts.
 
@@ -870,7 +1020,7 @@ The \href{https://slack.com/help/articles/360059928654-How-to-use-Slack--your-qu
 
 \textbf{Slack Apps}
 
-Slack apps are available for premium (aka not free) accounts.
+Up to 10 Slack apps are available for free Slack accounts, and unlimited apps are available for Pro Slack accounts.
 
 \begin{itemize}
 \tightlist
@@ -936,7 +1086,7 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
   \textbf{Step 2:} Under the Information Technology section, select \textbf{Request Services \& Software} link.
 \end{itemize}
 
-\begin{center}\includegraphics[width=11.57in]{images/ServiceLink} \end{center}
+\begin{center}\includegraphics{images/ServiceLink} \end{center}
 
 \begin{itemize}
 \tightlist
@@ -944,7 +1094,7 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
   \textbf{Step 3:} Scroll down to the \textbf{Software Request} card and select link.
 \end{itemize}
 
-\begin{flushleft}\includegraphics[width=3.81in]{images/softwarerequest} \end{flushleft}
+\begin{flushleft}\includegraphics{images/softwarerequest} \end{flushleft}
 
 \begin{itemize}
 \tightlist
@@ -952,7 +1102,7 @@ UC Riverside provides free access to ESRI ArcGIS software and platforms for facu
   \textbf{Step 4:} Complete the Software Request form using your UCR NetId and UCR email, then select \textbf{Submit}.
 \end{itemize}
 
-\begin{center}\includegraphics[width=13.19in]{images/requestsubmit} \end{center}
+\begin{center}\includegraphics{images/requestsubmit} \end{center}
 
 \begin{itemize}
 \tightlist

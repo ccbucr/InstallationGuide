@@ -4,8 +4,13 @@ intro
 computer-requirements
 software-installation
 r
-install-or-update-r
+install-r
+updating-r
+bulk-save-r-packages-prior-to-updates
+saving-a-list-of-r-packages-manually
+reinstalling-list-of-r-packages
 install-or-update-r-studio
+update-r-packages-in-r-studio
 install-quarto
 learn-how-to-use-r-rstudio
 bookdown

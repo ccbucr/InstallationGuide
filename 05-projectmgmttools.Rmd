@@ -160,7 +160,7 @@ The [Slack help center's "how to" guide](https://slack.com/help/articles/3600599
 
 **Slack Apps**
 
-Slack apps are available for premium (aka not free) accounts.
+Up to 10 Slack apps are available for free Slack accounts, and unlimited apps are available for Pro Slack accounts.
 
 - A **Trello app** is incorporated in the CCB_UCR Slack workspace. You can create cards in Slack for the CCB Team Projects Trello workspace. To learn how, [follow this Slack connect tool](https://slack.com/help/articles/231967387-Trello-for-Slack).
 - The **Zoom app** can be added to Slack that allows your to start or join a Zoom Meeting or Zoom Phone call by using the **“/zoom”** slash command in any Slack channel or message.
