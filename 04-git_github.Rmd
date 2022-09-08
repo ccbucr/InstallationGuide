@@ -2,7 +2,7 @@
 
 ## GitHub
 
-GitHub is a internet based code hosting platform for collaboration and [version control](https://www.atlassian.com/git/tutorials/what-is-version-control#:~:text=Version%20control%2C%20also%20known%20as,to%20source%20code%20over%20time.). GitHub lets you (and others) work together on projects.
+GitHub is a internet based code hosting platform for collaboration and [version control](https://www.atlassian.com/git/tutorials/what-is-version-control#:~:text=Version%20control%2C%20also%20known%20as,to%20source%20code%20over%20time.). GitHub lets you (and others) work together on projects. 
 
 Navigate to [github.com](https://github.com/), and create an account! Please use either your work or personal email account. You can add several emails to your account, and assign a particular email as the primary email for the account. 
 

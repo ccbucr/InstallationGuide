@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  7 SEP 2022 10:04
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  8 SEP 2022 11:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1098,16 +1098,20 @@ Overfull \hbox (114.12698pt too wide) in paragraph at lines 1169--1170
 Chapter 8.
 [45
 
+] [46
+
 ]
+Chapter 9.
+[47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[46]
+[48]
 Overfull \hbox (87.14124pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 8.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AND
- TIRING. \TU/lmr/m/n/10 47
+\TU/lmr/m/sl/10 9.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AND
+ TIRING. \TU/lmr/m/n/10 49
  []
 
-[47] (./bookdown-demo.bbl [48]) [49
+[49] (./bookdown-demo.bbl [50]) [51
 
 ] (./bookdown-demo.aux)
 
@@ -1115,12 +1119,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20073 strings out of 476919
- 351451 string characters out of 5821840
- 841650 words of memory out of 5000000
- 39686 multiletter control sequences out of 15000+600000
+ 20075 strings out of 476919
+ 351468 string characters out of 5821840
+ 841683 words of memory out of 5000000
+ 39688 multiletter control sequences out of 15000+600000
  410019 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,1032b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (49 pages).
+Output written on bookdown-demo.pdf (51 pages).

@@ -5,7 +5,7 @@ bookdown::gitbook:
       before: |
         <li><a href="./">UCR Center for Conservation Biology Resource Guide</a></li>
       after: |
-        <li><a href="https://github.com/ccbucr/AdministrationGuide" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/ccbucr/ResourceGuide" target="blank">Published with bookdown</a></li>
     edit: https://github.com/ccbucr/ResourceGuide/edit/main/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:

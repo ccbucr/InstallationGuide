@@ -1,0 +1,9 @@
+# Equipment {#equipment}
+
+Inventory of software and equpiment used and references
+
+
+- Garmin GPSMAP 38
+
+
+- ArcMap ArcGIS Desktop, version 10.9 (Esri, Redlands, California)

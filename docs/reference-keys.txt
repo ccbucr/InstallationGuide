@@ -43,6 +43,7 @@ organization
 file-naming
 folder-organization
 data-management
+equipment
 codeofconduct
 we-are-committed-to-working-as-a-team.
 we-are-committed-to-prioritizing-and-championing-the-people-and-communities-that-host-us.
