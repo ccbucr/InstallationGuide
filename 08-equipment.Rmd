@@ -4,8 +4,8 @@ Inventory of software and equipment used and references
 
 
 
-- ArcMap ArcGIS Desktop, version 10.9 (Esri, Redlands, California)
+- ARC MAP DESKTOP: ArcMap ArcGIS Desktop, version 10.9 (Esri, Redlands, California)
 
-- Hilti PD-42 laser rangefinder (Hilti Corporation, Schaan, Liechtenstein)
+- LASER RANGEFINDER: Hilti PD-42 laser rangefinder (Hilti Corporation, Schaan, Liechtenstein)
 
-A
+- TABLETS: Samsung Galaxy Tab Active 2 tablet (Samsung Group, Seoul, South Korea)
