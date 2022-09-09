@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="4.1 GitHub GitHub is a internet based code hosting platform for collaboration and version control. GitHub lets you (and others) work together on projects. Navigate to github.com, and create an...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -75,7 +75,8 @@
 <li><a class="" href="esri.html"><span class="header-section-number">6</span> ESRI GIS Platform</a></li>
 <li><a class="" href="organization.html"><span class="header-section-number">7</span> File Directory Organization</a></li>
 <li><a class="" href="equipment.html"><span class="header-section-number">8</span> Equipment</a></li>
-<li><a class="" href="codeofconduct.html"><span class="header-section-number">9</span> Code of Conduct</a></li>
+<li><a class="" href="concur.html"><span class="header-section-number">9</span> Concur Travel</a></li>
+<li><a class="" href="codeofconduct.html"><span class="header-section-number">10</span> Code of Conduct</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -157,7 +158,7 @@
 </ul>
 <p><code>install.packages("usethis")</code></p>
 <p>If the <code>usethis</code> package is installed correctly, at the end of the stream of text there should be a message similar to the image below:</p>
-<div class="inline-figure"><img src="images/usethis.png" alt="Installation download message in RStudio console that reads The downloaded binary packages are in this file path." width="554" style="display: block; margin: auto auto auto 0;"></div>
+<div class="inline-figure"><img src="images/usethis.png" title="Installation download message in RStudio console that reads The downloaded binary packages are in this file path." alt="Installation download message in RStudio console that reads The downloaded binary packages are in this file path." style="display: block; margin: auto auto auto 0;"></div>
 <ul>
 <li>Once the <code>usethis</code> package is installed, run the following in the RStudio Console:</li>
 </ul>
@@ -166,7 +167,7 @@
 <li>Enter your GitHub password when prompted.</li>
 </ul>
 <p>This should take you to the <strong>Settings/Developer settings</strong> section of your GitHub account:</p>
-<div class="inline-figure"><img src="images/pat.png" alt="Image of GitHub settings webpage." width="1160" style="display: block; margin: auto auto auto 0;"></div>
+<div class="inline-figure"><img src="images/pat.png" title="Image of GitHub settings webpage." alt="Image of GitHub settings webpage." style="display: block; margin: auto auto auto 0;"></div>
 <ul>
 <li><strong>Note Field</strong></li>
 </ul>
@@ -191,7 +192,7 @@
 <ul>
 <li>Once Scopes are selected, click on the green <code>Generate token</code> button:</li>
 </ul>
-<div class="inline-figure"><img src="images/generatepat.png" width="530" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/generatepat.png" style="display: block; margin: auto;"></div>
 <ul>
 <li><p>Copy the generated PAT to your clipboard.</p></li>
 <li><p>Paste and Save this PAT in a text file in a secure folder that will NEVER be accessed by other users or the internet. You can create a <code>private</code> folder on your personal computer to store these files.</p></li>
@@ -199,14 +200,14 @@
 </ul>
 <p><code><a href="https://rdrr.io/pkg/gitcreds/man/gitcreds_get.html">gitcreds::gitcreds_set()</a></code>.</p>
 <p>You will be prompted to paste the PAT into the console:</p>
-<div class="inline-figure"><img src="images/paste_pat.png" width="519" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/paste_pat.png" style="display: block; margin: auto;"></div>
 <p>Paste the PAT at the end of the line <code>Enter password or token:</code> and press enter.</p>
 <ul>
 <li>In the console, run:</li>
 </ul>
 <p><code><a href="https://usethis.r-lib.org/reference/git_sitrep.html">usethis::git_sitrep()</a></code></p>
 <p>This command should return your GitHub account information (see example below).</p>
-<div class="inline-figure"><img src="images/gitsitrep.png" width="648" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/gitsitrep.png" style="display: block; margin: auto;"></div>
 <p>For more information on PATs, check out <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub’s PAT information page</a>.</p>
 
 </div>
