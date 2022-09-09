@@ -9,3 +9,5 @@ Inventory of software and equipment used and references
 - LASER RANGEFINDER: Hilti PD-42 laser rangefinder (Hilti Corporation, Schaan, Liechtenstein)
 
 - TABLETS: Samsung Galaxy Tab Active 2 tablet (Samsung Group, Seoul, South Korea)
+
+- GPS: Trimble Juno 3

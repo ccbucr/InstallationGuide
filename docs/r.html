@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="2.1 Install R R is a programming language and environment used for statistical computing and grahics. For more information, please visit What is R. To install R, visit cloud.r-project.org to...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -102,7 +102,7 @@
 <p>If you already have R installed, you may want to update the version of R you are using. Usually this occurs with a major version upgrades versus minor updates.</p>
 <p><strong>Please be aware that when you update R, it means re-installing all of the packages you have previously installed.</strong> It is worth updating R when major updates are released, especially if new packages you are attempting to install are not compatible with the version of R currently installed.</p>
 <p>In order to update R, you have to find your installed version of R and run it on its own, outside of RStudio. This is easy if you have an R desktop shortcut, but not too hard if you hunt around a bit in your Applications folder.</p>
-<div class="inline-figure"><img src="images/rupdate.png" title="Caution message: Do not just upgrade R to a new minor (or major) version in the middle of a project. This will take a bit of work and time, maybe an hour if you have a lot of packages installed, as this will require re-installing packages to a new library folder." alt="Caution message: Do not just upgrade R to a new minor (or major) version in the middle of a project. This will take a bit of work and time, maybe an hour if you have a lot of packages installed, as this will require re-installing packages to a new library folder." style="display: block; margin: auto auto auto 0;"></div>
+<div class="inline-figure"><img src="images/rupdate.png" alt="Caution message: Do not just upgrade R to a new minor (or major) version in the middle of a project. This will take a bit of work and time, maybe an hour if you have a lot of packages installed, as this will require re-installing packages to a new library folder." width="658" style="display: block; margin: auto auto auto 0;"></div>
 <p><em>Please see details below in Section 2.1.2 to save all R packages currently installed PRIOR to updating R, so you won’t have to reinstall them individually after the update</em></p>
 <p>Double click the R icon to start up R. It will open the R Console and a menu. Click on the R menu at top left, and select Check for R Updates. If you are up to date, the R Console will report “Your version of R is up to date”. If not, this process will provide windows and buttons to click to upgrade to the latest version of R. When done, quit R and start RStudio to make sure the update has carried over. You should see the new version number when RStudio starts.</p>
 </div>
@@ -111,7 +111,7 @@
 <span class="header-section-number">2.1.2</span> Bulk Save R Packages Prior to Updates<a class="anchor" aria-label="anchor" href="#bulk-save-r-packages-prior-to-updates"><i class="fas fa-link"></i></a>
 </h3>
 <p>In order to follow the bulk save R package instructions, you will need to have R Studio installed, and be familiar with the terminal and console panels.**</p>
-<div class="inline-figure"><img src="images/renv.png" title="Caution message: Before you jump into upgrading R versions and packages, make sure that any important projects are protected. Make sure that your important ongoing projects use the {renv} package to preserve their Environment, and that you have taken a recent snapshot with renv::snapshot()" alt="Caution message: Before you jump into upgrading R versions and packages, make sure that any important projects are protected. Make sure that your important ongoing projects use the {renv} package to preserve their Environment, and that you have taken a recent snapshot with renv::snapshot()" style="display: block; margin: auto auto auto 0;"></div>
+<div class="inline-figure"><img src="images/renv.png" alt="Caution message: Before you jump into upgrading R versions and packages, make sure that any important projects are protected. Make sure that your important ongoing projects use the {renv} package to preserve their Environment, and that you have taken a recent snapshot with renv::snapshot()" width="647" style="display: block; margin: auto auto auto 0;"></div>
 <p>Before updating R, check out where your current package library is saved by entering <code><a href="https://rdrr.io/r/base/libPaths.html">.libPaths()</a></code> in the console of RStudio. This should look something like: <code>[1] "/Library/Frameworks/R.framework/Versions/4.2/Resources/library"</code></p>
 <p>Note that this package library is specific to the most recent major and minor version of R. If you upgrade from 4.1.x to 4.2.x, you will have a new library path to a new 4.2 folder, and will need to re-install packages in this folder.</p>
 <p>You can do this from scratch, and install packages individually as needed (which is not a bad way to clean out packages you are not using), but you may prefer to re-install all packages in an organized way, rather than when you need to use one</p>
@@ -186,7 +186,7 @@
 <li><p><strong>Update:</strong> If you already have RStudio and need to update: Open RStudio, and under ‘Help’ in the top menu, choose ‘Check for updates.’ If you have the most recent release, it will return ‘No update available. You are running the most recent version of RStudio.’ Otherwise, you should follow the instructions to install an updated version.</p></li>
 </ul>
 <p>Open RStudio (logo you’ll click on shown below). <strong>If you are prompted to install Command Line Tools, do it.</strong></p>
-<div class="inline-figure"><img src="images/rstudio.png" title="Image of R Studio logo, which is a white captial R encased in a light blue circle." alt="Image of R Studio logo, which is a white captial R encased in a light blue circle." style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/rstudio.png" alt="Image of R Studio logo, which is a white captial R encased in a light blue circle." width="179" style="display: block; margin: auto;"></div>
 <p><strong>Mac Users</strong></p>
 <p>There may be a need to install command line tools and <a href="https://www.xquartz.org/">XQuartz</a>:</p>
 <ul>
@@ -279,7 +279,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-08.</p>
+    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-09.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
