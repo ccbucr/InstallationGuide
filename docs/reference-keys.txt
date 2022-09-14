@@ -38,6 +38,9 @@ slack-resources
 esri
 esri-arcgis
 install-esri-arcgis-software
+esri-arcgis-online
+esri-arcgis-pro
+archived-ucr-esri-arcgis-desktop-and-pro-installation-instructions
 esri-resources
 organization
 file-naming
