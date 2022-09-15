@@ -11,3 +11,10 @@ Inventory of software and equipment used and references
 - TABLETS: Samsung Galaxy Tab Active 2 tablet (Samsung Group, Seoul, South Korea)
 
 - GPS: Trimble Juno 3
+
+- Server: 
+  - NAS model -- Synology DS920+
+  - Storage -- HUS728T8TALE6L4 Ultrastar DC HC320 8TB (x2, one for backup)
+  - OS & Monitoring software -- Synology DSM (DiskStation Manager) 7.1-42661
+  
+  

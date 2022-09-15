@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  14 SEP 2022 17:05
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  15 SEP 2022 13:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1026,31 +1026,47 @@ File: images/gitsitrep.png Graphic file (type bmp)
 ]
 Chapter 5.
 [29]
-File: images/trello.png Graphic file (type bmp)
-<images/trello.png>
-File: images/zoteroinstall.png Graphic file (type bmp)
-<images/zoteroinstall.png>
-File: images/zoteroextension.png Graphic file (type bmp)
-<images/zoteroextension.png>
+File: images/nas_map.png Graphic file (type bmp)
+<images/nas_map.png>
+File: images/nas_path.png Graphic file (type bmp)
+<images/nas_path.png>
 
-Underfull \vbox (badness 1515) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [30]
-File: images/zoterosyncing.png Graphic file (type bmp)
-<images/zoterosyncing.png>
+File: images/nas_map10.png Graphic file (type bmp)
+<images/nas_map10.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [31]
+File: images/nas_mac.png Graphic file (type bmp)
+<images/nas_mac.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[32]
+File: images/slack.png Graphic file (type bmp)
+<images/slack.png>
+
+Underfull \vbox (badness 2229) has occurred while \output is active []
+
+[33] [34]
+File: images/trello.png Graphic file (type bmp)
+<images/trello.png>
+[35]
 File: images/zoomdownload.png Graphic file (type bmp)
 <images/zoomdownload.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[32]
+[36]
 File: images/zoomsso.png Graphic file (type bmp)
 <images/zoomsso.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[33]
+[37]
 File: images/zoomdomain.png Graphic file (type bmp)
 <images/zoomdomain.png>
 File: images/zoomcred.png Graphic file (type bmp)
@@ -1058,70 +1074,78 @@ File: images/zoomcred.png Graphic file (type bmp)
 
 Underfull \vbox (badness 7869) has occurred while \output is active []
 
-[34]
+[38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[35]
-File: images/slack.png Graphic file (type bmp)
-<images/slack.png>
-[36] [37] [38]
+[39]
+File: images/zoteroinstall.png Graphic file (type bmp)
+<images/zoteroinstall.png>
+File: images/zoteroextension.png Graphic file (type bmp)
+<images/zoteroextension.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[40]
+File: images/zoterosyncing.png Graphic file (type bmp)
+<images/zoterosyncing.png>
+[41] [42]
 Chapter 6.
-[39
+[43
 
 ]
 File: images/esri_arcgisonline.png Graphic file (type bmp)
 <images/esri_arcgisonline.png>
 File: images/esri_ucrenterprise.png Graphic file (type bmp)
 <images/esri_ucrenterprise.png>
-[40]
+[44]
 File: images/esri_ucrid.png Graphic file (type bmp)
 <images/esri_ucrid.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[41]
+[45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[42]
+[46]
 File: images/esri_signin.png Graphic file (type bmp)
 <images/esri_signin.png>
 File: images/esri_pro.png Graphic file (type bmp)
 <images/esri_pro.png>
-[43]
+[47]
 File: images/ServiceLink.png Graphic file (type bmp)
 <images/ServiceLink.png>
 File: images/softwarerequest.png Graphic file (type bmp)
 <images/softwarerequest.png>
 File: images/requestsubmit.png Graphic file (type bmp)
 <images/requestsubmit.png>
-[44] [45] [46
+[48] [49] [50
 
 ]
 Chapter 7.
 
-Overfull \hbox (36.09503pt too wide) in paragraph at lines 1218--1220
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 1365--1367
 []\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
 me_rev20230131.doc). 
  []
 
-[47]
-Overfull \hbox (114.12698pt too wide) in paragraph at lines 1233--1234
+[51]
+Overfull \hbox (114.12698pt too wide) in paragraph at lines 1380--1381
 []\TU/lmr/m/n/10 Examples: \TU/lmr/m/it/10 CVStormwaterVAP20170217.csv\TU/lmr/m
 /n/10 , \TU/lmr/m/it/10 CVMC_CRCA01_Proposal_LCS_20221231.doc\TU/lmr/m/n/10 ; 
  []
 
-[48]
+[52]
 Chapter 8.
-[49
+[53
 
-] [50
+] [54
 
 ]
 Chapter 9.
-[51]
+[55]
 File: images/concur1.png Graphic file (type bmp)
 <images/concur1.png>
-[52]
+[56]
 File: images/concur2a.jpg Graphic file (type bmp)
 <images/concur2a.jpg>
 File: images/concur3.png Graphic file (type bmp)
@@ -1131,30 +1155,30 @@ File: images/concur4.png Graphic file (type bmp)
 
 Underfull \vbox (badness 2126) has occurred while \output is active []
 
-[53]
+[57]
 File: images/concur5.png Graphic file (type bmp)
 <images/concur5.png>
 File: images/concur6.png Graphic file (type bmp)
 <images/concur6.png>
-[54] [55] [56
+[58] [59] [60
 
 ]
 Chapter 10.
 
-Underfull \hbox (badness 1735) in paragraph at lines 1354--1354
+Underfull \hbox (badness 1735) in paragraph at lines 1513--1513
 []\TU/lmr/bx/n/14.4 We are committed to prioritizing and
  []
 
-[57]
+[61]
 Underfull \vbox (badness 2443) has occurred while \output is active []
 
-[58]
+[62]
 Overfull \hbox (92.14124pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 10.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AN
-D TIRING. \TU/lmr/m/n/10 59
+D TIRING. \TU/lmr/m/n/10 63
  []
 
-[59] (./bookdown-demo.bbl [60]) [61
+[63] (./bookdown-demo.bbl [64]) [65
 
 ] (./bookdown-demo.aux)
 
@@ -1162,12 +1186,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20213 strings out of 476919
- 354381 string characters out of 5821840
- 842320 words of memory out of 5000000
- 39814 multiletter control sequences out of 15000+600000
+ 20259 strings out of 476919
+ 355224 string characters out of 5821840
+ 842362 words of memory out of 5000000
+ 39856 multiletter control sequences out of 15000+600000
  410027 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,1032b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (61 pages).
+Output written on bookdown-demo.pdf (65 pages).

@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Research Unit Resource Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Fellow}
-\date{2022-09-14}
+\date{2022-09-15}
 
 \begin{document}
 \maketitle
@@ -815,6 +815,153 @@ UC Riverside provides free access to a Virtual Private Network (VPN), GlobalProt
 
 To install and use the GlobalProtect VPN, navigate to the UCR ServiceLink \href{https://ucrsupport.service-now.com/ucr_portal/?id=kb_article\&sys_id=8a264d791b5f0c149c0b844fdd4bcb34}{GlobalProtect Connection Installation Instructions}.
 
+\hypertarget{ccb-nas-server}{%
+\section{CCB NAS Server}\label{ccb-nas-server}}
+
+The Center for Conservation Biology has a NAS Server, which serves as the primary data storage location to access data and reference files. CCB staff should ensure that all work and research related files are saved on the NAS. Reference \textbf{Chapter} \ref{organization} for proper directory organization and file naming.
+
+Network-attached storage (NAS) is dedicated file storage that enables multiple users to retrieve data from centralized disk capacity. The purpose of NAS is to enable users to collaborate and share data more effectively. It is especially useful to teams that need remote access. NAS connects to a wireless router, making it easy for remote workers to access files from any device with a network connection.
+
+The CCB NAS server model is Synology DS920+. For more information on the unit, see \textbf{Chapter} \ref{equipment}.
+
+In order to access the CCB NAS, there just a few steps:
+
+\begin{itemize}
+\item
+  \textbf{Step 01:} Request the creation of a NAS user account through the designated CCB staff member. You will need to provide your preferred \textbf{username} (typically similar to UCR ID) and a \textbf{passcode}. The passcode must be a strong code: a unique code with 12 - 15 characters consisting of a mix of letters, numbers, symbols, and does not contain personal information.
+\item
+  \textbf{Step 02:} Once a user account has been created, log onto the UCR VPN (\emph{see above section}).
+\item
+  \textbf{Step 03:} Map the server onto your local computer:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    For PCs running Windows 11:
+
+    \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+    \tightlist
+    \item
+      Open File Explorer on Windows 11.
+    \item
+      Click on \texttt{This\ PC} from the left pane.
+    \item
+      Click the \texttt{See\ More} (three-dotted) button in the command bar and select the ``Map network drive'' option.
+    \end{enumerate}
+  \end{itemize}
+\end{itemize}
+
+\begin{flushleft}\includegraphics{images/nas_map} \end{flushleft}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Use the \texttt{Drive} drop-down menu and choose a letter to assign the drive.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{4}
+  \tightlist
+  \item
+    In the \texttt{Folder} field, enter the network path to the shared folder, \texttt{\textbackslash{}\textbackslash{}CCBNAS.dyn.ucr.edu\textbackslash{}pdo}. (Or click the Browse button to browse the folder to map as a network drive, and click the OK button.)
+  \end{enumerate}
+\end{enumerate}
+
+\begin{flushleft}\includegraphics{images/nas_path} \end{flushleft}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Check the \texttt{Reconnect\ at\ sign-in} option to make the connection permanent.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{6}
+  \tightlist
+  \item
+    Check the Connect using different credentials option if the credentials are different from the account you are already using.
+  \item
+    Click the Finish button.
+  \item
+    Confirm the network account credentials (if applicable) to map the network drive to Windows 11.
+  \item
+    Click the OK button.
+  \end{enumerate}
+\end{enumerate}
+
+Once you complete the steps, the network drive will become available in File Explorer.
+
+If you run into issues, first read over this \href{https://www.robertwent.com/blog/mapping-a-synology-nas-drive-in-windows-11/}{blog post for a common linkage issue}.
+
+\begin{itemize}
+\tightlist
+\item
+  For PCs running Windows 10:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    On your Windows 10 PC, open Windows Explorer.
+  \item
+    Click on This Computer.
+  \item
+    Click on Map network drive.
+  \end{enumerate}
+\end{itemize}
+
+\begin{flushleft}\includegraphics{images/nas_map10} \end{flushleft}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Select a drive letter from the drop-down menu.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \setcounter{enumii}{4}
+  \tightlist
+  \item
+    Enter \texttt{\textbackslash{}\textbackslash{}CCBNAS.dyn.ucr.edu\textbackslash{}pdo} into the folder field.
+  \item
+    Click Finish.
+  \item
+    Enter your Synology NAS username and password in the Windows credentials pop-up prompt.
+  \end{enumerate}
+\end{enumerate}
+
+The mapped network drive will now appear within Windows Explorer as local storage, allowing you to quickly transfer files.
+
+\begin{itemize}
+\tightlist
+\item
+  For Macs:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Open the Finder app.
+  \item
+    Click \texttt{Go} on top bar and select \texttt{Connect\ to\ Server}.
+  \item
+    Type in the CCB NAS IP: \texttt{smb://CCBNAS.dyn.ucr.edu/pdo}
+  \item
+    Enter \texttt{User\ Name} and \texttt{Passcode}.
+  \end{enumerate}
+\end{itemize}
+
+There should be a connection set to the CCB NAS at the folder level.
+
+\begin{flushleft}\includegraphics{images/nas_mac} \end{flushleft}
+
 \hypertarget{google-apps}{%
 \section{Google Apps}\label{google-apps}}
 
@@ -833,96 +980,6 @@ UCR provides free access to Microsoft Office 365 Pro Plus for faculty, staff, an
 \href{https://ucrsupport.service-now.com/ucr_portal/?id=kb_article\&sys_id=0868da980f602f0086b7c7dce1050ee0}{UC Riverside Microsoft 360 information page}.
 
 Microsoft 360 training resources can be found \href{https://support.microsoft.com/en-us/training}{here}.
-
-\hypertarget{trello}{%
-\section{Trello}\label{trello}}
-
-\begin{flushleft}\includegraphics{images/trello} \end{flushleft}
-
-\href{https://trello.com/en}{Trello} is a project management app tool that provides teams the opportunity to create task lists, reference \& resource lists, and communicate via tagging! To connect with CCB's Trello Workspace, send a request to CCB's PI. The main board is \textbf{CCB Team Projects}.
-
-\hypertarget{zotero}{%
-\section{Zotero}\label{zotero}}
-
-The Center for Conservation Biology shares research references through Zotero software. Zotero is a citation management tool and allows groups to collect and share references easily. The Zotero browser extension makes it easy to copy citations from webpages.
-
-To install Zotero and the extension, please follow UC Riverside's installation instructions \href{https://guides.lib.ucr.edu/c.php?g=171064}{here}. \emph{Note}: These instructions are for a \textbf{Windows} machine, but it is a similar process for Macs.
-
-\begin{center}\includegraphics{images/zoteroinstall} \end{center}
-
-\begin{center}\includegraphics{images/zoteroextension} \end{center}
-
-The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the \href{https://www.zotero.org/groups/4734848/ccbucr}{CCB Zotero Reference Group}. Make sure to use your using the UCR email address when setting up the Zotero account.
-
-\begin{center}\includegraphics{images/zoterosyncing} \end{center}
-
-To connect to the CCB Zotero Reference Group, navigate to \href{https://www.zotero.org/groups/4734848/ccbucr}{this link}. If you do not have access to the Group page, please send a request that you be added to the CCB PI.
-
-For more information on how to use Zotero, check out these links:
-
-\begin{itemize}
-\tightlist
-\item
-  \href{https://guides.lib.ucr.edu/c.php?g=171064\&p=1126842}{UC Riverside Zotero Tips \& Tricks}
-\item
-  \href{https://www.zotero.org/support/quick_start_guide}{Zotero Quick Start Guide}
-\item
-  \href{https://www.zotero.org/support/groups}{Zotero Groups}
-\item
-  \href{https://www.youtube.com/watch?v=zuuOYjE8m98}{RStudio Citations} - add BibTex citation format in Zotero then quickly use .bib files in R to create references in markdown.
-\end{itemize}
-
-\hypertarget{zoom}{%
-\section{Zoom}\label{zoom}}
-
-Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based team meeting regularly. UC Riverside provides all faculty, staff, and students a free premium account. In order to utilize this service, download the application and sign in via Single Sign-ON (SS0). For the most current installation and log in information, visit UC Riverside's \href{https://its.ucr.edu/blog/2019/12/17/changes-ucr-zoom-account-access}{Information Technology Systems Zoom account page}.
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Step 1}: Download the Zoom application via \href{https://ucr.zoom.us/}{UC Riverside's Zoom service page} - just select the \textbf{Download} button!
-\end{itemize}
-
-\begin{center}\includegraphics{images/zoomdownload} \end{center}
-
-\begin{itemize}
-\item
-  \textbf{Step 2}: Once the application is downloading, Zoom will automatically open. You will be prompted to either \emph{Join a Meeting} or \emph{Sign In}. Select \emph{Sign In} and set up your UCR Zoom account using your NetId information.
-\item
-  \textbf{Step 3}: Click the \emph{Sign In with SSO} button, then enter \texttt{ucr} in the \emph{company domain} section.
-\end{itemize}
-
-\begin{center}\includegraphics{images/zoomsso} \end{center}
-
-\begin{center}\includegraphics{images/zoomdomain} \end{center}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Step 4}: You will then be prompted to sign in, this time using your UCR NetId. The program may open up an authentication window requesting your UCR NetId as shown below:
-\end{itemize}
-
-\begin{center}\includegraphics{images/zoomcred} \end{center}
-
-\begin{itemize}
-\tightlist
-\item
-  \textbf{Step 5}: Personalize your Zoom account! You can add your name, pronouns, and an image to your profile, create a \emph{personal Zoom room} to utilize as a default meeting space, and set settings like \emph{mute all participants when they join a meeting} or turn off settings such as \emph{start meetings with participant video on. Participants can change this during the meeting.}
-\end{itemize}
-
-Happy Zooming!
-
-\textbf{Zoom Resources:}
-
-\begin{itemize}
-\tightlist
-\item
-  \href{https://support.zoom.us/hc/en-us}{Zoom Help Desk}
-\item
-  \href{https://livetraining.zoom.us/rec/play/6Zx8f-j7qDw3GNeQswSDAPJ-W9S4J6qshiYfqfcNyk20WyIHNFChb7pHZuClKrDVR76R1BxgtMF4txaS?continueMode=true}{Zoom meetings trainings}
-\item
-  \href{https://ucr.zoom.us/}{UC Riverside Zoom Services}
-\end{itemize}
 
 \hypertarget{slack}{%
 \section{Slack}\label{slack}}
@@ -1054,6 +1111,96 @@ Up to 10 Slack apps are available for free Slack accounts, and unlimited apps ar
   \href{https://www.rfordatasci.com}{R4DS Online Learning Community}
 \item
   \href{https://www.sortee.org}{Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology (SORTEE)}
+\end{itemize}
+
+\hypertarget{trello}{%
+\section{Trello}\label{trello}}
+
+\begin{flushleft}\includegraphics{images/trello} \end{flushleft}
+
+\href{https://trello.com/en}{Trello} is a project management app tool that provides teams the opportunity to create task lists, reference \& resource lists, and communicate via tagging! To connect with CCB's Trello Workspace, send a request to CCB's PI. The main board is \textbf{CCB Team Projects}.
+
+\hypertarget{zoom}{%
+\section{Zoom}\label{zoom}}
+
+Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based team meeting regularly. UC Riverside provides all faculty, staff, and students a free premium account. In order to utilize this service, download the application and sign in via Single Sign-ON (SS0). For the most current installation and log in information, visit UC Riverside's \href{https://its.ucr.edu/blog/2019/12/17/changes-ucr-zoom-account-access}{Information Technology Systems Zoom account page}.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Step 1}: Download the Zoom application via \href{https://ucr.zoom.us/}{UC Riverside's Zoom service page} - just select the \textbf{Download} button!
+\end{itemize}
+
+\begin{center}\includegraphics{images/zoomdownload} \end{center}
+
+\begin{itemize}
+\item
+  \textbf{Step 2}: Once the application is downloading, Zoom will automatically open. You will be prompted to either \emph{Join a Meeting} or \emph{Sign In}. Select \emph{Sign In} and set up your UCR Zoom account using your NetId information.
+\item
+  \textbf{Step 3}: Click the \emph{Sign In with SSO} button, then enter \texttt{ucr} in the \emph{company domain} section.
+\end{itemize}
+
+\begin{center}\includegraphics{images/zoomsso} \end{center}
+
+\begin{center}\includegraphics{images/zoomdomain} \end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Step 4}: You will then be prompted to sign in, this time using your UCR NetId. The program may open up an authentication window requesting your UCR NetId as shown below:
+\end{itemize}
+
+\begin{center}\includegraphics{images/zoomcred} \end{center}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Step 5}: Personalize your Zoom account! You can add your name, pronouns, and an image to your profile, create a \emph{personal Zoom room} to utilize as a default meeting space, and set settings like \emph{mute all participants when they join a meeting} or turn off settings such as \emph{start meetings with participant video on. Participants can change this during the meeting.}
+\end{itemize}
+
+Happy Zooming!
+
+\textbf{Zoom Resources:}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://support.zoom.us/hc/en-us}{Zoom Help Desk}
+\item
+  \href{https://livetraining.zoom.us/rec/play/6Zx8f-j7qDw3GNeQswSDAPJ-W9S4J6qshiYfqfcNyk20WyIHNFChb7pHZuClKrDVR76R1BxgtMF4txaS?continueMode=true}{Zoom meetings trainings}
+\item
+  \href{https://ucr.zoom.us/}{UC Riverside Zoom Services}
+\end{itemize}
+
+\hypertarget{zotero}{%
+\section{Zotero}\label{zotero}}
+
+The Center for Conservation Biology shares research references through Zotero software. Zotero is a citation management tool and allows groups to collect and share references easily. The Zotero browser extension makes it easy to copy citations from webpages.
+
+To install Zotero and the extension, please follow UC Riverside's installation instructions \href{https://guides.lib.ucr.edu/c.php?g=171064}{here}. \emph{Note}: These instructions are for a \textbf{Windows} machine, but it is a similar process for Macs.
+
+\begin{center}\includegraphics{images/zoteroinstall} \end{center}
+
+\begin{center}\includegraphics{images/zoteroextension} \end{center}
+
+The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the \href{https://www.zotero.org/groups/4734848/ccbucr}{CCB Zotero Reference Group}. Make sure to use your using the UCR email address when setting up the Zotero account.
+
+\begin{center}\includegraphics{images/zoterosyncing} \end{center}
+
+To connect to the CCB Zotero Reference Group, navigate to \href{https://www.zotero.org/groups/4734848/ccbucr}{this link}. If you do not have access to the Group page, please send a request that you be added to the CCB PI.
+
+For more information on how to use Zotero, check out these links:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://guides.lib.ucr.edu/c.php?g=171064\&p=1126842}{UC Riverside Zotero Tips \& Tricks}
+\item
+  \href{https://www.zotero.org/support/quick_start_guide}{Zotero Quick Start Guide}
+\item
+  \href{https://www.zotero.org/support/groups}{Zotero Groups}
+\item
+  \href{https://www.youtube.com/watch?v=zuuOYjE8m98}{RStudio Citations} - add BibTex citation format in Zotero then quickly use .bib files in R to create references in markdown.
 \end{itemize}
 
 \hypertarget{esri}{%
@@ -1254,6 +1401,18 @@ Inventory of software and equipment used and references
   TABLETS: Samsung Galaxy Tab Active 2 tablet (Samsung Group, Seoul, South Korea)
 \item
   GPS: Trimble Juno 3
+\item
+  Server:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    NAS model -- Synology DS920+
+  \item
+    Storage -- HUS728T8TALE6L4 Ultrastar DC HC320 8TB (x2, one for backup)
+  \item
+    OS \& Monitoring software -- Synology DSM (DiskStation Manager) 7.1-42661
+  \end{itemize}
 \end{itemize}
 
 \hypertarget{concur}{%

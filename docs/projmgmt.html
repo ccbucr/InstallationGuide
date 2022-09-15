@@ -96,93 +96,99 @@
 <p>UC Riverside provides free access to a Virtual Private Network (VPN), GlobalProtect, that allows you to access the CCB NAS Server or campus resources (ex: library services) when working remotely.</p>
 <p>To install and use the GlobalProtect VPN, navigate to the UCR ServiceLink <a href="https://ucrsupport.service-now.com/ucr_portal/?id=kb_article&amp;sys_id=8a264d791b5f0c149c0b844fdd4bcb34">GlobalProtect Connection Installation Instructions</a>.</p>
 </div>
-<div id="google-apps" class="section level2" number="5.2">
+<div id="ccb-nas-server" class="section level2" number="5.2">
 <h2>
-<span class="header-section-number">5.2</span> Google Apps<a class="anchor" aria-label="anchor" href="#google-apps"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.2</span> CCB NAS Server<a class="anchor" aria-label="anchor" href="#ccb-nas-server"><i class="fas fa-link"></i></a>
+</h2>
+<p>The Center for Conservation Biology has a NAS Server, which serves as the primary data storage location to access data and reference files. CCB staff should ensure that all work and research related files are saved on the NAS. Reference <strong>Chapter</strong> <a href="organization.html#organization">7</a> for proper directory organization and file naming.</p>
+<p>Network-attached storage (NAS) is dedicated file storage that enables multiple users to retrieve data from centralized disk capacity. The purpose of NAS is to enable users to collaborate and share data more effectively. It is especially useful to teams that need remote access. NAS connects to a wireless router, making it easy for remote workers to access files from any device with a network connection.</p>
+<p>The CCB NAS server model is Synology DS920+. For more information on the unit, see <strong>Chapter</strong> <a href="equipment.html#equipment">8</a>.</p>
+<p>In order to access the CCB NAS, there just a few steps:</p>
+<ul>
+<li><p><strong>Step 01:</strong> Request the creation of a NAS user account through the designated CCB staff member. You will need to provide your preferred <strong>username</strong> (typically similar to UCR ID) and a <strong>passcode</strong>. The passcode must be a strong code: a unique code with 12 - 15 characters consisting of a mix of letters, numbers, symbols, and does not contain personal information.</p></li>
+<li><p><strong>Step 02:</strong> Once a user account has been created, log onto the UCR VPN (<em>see above section</em>).</p></li>
+<li>
+<p><strong>Step 03:</strong> Map the server onto your local computer:</p>
+<ul>
+<li>For PCs running Windows 11:
+<ol style="list-style-type: decimal">
+<li>Open File Explorer on Windows 11.</li>
+<li>Click on <code>This PC</code> from the left pane.</li>
+<li>Click the <code>See More</code> (three-dotted) button in the command bar and select the “Map network drive” option.
+<img src="images/nas_map.png" alt="Screen shot of PC file path to map network drive." style="display: block; margin: auto auto auto 0;">
+</li>
+<li>Use the <code>Drive</code> drop-down menu and choose a letter to assign the drive.</li>
+<li>In the <code>Folder</code> field, enter the network path to the shared folder, <code>\\CCBNAS.dyn.ucr.edu\pdo</code>. (Or click the Browse button to browse the folder to map as a network drive, and click the OK button.)
+<img src="images/nas_path.png" style="display: block; margin: auto auto auto 0;">
+</li>
+<li>Check the <code>Reconnect at sign-in</code> option to make the connection permanent.</li>
+<li>Check the Connect using different credentials option if the credentials are different from the account you are already using.</li>
+<li>Click the Finish button.</li>
+<li>Confirm the network account credentials (if applicable) to map the network drive to Windows 11.</li>
+<li>Click the OK button.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>Once you complete the steps, the network drive will become available in File Explorer.</p>
+<p>If you run into issues, first read over this <a href="https://www.robertwent.com/blog/mapping-a-synology-nas-drive-in-windows-11/">blog post for a common linkage issue</a>.</p>
+<ul>
+<li>For PCs running Windows 10:
+<ol style="list-style-type: decimal">
+<li>On your Windows 10 PC, open Windows Explorer.</li>
+<li>Click on This Computer.</li>
+<li>Click on Map network drive.
+<img src="images/nas_map10.png" style="display: block; margin: auto auto auto 0;">
+</li>
+<li>Select a drive letter from the drop-down menu.</li>
+<li>Enter <code>\\CCBNAS.dyn.ucr.edu\pdo</code> into the folder field.</li>
+<li>Click Finish.</li>
+<li>Enter your Synology NAS username and password in the Windows credentials pop-up prompt.</li>
+</ol>
+</li>
+</ul>
+<p>The mapped network drive will now appear within Windows Explorer as local storage, allowing you to quickly transfer files.</p>
+<ul>
+<li>For Macs:
+<ol style="list-style-type: decimal">
+<li>Open the Finder app.</li>
+<li>Click <code>Go</code> on top bar and select <code>Connect to Server</code>.</li>
+<li>Type in the CCB NAS IP: <code>smb://CCBNAS.dyn.ucr.edu/pdo</code>
+</li>
+<li>Enter <code>User Name</code> and <code>Passcode</code>.</li>
+</ol>
+</li>
+</ul>
+<p>There should be a connection set to the CCB NAS at the folder level.</p>
+<div class="inline-figure"><img src="images/nas_mac.png" style="display: block; margin: auto auto auto 0;"></div>
+</div>
+<div id="google-apps" class="section level2" number="5.3">
+<h2>
+<span class="header-section-number">5.3</span> Google Apps<a class="anchor" aria-label="anchor" href="#google-apps"><i class="fas fa-link"></i></a>
 </h2>
 <p>The CCB team utilizes a number of Google applications for project management, data &amp; file sharing, and communicating with colleagues.</p>
 <p><strong>Google Calendar:</strong> There is a lab Google calendar, <em>UCR CCB Palm Desert</em>. This calendar maintains lab mates work and leave schedules as well as any team meetings. Please make sure this calendar is shared with you once you have obtained your UCR NetId.</p>
 <p><strong>Google Drive:</strong> CCB utilizes <em>Shared Drive</em> folders as a file sharing application. You must request access to the shared drive folder from the lab P.I.</p>
 <p><strong>Google Sites:</strong> There is a <a href="https://sites.google.com/ucr.edu/ccbucr/home">CCB Google Site</a> that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future.</p>
 </div>
-<div id="microsoft-360-suite" class="section level2" number="5.3">
+<div id="microsoft-360-suite" class="section level2" number="5.4">
 <h2>
-<span class="header-section-number">5.3</span> Microsoft 360 Suite<a class="anchor" aria-label="anchor" href="#microsoft-360-suite"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.4</span> Microsoft 360 Suite<a class="anchor" aria-label="anchor" href="#microsoft-360-suite"><i class="fas fa-link"></i></a>
 </h2>
 <p>UCR provides free access to Microsoft Office 365 Pro Plus for faculty, staff, and students! Please note that the available applications differ between PC and Mac OS. To learn more about downloading Microsoft applications, please visit the
 <a href="https://ucrsupport.service-now.com/ucr_portal/?id=kb_article&amp;sys_id=0868da980f602f0086b7c7dce1050ee0">UC Riverside Microsoft 360 information page</a>.</p>
 <p>Microsoft 360 training resources can be found <a href="https://support.microsoft.com/en-us/training">here</a>.</p>
 </div>
-<div id="trello" class="section level2" number="5.4">
+<div id="slack" class="section level2" number="5.5">
 <h2>
-<span class="header-section-number">5.4</span> Trello<a class="anchor" aria-label="anchor" href="#trello"><i class="fas fa-link"></i></a>
-</h2>
-<div class="inline-figure"><img src="images/trello.png" alt="Image of Trello logo, blue 3 bold blue lines and trello in black font." style="display: block; margin: auto auto auto 0;"></div>
-<p><a href="https://trello.com/en">Trello</a> is a project management app tool that provides teams the opportunity to create task lists, reference &amp; resource lists, and communicate via tagging! To connect with CCB’s Trello Workspace, send a request to CCB’s PI. The main board is <strong>CCB Team Projects</strong>.</p>
-</div>
-<div id="zotero" class="section level2" number="5.5">
-<h2>
-<span class="header-section-number">5.5</span> Zotero<a class="anchor" aria-label="anchor" href="#zotero"><i class="fas fa-link"></i></a>
-</h2>
-<p>The Center for Conservation Biology shares research references through Zotero software. Zotero is a citation management tool and allows groups to collect and share references easily. The Zotero browser extension makes it easy to copy citations from webpages.</p>
-<p>To install Zotero and the extension, please follow UC Riverside’s installation instructions <a href="https://guides.lib.ucr.edu/c.php?g=171064">here</a>. <em>Note</em>: These instructions are for a <strong>Windows</strong> machine, but it is a similar process for Macs.</p>
-<div class="inline-figure"><img src="images/zoteroinstall.png" style="display: block; margin: auto;"></div>
-<div class="inline-figure"><img src="images/zoteroextension.png" style="display: block; margin: auto;"></div>
-<p>The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the <a href="https://www.zotero.org/groups/4734848/ccbucr">CCB Zotero Reference Group</a>. Make sure to use your using the UCR email address when setting up the Zotero account.</p>
-<div class="inline-figure"><img src="images/zoterosyncing.png" style="display: block; margin: auto;"></div>
-<p>To connect to the CCB Zotero Reference Group, navigate to <a href="https://www.zotero.org/groups/4734848/ccbucr">this link</a>. If you do not have access to the Group page, please send a request that you be added to the CCB PI.</p>
-<p>For more information on how to use Zotero, check out these links:</p>
-<ul>
-<li><a href="https://guides.lib.ucr.edu/c.php?g=171064&amp;p=1126842">UC Riverside Zotero Tips &amp; Tricks</a></li>
-<li><a href="https://www.zotero.org/support/quick_start_guide">Zotero Quick Start Guide</a></li>
-<li><a href="https://www.zotero.org/support/groups">Zotero Groups</a></li>
-<li>
-<a href="https://www.youtube.com/watch?v=zuuOYjE8m98">RStudio Citations</a> - add BibTex citation format in Zotero then quickly use .bib files in R to create references in markdown.</li>
-</ul>
-</div>
-<div id="zoom" class="section level2" number="5.6">
-<h2>
-<span class="header-section-number">5.6</span> Zoom<a class="anchor" aria-label="anchor" href="#zoom"><i class="fas fa-link"></i></a>
-</h2>
-<p>Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based team meeting regularly. UC Riverside provides all faculty, staff, and students a free premium account. In order to utilize this service, download the application and sign in via Single Sign-ON (SS0). For the most current installation and log in information, visit UC Riverside’s <a href="https://its.ucr.edu/blog/2019/12/17/changes-ucr-zoom-account-access">Information Technology Systems Zoom account page</a>.</p>
-<ul>
-<li>
-<strong>Step 1</strong>: Download the Zoom application via <a href="https://ucr.zoom.us/">UC Riverside’s Zoom service page</a> - just select the <strong>Download</strong> button!</li>
-</ul>
-<div class="inline-figure"><img src="images/zoomdownload.png" alt="Image of UC Riverside's Zoom Service page that has 4 buttons that prompts users to either Sign In, Sign In, Download, Join, Host." style="display: block; margin: auto;"></div>
-<ul>
-<li><p><strong>Step 2</strong>: Once the application is downloading, Zoom will automatically open. You will be prompted to either <em>Join a Meeting</em> or <em>Sign In</em>. Select <em>Sign In</em> and set up your UCR Zoom account using your NetId information.</p></li>
-<li><p><strong>Step 3</strong>: Click the <em>Sign In with SSO</em> button, then enter <code>ucr</code> in the <em>company domain</em> section.</p></li>
-</ul>
-<div class="inline-figure"><img src="images/zoomsso.png" alt="Image of Zoom Account Sign In prompt displaying 4 buttons: SSO, Apple, Google, Facebook" style="display: block; margin: auto;"></div>
-<div class="inline-figure"><img src="images/zoomdomain.png" style="display: block; margin: auto;"></div>
-<ul>
-<li>
-<strong>Step 4</strong>: You will then be prompted to sign in, this time using your UCR NetId. The program may open up an authentication window requesting your UCR NetId as shown below:</li>
-</ul>
-<div class="inline-figure"><img src="images/zoomcred.png" style="display: block; margin: auto;"></div>
-<ul>
-<li>
-<strong>Step 5</strong>: Personalize your Zoom account! You can add your name, pronouns, and an image to your profile, create a <em>personal Zoom room</em> to utilize as a default meeting space, and set settings like <em>mute all participants when they join a meeting</em> or turn off settings such as <em>start meetings with participant video on. Participants can change this during the meeting.</em>
-</li>
-</ul>
-<p>Happy Zooming!</p>
-<p><strong>Zoom Resources:</strong></p>
-<ul>
-<li><a href="https://support.zoom.us/hc/en-us">Zoom Help Desk</a></li>
-<li><a href="https://livetraining.zoom.us/rec/play/6Zx8f-j7qDw3GNeQswSDAPJ-W9S4J6qshiYfqfcNyk20WyIHNFChb7pHZuClKrDVR76R1BxgtMF4txaS?continueMode=true">Zoom meetings trainings</a></li>
-<li><a href="https://ucr.zoom.us/">UC Riverside Zoom Services</a></li>
-</ul>
-</div>
-<div id="slack" class="section level2" number="5.7">
-<h2>
-<span class="header-section-number">5.7</span> Slack<a class="anchor" aria-label="anchor" href="#slack"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.5</span> Slack<a class="anchor" aria-label="anchor" href="#slack"><i class="fas fa-link"></i></a>
 </h2>
 <div class="inline-figure"><img src="images/slack.png" alt="Image of Slack logo, light blue, bright green, red, and mustard yellow symbol with lower case slack spelled out in black font." style="display: block; margin: auto auto auto 0;"></div>
 <p>Slack is a messaging app that connects teams via channels and direct messages (DMs). To make the most of this team communication tool, you will need to download the application to your desktop, have the application open throughout the workday, and adjust the notification settings to your preferences to receive timely alerts.</p>
-<div id="download-the-slack-app" class="section level3" number="5.7.1">
+<div id="download-the-slack-app" class="section level3" number="5.5.1">
 <h3>
-<span class="header-section-number">5.7.1</span> Download the Slack app<a class="anchor" aria-label="anchor" href="#download-the-slack-app"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.5.1</span> Download the Slack app<a class="anchor" aria-label="anchor" href="#download-the-slack-app"><i class="fas fa-link"></i></a>
 </h3>
 <ul>
 <li>For Windows: download Slack <a href="https://slack.com/downloads/windows">here</a>.</li>
@@ -190,9 +196,9 @@
 <li>Consider adding the app to your Android or iOS device(s) for mobile communication with the CCB team!</li>
 </ul>
 </div>
-<div id="join-the-ccb_ucr-slack-workspace" class="section level3" number="5.7.2">
+<div id="join-the-ccb_ucr-slack-workspace" class="section level3" number="5.5.2">
 <h3>
-<span class="header-section-number">5.7.2</span> Join the CCB_UCR Slack Workspace<a class="anchor" aria-label="anchor" href="#join-the-ccb_ucr-slack-workspace"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.5.2</span> Join the CCB_UCR Slack Workspace<a class="anchor" aria-label="anchor" href="#join-the-ccb_ucr-slack-workspace"><i class="fas fa-link"></i></a>
 </h3>
 <p>Follow <a href="https://join.slack.com/t/ccbucr/shared_invite/zt-1dfpaguqs-F4CAPCI4ILMvT0JOcSpnag">this link</a> to join the CCB Slack workspace. Once you have joined, you will be automatically be added to several workspace channels:</p>
 <ul>
@@ -206,9 +212,9 @@
 <code>#random</code>: a channel to share random news, updates, ideas, jokes, etc.</li>
 </ul>
 </div>
-<div id="slack-resources" class="section level3" number="5.7.3">
+<div id="slack-resources" class="section level3" number="5.5.3">
 <h3>
-<span class="header-section-number">5.7.3</span> Slack Resources<a class="anchor" aria-label="anchor" href="#slack-resources"><i class="fas fa-link"></i></a>
+<span class="header-section-number">5.5.3</span> Slack Resources<a class="anchor" aria-label="anchor" href="#slack-resources"><i class="fas fa-link"></i></a>
 </h3>
 <p>The <a href="https://slack.com/help/articles/360059928654-How-to-use-Slack--your-quick-start-guide">Slack help center</a> has useful <em>how to</em> guides and <a href="https://slack.com/help/articles/360059976673-Slack-video-tutorials">tutorials</a> to facilitate working in Slack.</p>
 <p><strong>Slack Trainings</strong></p>
@@ -270,6 +276,67 @@ Launch a call in Slack with the /teams-calls slash command. Before joining, get 
 </ul>
 </div>
 </div>
+<div id="trello" class="section level2" number="5.6">
+<h2>
+<span class="header-section-number">5.6</span> Trello<a class="anchor" aria-label="anchor" href="#trello"><i class="fas fa-link"></i></a>
+</h2>
+<div class="inline-figure"><img src="images/trello.png" alt="Image of Trello logo, blue 3 bold blue lines and trello in black font." style="display: block; margin: auto auto auto 0;"></div>
+<p><a href="https://trello.com/en">Trello</a> is a project management app tool that provides teams the opportunity to create task lists, reference &amp; resource lists, and communicate via tagging! To connect with CCB’s Trello Workspace, send a request to CCB’s PI. The main board is <strong>CCB Team Projects</strong>.</p>
+</div>
+<div id="zoom" class="section level2" number="5.7">
+<h2>
+<span class="header-section-number">5.7</span> Zoom<a class="anchor" aria-label="anchor" href="#zoom"><i class="fas fa-link"></i></a>
+</h2>
+<p>Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based team meeting regularly. UC Riverside provides all faculty, staff, and students a free premium account. In order to utilize this service, download the application and sign in via Single Sign-ON (SS0). For the most current installation and log in information, visit UC Riverside’s <a href="https://its.ucr.edu/blog/2019/12/17/changes-ucr-zoom-account-access">Information Technology Systems Zoom account page</a>.</p>
+<ul>
+<li>
+<strong>Step 1</strong>: Download the Zoom application via <a href="https://ucr.zoom.us/">UC Riverside’s Zoom service page</a> - just select the <strong>Download</strong> button!</li>
+</ul>
+<div class="inline-figure"><img src="images/zoomdownload.png" alt="Image of UC Riverside's Zoom Service page that has 4 buttons that prompts users to either Sign In, Sign In, Download, Join, Host." style="display: block; margin: auto;"></div>
+<ul>
+<li><p><strong>Step 2</strong>: Once the application is downloading, Zoom will automatically open. You will be prompted to either <em>Join a Meeting</em> or <em>Sign In</em>. Select <em>Sign In</em> and set up your UCR Zoom account using your NetId information.</p></li>
+<li><p><strong>Step 3</strong>: Click the <em>Sign In with SSO</em> button, then enter <code>ucr</code> in the <em>company domain</em> section.</p></li>
+</ul>
+<div class="inline-figure"><img src="images/zoomsso.png" alt="Image of Zoom Account Sign In prompt displaying 4 buttons: SSO, Apple, Google, Facebook" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/zoomdomain.png" style="display: block; margin: auto;"></div>
+<ul>
+<li>
+<strong>Step 4</strong>: You will then be prompted to sign in, this time using your UCR NetId. The program may open up an authentication window requesting your UCR NetId as shown below:</li>
+</ul>
+<div class="inline-figure"><img src="images/zoomcred.png" style="display: block; margin: auto;"></div>
+<ul>
+<li>
+<strong>Step 5</strong>: Personalize your Zoom account! You can add your name, pronouns, and an image to your profile, create a <em>personal Zoom room</em> to utilize as a default meeting space, and set settings like <em>mute all participants when they join a meeting</em> or turn off settings such as <em>start meetings with participant video on. Participants can change this during the meeting.</em>
+</li>
+</ul>
+<p>Happy Zooming!</p>
+<p><strong>Zoom Resources:</strong></p>
+<ul>
+<li><a href="https://support.zoom.us/hc/en-us">Zoom Help Desk</a></li>
+<li><a href="https://livetraining.zoom.us/rec/play/6Zx8f-j7qDw3GNeQswSDAPJ-W9S4J6qshiYfqfcNyk20WyIHNFChb7pHZuClKrDVR76R1BxgtMF4txaS?continueMode=true">Zoom meetings trainings</a></li>
+<li><a href="https://ucr.zoom.us/">UC Riverside Zoom Services</a></li>
+</ul>
+</div>
+<div id="zotero" class="section level2" number="5.8">
+<h2>
+<span class="header-section-number">5.8</span> Zotero<a class="anchor" aria-label="anchor" href="#zotero"><i class="fas fa-link"></i></a>
+</h2>
+<p>The Center for Conservation Biology shares research references through Zotero software. Zotero is a citation management tool and allows groups to collect and share references easily. The Zotero browser extension makes it easy to copy citations from webpages.</p>
+<p>To install Zotero and the extension, please follow UC Riverside’s installation instructions <a href="https://guides.lib.ucr.edu/c.php?g=171064">here</a>. <em>Note</em>: These instructions are for a <strong>Windows</strong> machine, but it is a similar process for Macs.</p>
+<div class="inline-figure"><img src="images/zoteroinstall.png" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="images/zoteroextension.png" style="display: block; margin: auto;"></div>
+<p>The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the <a href="https://www.zotero.org/groups/4734848/ccbucr">CCB Zotero Reference Group</a>. Make sure to use your using the UCR email address when setting up the Zotero account.</p>
+<div class="inline-figure"><img src="images/zoterosyncing.png" style="display: block; margin: auto;"></div>
+<p>To connect to the CCB Zotero Reference Group, navigate to <a href="https://www.zotero.org/groups/4734848/ccbucr">this link</a>. If you do not have access to the Group page, please send a request that you be added to the CCB PI.</p>
+<p>For more information on how to use Zotero, check out these links:</p>
+<ul>
+<li><a href="https://guides.lib.ucr.edu/c.php?g=171064&amp;p=1126842">UC Riverside Zotero Tips &amp; Tricks</a></li>
+<li><a href="https://www.zotero.org/support/quick_start_guide">Zotero Quick Start Guide</a></li>
+<li><a href="https://www.zotero.org/support/groups">Zotero Groups</a></li>
+<li>
+<a href="https://www.youtube.com/watch?v=zuuOYjE8m98">RStudio Citations</a> - add BibTex citation format in Zotero then quickly use .bib files in R to create references in markdown.</li>
+</ul>
+</div>
 </div>
   <div class="chapter-nav">
 <div class="prev"><a href="git.html"><span class="header-section-number">4</span> Git Installation &amp; GitHub Account</a></div>
@@ -279,18 +346,19 @@ Launch a call in Slack with the /teams-calls slash command. Before joining, get 
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#projmgmt"><span class="header-section-number">5</span> Project Management Tools</a></li>
 <li><a class="nav-link" href="#ucr-vpn---globalprotect"><span class="header-section-number">5.1</span> UCR VPN - GlobalProtect</a></li>
-<li><a class="nav-link" href="#google-apps"><span class="header-section-number">5.2</span> Google Apps</a></li>
-<li><a class="nav-link" href="#microsoft-360-suite"><span class="header-section-number">5.3</span> Microsoft 360 Suite</a></li>
-<li><a class="nav-link" href="#trello"><span class="header-section-number">5.4</span> Trello</a></li>
-<li><a class="nav-link" href="#zotero"><span class="header-section-number">5.5</span> Zotero</a></li>
-<li><a class="nav-link" href="#zoom"><span class="header-section-number">5.6</span> Zoom</a></li>
+<li><a class="nav-link" href="#ccb-nas-server"><span class="header-section-number">5.2</span> CCB NAS Server</a></li>
+<li><a class="nav-link" href="#google-apps"><span class="header-section-number">5.3</span> Google Apps</a></li>
+<li><a class="nav-link" href="#microsoft-360-suite"><span class="header-section-number">5.4</span> Microsoft 360 Suite</a></li>
 <li>
-<a class="nav-link" href="#slack"><span class="header-section-number">5.7</span> Slack</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#download-the-slack-app"><span class="header-section-number">5.7.1</span> Download the Slack app</a></li>
-<li><a class="nav-link" href="#join-the-ccb_ucr-slack-workspace"><span class="header-section-number">5.7.2</span> Join the CCB_UCR Slack Workspace</a></li>
-<li><a class="nav-link" href="#slack-resources"><span class="header-section-number">5.7.3</span> Slack Resources</a></li>
+<a class="nav-link" href="#slack"><span class="header-section-number">5.5</span> Slack</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#download-the-slack-app"><span class="header-section-number">5.5.1</span> Download the Slack app</a></li>
+<li><a class="nav-link" href="#join-the-ccb_ucr-slack-workspace"><span class="header-section-number">5.5.2</span> Join the CCB_UCR Slack Workspace</a></li>
+<li><a class="nav-link" href="#slack-resources"><span class="header-section-number">5.5.3</span> Slack Resources</a></li>
 </ul>
 </li>
+<li><a class="nav-link" href="#trello"><span class="header-section-number">5.6</span> Trello</a></li>
+<li><a class="nav-link" href="#zoom"><span class="header-section-number">5.7</span> Zoom</a></li>
+<li><a class="nav-link" href="#zotero"><span class="header-section-number">5.8</span> Zotero</a></li>
 </ul>
 
       <div class="book-extra">
@@ -307,7 +375,7 @@ Launch a call in Slack with the /teams-calls slash command. Before joining, get 
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-14.</p>
+    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-15.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
