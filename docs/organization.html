@@ -7,14 +7,14 @@
 <title>Chapter 7 File Directory Organization | Center for Conservation Biology | UC Riverside</title>
 <meta name="author" content="Lynn Sweet | Principal Investigator, Assistant Research Ecologist">
 <meta name="author" content="Julia Parish | Data Science Fellow">
-<meta name="description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files (ex: DTLA_RA_20230131.csv); Avoid...">
+<meta name="description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files ex: 20230131_DTLA_RA.csv file name...">
 <meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Chapter 7 File Directory Organization | Center for Conservation Biology | UC Riverside">
 <meta property="og:type" content="book">
-<meta property="og:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files (ex: DTLA_RA_20230131.csv); Avoid...">
+<meta property="og:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files ex: 20230131_DTLA_RA.csv file name...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 7 File Directory Organization | Center for Conservation Biology | UC Riverside">
-<meta name="twitter:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files (ex: DTLA_RA_20230131.csv); Avoid...">
+<meta name="twitter:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files ex: 20230131_DTLA_RA.csv file name...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -95,23 +95,37 @@
 </h2>
 <p>When creating file names, best practices dictate that you should:</p>
 <ul>
-<li><p>Create meaningful but brief names;</p></li>
-<li><p>Use file names to classify types of files (ex: DTLA_RA_20230131.csv);</p></li>
-<li><p>Avoid using spaces, dots and special characters (&amp; or ? or !);</p></li>
-<li><p>Use capital letters to delimit words, not spaces or underscores for data files, <em>as much as possible</em> (ex: CVStormwaterVAP20170217.csv);</p></li>
+<li>Create meaningful but brief names;</li>
+<li>Use file names to classify types of files
+<ul>
+<li>ex: <code>20230131_DTLA_RA.csv</code> file name classifies this file as Rapid Assessment vegetation monitoring data from the Desert Tortoise Linkage Area and was created on Jan. 31, 2023;</li>
+</ul>
+</li>
+<li>Avoid using spaces, dots and special characters (ex: &amp; or ? or !);</li>
+<li>Use capital letters to delimit words, not spaces or underscores for data files, <em>as much as possible</em> (ex: 20170217_CVStormwaterVAP.csv);</li>
+</ul>
+<div class="figure" style="text-align: center">
+<span style="display:block;" id="fig:case"></span>
+<img src="images/case_horst.jpeg" alt="Types of font cases (L to R, clockwise): Screaming Snake Case, Camel Case, Upper Camel, Snake Case, Kebab Case. Art Credit: Dr. Allison Horst, UCSB"><p class="caption">
+Figure 7.1: Types of font cases (L to R, clockwise): Screaming Snake Case, Camel Case, Upper Camel, Snake Case, Kebab Case. Art Credit: Dr. Allison Horst, UCSB
+</p>
+</div>
+<ul>
 <li><p>Use hyphens (-) or underscores (_) to separate elements in a file name for documents;</p></li>
-<li><p>Always use the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> date format in file names: <strong>YYYYMMDD</strong>. For example, in the file name <em>DTLA_RA_20230131.csv</em> January 31, 2023 is represented as <strong>20230131</strong>;</p></li>
+<li><p>Always use the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> date format in file names: <strong>YYYYMMDD</strong>. For example, in the file name <em>20230131_DTLA_RA.csv</em> January 31, 2023 is represented as <strong>20230131</strong>;</p></li>
 <li><p>Preserve the 3-letter file extension for application-specific codes of file format (e.g. .doc, .xls, .mov, .tif);</p></li>
 <li><p>With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;</p></li>
 <li><p>Include versioning of file names where appropriate (ex: filename_rev20230131.doc).</p></li>
 <li>
 <p>Order the elements in a file name in the most appropriate way to retrieve the record. For example,</p>
 <ul>
+<li>file name with the date,</li>
 <li>the project name (or acronym) or project location should be first,</li>
 <li>then the type of data or file (either RA or Report),</li>
 <li>then version or author,</li>
-<li>end file name with the date,</li>
-<li>Examples: <em>CVStormwaterVAP20170217.csv</em>, <em>CVMC_CRCA01_Proposal_LCS_20221231.doc</em>;</li>
+<li>
+<strong>Examples:</strong> <code>20170217_CVStormwaterVAP.csv</code>, <code>20221231_CVMC_CRCA01_Proposal_LCS.doc</code>
+</li>
 </ul>
 </li>
 </ul>
@@ -154,7 +168,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-15.</p>
+    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-16.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -1,6 +1,6 @@
 # Bookdown Guide {#bookdown}
 
-This Resource Guide was created using the [`bookdown` package](https://github.com/rstudio/bookdown). `bookdown` provides a platform to publish references using various output formats (PDF, HTML, Word) and allows for interactivity, insertion of code chunks, and supports a variety of languages (R, Python, Julia, SQL, etc.). 
+This Resource Guide was created using the [`bookdown`](https://github.com/rstudio/bookdown) package. **bookdown** provides a platform to publish references using various output formats (PDF, HTML, Word) and allows for interactivity, insertion of code chunks, and supports a variety of languages (R, Python, Julia, SQL, etc.). 
 
 ## Primary Reference Resources
 
@@ -20,6 +20,28 @@ install.packages("bookdown")
 # devtools::install_github("rstudio/bookdown")
 ```
 
+### Additional packages
+
+You may need to install additional packages if you do not currently have them in order to render the Resource Guide bookdown:
+
+- `formatR`
+- `here`
+- `kableExtra`
+- `Rtools`
+- `shiny`
+- `tidyverse`
+
+
+### Install TinyTex
+
+TinyTeX is a custom LaTeX distribution. LaTeX, which is pronounced «Lah-tech» or «Lay-tech», is a document preparation system for high-quality typesetting. It is most often used for technical or scientific documents. To learn more about TinyTex, [navigate to this document](https://yihui.org/tinytex/), and to learn more about LaTex, [visit the LaTex Project site](https://www.latex-project.org/).
+
+
+To install TinyTex on your computer, navigate to the R Studio console panel, and type in the following command: 
+
+`tinytex::install_tinytex()`
+
+
 ## Render, Build & Publish the Resource Guide 
 
 When updates are made to the Resource Guide, it needs to be render, built, and then the updates published. 
@@ -29,7 +51,12 @@ In your Console, type either of these commands depending on which type of render
 `bookdown::render_book("index.Rmd", "bookdown::gitbook")`
 `bookdown::render_book("index.Rmd", "bookdown::pdf_book")`
 
-- *Note*: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+**Note:** If there is an error during rendering, Google what the error message means! You should be able to find an answer on [stack overflow](https://stackoverflow.com/) or other tech support site. One of the most common errors during rendering is that not all dependencies (aka packages) have been installed on your local computer. 
+
+```{r rendererror, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.cap="An common error message in the RStudio console: Error in library(here): there is no package called `here`. If you see this library error message, all you need to do is install the required package! The additional warning messages are notifications that R should be updated to be compatiable with the current packages. These will not hender the render."}
+
+knitr::include_graphics("images/bookdown_here.png")
+```
 
 Once you have rendered updates using the console commands above:
 
@@ -63,10 +90,12 @@ ________________________________________________________________________________
 
 You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
+### Referencing Bookdown Chapters
 Remember each Rmd file contains one and only one chapter, and **a chapter** is defined by the first-level heading `#`.
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+You can label chapter and section titles using `{#label}` after them, e.g., reference this Resource Guide Chapter \@ref(intro) by using the markdown format: `\@ref(insert chapter label name here)`. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
+### Formatting Figures
 Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 
 ```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
@@ -83,11 +112,11 @@ knitr::kable(
 )
 ```
 
-## Citations
+### Citations
 
 You can easily write citations using .bib files within this repository formatted using [BibTEX](http://www.bibtex.org/). For example, the **bookdown** package [@R-bookdown] in this reference book, which was built on top of R Markdown and **knitr** [@xie2015].
 
-## Alt Text for Accessibility
+### Alt Text for Accessibility
 
 [Use the knitr package to add alt text to graphics in R Markdown files](https://www.rstudio.com/blog/knitr-fig-alt/)
 

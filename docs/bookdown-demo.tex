@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Research Unit Resource Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Fellow}
-\date{2022-09-15}
+\date{2022-09-16}
 
 \begin{document}
 \maketitle
@@ -454,7 +454,7 @@ There are many resources out there to help you learn how to use R and the RStudi
 \hypertarget{bookdown}{%
 \chapter{Bookdown Guide}\label{bookdown}}
 
-This Resource Guide was created using the \href{https://github.com/rstudio/bookdown}{\texttt{bookdown} package}. \texttt{bookdown} provides a platform to publish references using various output formats (PDF, HTML, Word) and allows for interactivity, insertion of code chunks, and supports a variety of languages (R, Python, Julia, SQL, etc.).
+This Resource Guide was created using the \href{https://github.com/rstudio/bookdown}{\texttt{bookdown}} package. \textbf{bookdown} provides a platform to publish references using various output formats (PDF, HTML, Word) and allows for interactivity, insertion of code chunks, and supports a variety of languages (R, Python, Julia, SQL, etc.).
 
 \hypertarget{primary-reference-resources}{%
 \section{Primary Reference Resources}\label{primary-reference-resources}}
@@ -486,6 +486,36 @@ The first step to edit and add to this Resource Guide is to install the \textbf{
 \end{Highlighting}
 \end{Shaded}
 
+\hypertarget{additional-packages}{%
+\subsection{Additional packages}\label{additional-packages}}
+
+You may need to install additional packages if you do not currently have them in order to render the Resource Guide bookdown:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{formatR}
+\item
+  \texttt{here}
+\item
+  \texttt{kableExtra}
+\item
+  \texttt{Rtools}
+\item
+  \texttt{shiny}
+\item
+  \texttt{tidyverse}
+\end{itemize}
+
+\hypertarget{install-tinytex}{%
+\subsection{Install TinyTex}\label{install-tinytex}}
+
+TinyTeX is a custom LaTeX distribution. LaTeX, which is pronounced «Lah-tech» or «Lay-tech», is a document preparation system for high-quality typesetting. It is most often used for technical or scientific documents. To learn more about TinyTex, \href{https://yihui.org/tinytex/}{navigate to this document}, and to learn more about LaTex, \href{https://www.latex-project.org/}{visit the LaTex Project site}.
+
+To install TinyTex on your computer, navigate to the R Studio console panel, and type in the following command:
+
+\texttt{tinytex::install\_tinytex()}
+
 \hypertarget{render-build-publish-the-resource-guide}{%
 \section{Render, Build \& Publish the Resource Guide}\label{render-build-publish-the-resource-guide}}
 
@@ -496,11 +526,16 @@ In your Console, type either of these commands depending on which type of render
 \texttt{bookdown::render\_book("index.Rmd",\ "bookdown::gitbook")}
 \texttt{bookdown::render\_book("index.Rmd",\ "bookdown::pdf\_book")}
 
-\begin{itemize}
-\tightlist
-\item
-  \emph{Note}: to compile to PDF, you need XeLaTeX. It is recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
-\end{itemize}
+\textbf{Note:} If there is an error during rendering, Google what the error message means! You should be able to find an answer on \href{https://stackoverflow.com/}{stack overflow} or other tech support site. One of the most common errors during rendering is that not all dependencies (aka packages) have been installed on your local computer.
+
+\begin{figure}
+
+{\centering \includegraphics{images/bookdown_here} 
+
+}
+
+\caption{An common error message in the RStudio console: Error in library(here): there is no package called `here`. If you see this library error message, all you need to do is install the required package! The additional warning messages are notifications that R should be updated to be compatiable with the current packages. These will not hender the render.}\label{fig:rendererror}
+\end{figure}
 
 Once you have rendered updates using the console commands above:
 
@@ -531,9 +566,15 @@ Once you have rendered updates using the console commands above:
 
 You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
+\hypertarget{referencing-bookdown-chapters}{%
+\subsection{Referencing Bookdown Chapters}\label{referencing-bookdown-chapters}}
+
 Remember each Rmd file contains one and only one chapter, and \textbf{a chapter} is defined by the first-level heading \texttt{\#}.
 
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., reference this Resource Guide Chapter \ref{intro} by using the markdown format: \texttt{\textbackslash{}@ref(insert\ chapter\ label\ name\ here)}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+
+\hypertarget{formatting-figures}{%
+\subsection{Formatting Figures}\label{formatting-figures}}
 
 Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
 
@@ -584,12 +625,12 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \end{table}
 
 \hypertarget{citations}{%
-\section{Citations}\label{citations}}
+\subsection{Citations}\label{citations}}
 
 You can easily write citations using .bib files within this repository formatted using \href{http://www.bibtex.org/}{BibTEX}. For example, the \textbf{bookdown} package \citep{R-bookdown} in this reference book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
 \hypertarget{alt-text-for-accessibility}{%
-\section{Alt Text for Accessibility}\label{alt-text-for-accessibility}}
+\subsection{Alt Text for Accessibility}\label{alt-text-for-accessibility}}
 
 \href{https://www.rstudio.com/blog/knitr-fig-alt/}{Use the knitr package to add alt text to graphics in R Markdown files}
 
@@ -1345,18 +1386,37 @@ Here are few resources that provide tutorials and workshops on how to use ESRI s
 When creating file names, best practices dictate that you should:
 
 \begin{itemize}
+\tightlist
 \item
   Create meaningful but brief names;
 \item
-  Use file names to classify types of files (ex: DTLA\_RA\_20230131.csv);
+  Use file names to classify types of files
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ex: \texttt{20230131\_DTLA\_RA.csv} file name classifies this file as Rapid Assessment vegetation monitoring data from the Desert Tortoise Linkage Area and was created on Jan.~31, 2023;
+  \end{itemize}
 \item
-  Avoid using spaces, dots and special characters (\& or ? or !);
+  Avoid using spaces, dots and special characters (ex: \& or ? or !);
 \item
-  Use capital letters to delimit words, not spaces or underscores for data files, \emph{as much as possible} (ex: CVStormwaterVAP20170217.csv);
+  Use capital letters to delimit words, not spaces or underscores for data files, \emph{as much as possible} (ex: 20170217\_CVStormwaterVAP.csv);
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics{images/case_horst} 
+
+}
+
+\caption{Types of font cases (L to R, clockwise): Screaming Snake Case, Camel Case, Upper Camel, Snake Case, Kebab Case. Art Credit: Dr. Allison Horst, UCSB}\label{fig:case}
+\end{figure}
+
+\begin{itemize}
 \item
   Use hyphens (-) or underscores (\_) to separate elements in a file name for documents;
 \item
-  Always use the \href{https://www.iso.org/iso-8601-date-and-time-format.html}{ISO 8601} date format in file names: \textbf{YYYYMMDD}. For example, in the file name \emph{DTLA\_RA\_20230131.csv} January 31, 2023 is represented as \textbf{20230131};
+  Always use the \href{https://www.iso.org/iso-8601-date-and-time-format.html}{ISO 8601} date format in file names: \textbf{YYYYMMDD}. For example, in the file name \emph{20230131\_DTLA\_RA.csv} January 31, 2023 is represented as \textbf{20230131};
 \item
   Preserve the 3-letter file extension for application-specific codes of file format (e.g.~.doc, .xls, .mov, .tif);
 \item
@@ -1369,15 +1429,15 @@ When creating file names, best practices dictate that you should:
   \begin{itemize}
   \tightlist
   \item
+    file name with the date,
+  \item
     the project name (or acronym) or project location should be first,
   \item
     then the type of data or file (either RA or Report),
   \item
     then version or author,
   \item
-    end file name with the date,
-  \item
-    Examples: \emph{CVStormwaterVAP20170217.csv}, \emph{CVMC\_CRCA01\_Proposal\_LCS\_20221231.doc};
+    \textbf{Examples:} \texttt{20170217\_CVStormwaterVAP.csv}, \texttt{20221231\_CVMC\_CRCA01\_Proposal\_LCS.doc}
   \end{itemize}
 \end{itemize}
 
@@ -1402,7 +1462,7 @@ Inventory of software and equipment used and references
 \item
   GPS: Trimble Juno 3
 \item
-  Server:
+  SERVER:
 
   \begin{itemize}
   \tightlist
