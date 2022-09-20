@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  16 SEP 2022 09:41
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  20 SEP 2022 11:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1049,27 +1049,40 @@ File: images/nas_mac.png Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [32]
+Underfull \hbox (badness 3989) in paragraph at lines 1029--1034
+\TU/lmr/m/n/10 via SSH: \TU/lmtt/m/n/10 ssh [Synology NAS admin user name]@[Syn
+ology NAS IP
+ []
+
+
+Underfull \hbox (badness 2318) in paragraph at lines 1029--1034
+\TU/lmtt/m/n/10 address or hostname] -p [The port number of SSH] \TU/lmr/m/n/10
+ For example,
+ []
+
+File: images/git_root.png Graphic file (type bmp)
+<images/git_root.png>
+[33]
+File: images/git_usernote.png Graphic file (type bmp)
+<images/git_usernote.png>
+[34]
 File: images/slack.png Graphic file (type bmp)
 <images/slack.png>
-
-Underfull \vbox (badness 2229) has occurred while \output is active []
-
-[33] [34]
+[35] [36]
 File: images/trello.png Graphic file (type bmp)
 <images/trello.png>
-[35]
 File: images/zoomdownload.png Graphic file (type bmp)
 <images/zoomdownload.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[36]
+[37]
 File: images/zoomsso.png Graphic file (type bmp)
 <images/zoomsso.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[37]
+[38]
 File: images/zoomdomain.png Graphic file (type bmp)
 <images/zoomdomain.png>
 File: images/zoomcred.png Graphic file (type bmp)
@@ -1077,10 +1090,10 @@ File: images/zoomcred.png Graphic file (type bmp)
 
 Underfull \vbox (badness 7869) has occurred while \output is active []
 
-[38]
+[39]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39]
+[40]
 File: images/zoteroinstall.png Graphic file (type bmp)
 <images/zoteroinstall.png>
 File: images/zoteroextension.png Graphic file (type bmp)
@@ -1088,69 +1101,69 @@ File: images/zoteroextension.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[40]
+[41]
 File: images/zoterosyncing.png Graphic file (type bmp)
 <images/zoterosyncing.png>
-[41] [42]
-Chapter 6.
-[43
+[42] [43] [44
 
 ]
+Chapter 6.
+[45]
 File: images/esri_arcgisonline.png Graphic file (type bmp)
 <images/esri_arcgisonline.png>
 File: images/esri_ucrenterprise.png Graphic file (type bmp)
 <images/esri_ucrenterprise.png>
-[44]
+[46]
 File: images/esri_ucrid.png Graphic file (type bmp)
 <images/esri_ucrid.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[45]
+[47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[46]
+[48]
 File: images/esri_signin.png Graphic file (type bmp)
 <images/esri_signin.png>
 File: images/esri_pro.png Graphic file (type bmp)
 <images/esri_pro.png>
-[47]
+[49]
 File: images/ServiceLink.png Graphic file (type bmp)
 <images/ServiceLink.png>
 File: images/softwarerequest.png Graphic file (type bmp)
 <images/softwarerequest.png>
 File: images/requestsubmit.png Graphic file (type bmp)
 <images/requestsubmit.png>
-[48] [49] [50
+[50] [51] [52
 
 ]
 Chapter 7.
 File: images/case_horst.jpeg Graphic file (type bmp)
 <images/case_horst.jpeg>
 
-Overfull \hbox (36.09503pt too wide) in paragraph at lines 1425--1427
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 1490--1492
 []\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
 me_rev20230131.doc). 
  []
 
-[51] [52]
-Overfull \hbox (103.73698pt too wide) in paragraph at lines 1440--1441
+[53] [54]
+Overfull \hbox (103.73698pt too wide) in paragraph at lines 1505--1506
 []\TU/lmr/bx/n/10 Examples: \TU/lmtt/m/n/10 20170217_CVStormwaterVAP.csv\TU/lmr
 /m/n/10 , \TU/lmtt/m/n/10 20221231_CVMC_CRCA01_Proposal_LCS.doc 
  []
 
-[53] [54
-
-]
-Chapter 8.
 [55] [56
 
 ]
+Chapter 8.
+[57] [58
+
+]
 Chapter 9.
-[57]
+[59]
 File: images/concur1.png Graphic file (type bmp)
 <images/concur1.png>
-[58]
+[60]
 File: images/concur2a.jpg Graphic file (type bmp)
 <images/concur2a.jpg>
 File: images/concur3.png Graphic file (type bmp)
@@ -1160,30 +1173,30 @@ File: images/concur4.png Graphic file (type bmp)
 
 Underfull \vbox (badness 2126) has occurred while \output is active []
 
-[59]
+[61]
 File: images/concur5.png Graphic file (type bmp)
 <images/concur5.png>
 File: images/concur6.png Graphic file (type bmp)
 <images/concur6.png>
-[60] [61] [62
+[62] [63] [64
 
 ]
 Chapter 10.
 
-Underfull \hbox (badness 1735) in paragraph at lines 1573--1573
+Underfull \hbox (badness 1735) in paragraph at lines 1638--1638
 []\TU/lmr/bx/n/14.4 We are committed to prioritizing and
  []
 
-[63]
+[65]
 Underfull \vbox (badness 2443) has occurred while \output is active []
 
-[64]
+[66]
 Overfull \hbox (92.14124pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 10.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AN
-D TIRING. \TU/lmr/m/n/10 65
+D TIRING. \TU/lmr/m/n/10 67
  []
 
-[65] (./bookdown-demo.bbl [66]) [67
+[67] (./bookdown-demo.bbl [68]) [69
 
 ] (./bookdown-demo.aux)
 
@@ -1191,12 +1204,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20289 strings out of 476919
- 355909 string characters out of 5821840
- 843148 words of memory out of 5000000
- 39884 multiletter control sequences out of 15000+600000
+ 20315 strings out of 476919
+ 356534 string characters out of 5821840
+ 843460 words of memory out of 5000000
+ 39908 multiletter control sequences out of 15000+600000
  410027 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  98i,9n,122p,1032b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (67 pages).
+Output written on bookdown-demo.pdf (69 pages).

@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Research Unit Resource Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Fellow}
-\date{2022-09-16}
+\date{2022-09-20}
 
 \begin{document}
 \maketitle
@@ -865,6 +865,9 @@ Network-attached storage (NAS) is dedicated file storage that enables multiple u
 
 The CCB NAS server model is Synology DS920+. For more information on the unit, see \textbf{Chapter} \ref{equipment}.
 
+\hypertarget{access-the-ccb-nas-server-from-local-computer}{%
+\subsection{Access the CCB NAS Server from Local Computer}\label{access-the-ccb-nas-server-from-local-computer}}
+
 In order to access the CCB NAS, there just a few steps:
 
 \begin{itemize}
@@ -1002,6 +1005,68 @@ The mapped network drive will now appear within Windows Explorer as local storag
 There should be a connection set to the CCB NAS at the folder level.
 
 \begin{flushleft}\includegraphics{images/nas_mac} \end{flushleft}
+
+\hypertarget{connecting-the-ccb-nas-synology-to-git}{%
+\subsection{Connecting the CCB NAS Synology to Git}\label{connecting-the-ccb-nas-synology-to-git}}
+
+The information below was taken from the \href{https://kb.synology.com/en-sg/DSM/help/Git/git?version=7}{Synology Knowledge Center}.
+
+Git is an open-source distributed version control system, which allows you to maintain software source code, documents, or any type of file on a computer with speed and efficiency.
+
+\hypertarget{to-create-a-git-repository}{%
+\subsubsection{To create a Git repository:}\label{to-create-a-git-repository}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Sign in to DSM using an account with administrative privileges.
+\item
+  Go to Control Panel \textgreater{} Terminal \& SNMP \textgreater{} Terminal then enable SSH service.
+\item
+  Go to Control Panel \textgreater{} Shared Folder and create a shared folder for Git repositories.
+\item
+  On your computer, enter the command below to access Synology NAS via SSH:
+  \texttt{ssh\ {[}Synology\ NAS\ admin\ user\ name{]}@{[}Synology\ NAS\ IP\ address\ or\ hostname{]}\ -p\ {[}The\ port\ number\ of\ SSH{]}}
+  For example, you can enter:
+  \texttt{ssh\ myadminuser@192.168.1.2\ -p\ 22}
+\item
+  Enter the command below to change the current directory to the shared folder you created in step 3:
+  \texttt{cd\ /{[}Volume\ name{]}/{[}Shared\ folder\ name{]}/}
+  For example, you can enter:
+  \texttt{cd\ /volume1/mysharefolder/}
+\item
+  Enter the command below to create a folder on your computer for the Git repository:
+  \texttt{mkdir\ {[}Folder\ name{]}}
+\item
+  Enter the command below to change the current location to the new folder:
+  \texttt{cd\ {[}Folder\ name{]}}
+\item
+  Enter the command below to create a Git bare repository under the folder you created in step 6:
+  \texttt{git\ init\ -\/-bare}
+\end{enumerate}
+
+\begin{flushleft}\includegraphics{images/git_root} \end{flushleft}
+
+\hypertarget{to-allow-users-to-use-git-on-synology-nas-server}{%
+\subsubsection{To Allow Users to Use Git on Synology NAS Server}\label{to-allow-users-to-use-git-on-synology-nas-server}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Sign in to DSM using an account with administrators' privileges.
+\item
+  Go to \textbf{Control Panel \textgreater{} Terminal \& SNMP \textgreater{} Terminal}, and enable \textbf{SSH service} for users to access Git repositories via SSH.
+\item
+  Go to \textbf{Control Panel \textgreater{} User \& Group} and create a user. Grant \textbf{Read/Write} permission of the Git repository shared folder to the user.
+\item
+  Go to \textbf{Package Center \textgreater{} Installed} and open the \textbf{Git Server} package.
+\item
+  Allow the user to access repositories via git-shell.
+\end{enumerate}
+
+\begin{flushleft}\includegraphics{images/git_usernote} \end{flushleft}
 
 \hypertarget{google-apps}{%
 \section{Google Apps}\label{google-apps}}

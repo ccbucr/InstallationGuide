@@ -103,6 +103,10 @@
 <p>The Center for Conservation Biology has a NAS Server, which serves as the primary data storage location to access data and reference files. CCB staff should ensure that all work and research related files are saved on the NAS. Reference <strong>Chapter</strong> <a href="organization.html#organization">7</a> for proper directory organization and file naming.</p>
 <p>Network-attached storage (NAS) is dedicated file storage that enables multiple users to retrieve data from centralized disk capacity. The purpose of NAS is to enable users to collaborate and share data more effectively. It is especially useful to teams that need remote access. NAS connects to a wireless router, making it easy for remote workers to access files from any device with a network connection.</p>
 <p>The CCB NAS server model is Synology DS920+. For more information on the unit, see <strong>Chapter</strong> <a href="equipment.html#equipment">8</a>.</p>
+<div id="access-the-ccb-nas-server-from-local-computer" class="section level3" number="5.2.1">
+<h3>
+<span class="header-section-number">5.2.1</span> Access the CCB NAS Server from Local Computer<a class="anchor" aria-label="anchor" href="#access-the-ccb-nas-server-from-local-computer"><i class="fas fa-link"></i></a>
+</h3>
 <p>In order to access the CCB NAS, there just a few steps:</p>
 <ul>
 <li><p><strong>Step 01:</strong> Request the creation of a NAS user account through the designated CCB staff member. You will need to provide your preferred <strong>username</strong> (typically similar to UCR ID) and a <strong>passcode</strong>. The passcode must be a strong code: a unique code with 12 - 15 characters consisting of a mix of letters, numbers, symbols, and does not contain personal information.</p></li>
@@ -162,6 +166,57 @@
 </ul>
 <p>There should be a connection set to the CCB NAS at the folder level.</p>
 <div class="inline-figure"><img src="images/nas_mac.png" style="display: block; margin: auto auto auto 0;"></div>
+</div>
+<div id="connecting-the-ccb-nas-synology-to-git" class="section level3" number="5.2.2">
+<h3>
+<span class="header-section-number">5.2.2</span> Connecting the CCB NAS Synology to Git<a class="anchor" aria-label="anchor" href="#connecting-the-ccb-nas-synology-to-git"><i class="fas fa-link"></i></a>
+</h3>
+<p>The information below was taken from the <a href="https://kb.synology.com/en-sg/DSM/help/Git/git?version=7">Synology Knowledge Center</a>.</p>
+<p>Git is an open-source distributed version control system, which allows you to maintain software source code, documents, or any type of file on a computer with speed and efficiency.</p>
+<div id="to-create-a-git-repository" class="section level4" number="5.2.2.1">
+<h4>
+<span class="header-section-number">5.2.2.1</span> To create a Git repository:<a class="anchor" aria-label="anchor" href="#to-create-a-git-repository"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>Sign in to DSM using an account with administrative privileges.</li>
+<li>Go to Control Panel &gt; Terminal &amp; SNMP &gt; Terminal then enable SSH service.</li>
+<li>Go to Control Panel &gt; Shared Folder and create a shared folder for Git repositories.</li>
+<li>On your computer, enter the command below to access Synology NAS via SSH:
+<code>ssh [Synology NAS admin user name]@[Synology NAS IP address or hostname] -p [The port number of SSH]</code>
+For example, you can enter:
+<code>ssh myadminuser@192.168.1.2 -p 22</code>
+</li>
+<li>Enter the command below to change the current directory to the shared folder you created in step 3:
+<code>cd /[Volume name]/[Shared folder name]/</code>
+For example, you can enter:
+<code>cd /volume1/mysharefolder/</code>
+</li>
+<li>Enter the command below to create a folder on your computer for the Git repository:
+<code>mkdir [Folder name]</code>
+</li>
+<li>Enter the command below to change the current location to the new folder:
+<code>cd [Folder name]</code>
+</li>
+<li>Enter the command below to create a Git bare repository under the folder you created in step 6:
+<code>git init --bare</code>
+</li>
+</ol>
+<div class="inline-figure"><img src="images/git_root.png" style="display: block; margin: auto auto auto 0;"></div>
+</div>
+<div id="to-allow-users-to-use-git-on-synology-nas-server" class="section level4" number="5.2.2.2">
+<h4>
+<span class="header-section-number">5.2.2.2</span> To Allow Users to Use Git on Synology NAS Server<a class="anchor" aria-label="anchor" href="#to-allow-users-to-use-git-on-synology-nas-server"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>Sign in to DSM using an account with administrators’ privileges.</li>
+<li>Go to <strong>Control Panel &gt; Terminal &amp; SNMP &gt; Terminal</strong>, and enable <strong>SSH service</strong> for users to access Git repositories via SSH.</li>
+<li>Go to <strong>Control Panel &gt; User &amp; Group</strong> and create a user. Grant <strong>Read/Write</strong> permission of the Git repository shared folder to the user.</li>
+<li>Go to <strong>Package Center &gt; Installed</strong> and open the <strong>Git Server</strong> package.</li>
+<li>Allow the user to access repositories via git-shell.</li>
+</ol>
+<div class="inline-figure"><img src="images/git_usernote.png" style="display: block; margin: auto auto auto 0;"></div>
+</div>
+</div>
 </div>
 <div id="google-apps" class="section level2" number="5.3">
 <h2>
@@ -346,7 +401,12 @@ Launch a call in Slack with the /teams-calls slash command. Before joining, get 
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#projmgmt"><span class="header-section-number">5</span> Project Management Tools</a></li>
 <li><a class="nav-link" href="#ucr-vpn---globalprotect"><span class="header-section-number">5.1</span> UCR VPN - GlobalProtect</a></li>
-<li><a class="nav-link" href="#ccb-nas-server"><span class="header-section-number">5.2</span> CCB NAS Server</a></li>
+<li>
+<a class="nav-link" href="#ccb-nas-server"><span class="header-section-number">5.2</span> CCB NAS Server</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#access-the-ccb-nas-server-from-local-computer"><span class="header-section-number">5.2.1</span> Access the CCB NAS Server from Local Computer</a></li>
+<li><a class="nav-link" href="#connecting-the-ccb-nas-synology-to-git"><span class="header-section-number">5.2.2</span> Connecting the CCB NAS Synology to Git</a></li>
+</ul>
+</li>
 <li><a class="nav-link" href="#google-apps"><span class="header-section-number">5.3</span> Google Apps</a></li>
 <li><a class="nav-link" href="#microsoft-360-suite"><span class="header-section-number">5.4</span> Microsoft 360 Suite</a></li>
 <li>
@@ -375,7 +435,7 @@ Launch a call in Slack with the /teams-calls slash command. Before joining, get 
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-16.</p>
+    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-20.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

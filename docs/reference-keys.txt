@@ -33,6 +33,10 @@ personal-access-token
 projmgmt
 ucr-vpn---globalprotect
 ccb-nas-server
+access-the-ccb-nas-server-from-local-computer
+connecting-the-ccb-nas-synology-to-git
+to-create-a-git-repository
+to-allow-users-to-use-git-on-synology-nas-server
 google-apps
 microsoft-360-suite
 slack
