@@ -10,7 +10,7 @@ When creating file names, best practices dictate that you should:
 - Avoid using spaces, dots and special characters (ex: & or ? or !);
 - Use capital letters to delimit words, not spaces or underscores for data files, *as much as possible* (ex: 20170217_CVStormwaterVAP.csv);
 
-```{r case, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2, fig.cap= "Types of font cases (L to R, clockwise): Screaming Snake Case, Camel Case, Upper Camel, Snake Case, Kebab Case. Art Credit: Dr. Allison Horst, UCSB"}
+```{r case, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "50%", fig.cap= "Types of font cases (L to R, clockwise): Screaming Snake Case, Camel Case, Upper Camel, Snake Case, Kebab Case. Art Credit: Dr. Allison Horst, UCSB"}
 
 knitr::include_graphics("images/case_horst.jpeg")
 ```

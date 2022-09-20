@@ -44,7 +44,7 @@ To install TinyTex on your computer, navigate to the R Studio console panel, and
 
 ## Render, Build & Publish the Resource Guide 
 
-When updates are made to the Resource Guide, it needs to be render, built, and then the updates published. 
+When updates are made to the Resource Guide, it needs to be rendered, built, and then the updates published. 
 
 In your Console, type either of these commands depending on which type of render you prefer:
 
