@@ -37,7 +37,7 @@ First, you will need to log into the Concur Travel system.
 -Click *Create New Request*
 
 
-```{r concur1, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r concur1, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "75%"}
 
 knitr::include_graphics("images/concur1.png")
 ```
@@ -54,7 +54,7 @@ knitr::include_graphics("images/concur1.png")
 -Approver ID is 'Christine Morgando'.
 
 
-```{r concur2a, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r concur2a, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "75%"}
 
 knitr::include_graphics("images/concur2a.jpg")
 ```
@@ -64,14 +64,14 @@ knitr::include_graphics("images/concur2a.jpg")
 
 -Select the *Add* button under Expected Expenses
 
-```{r concur3, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r concur3, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "75%"}
 
 knitr::include_graphics("images/concur3.png")
 ```
 
 -Select *Ground Transportation* (or any other *expected* expenses such as food, lodging, registrations, etc.)
 
-```{r concur4, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r concur4, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "75%"}
 
 knitr::include_graphics("images/concur4.png")
 ```
@@ -82,14 +82,14 @@ knitr::include_graphics("images/concur4.png")
 *NOTE: MILEAGE REIBURSEMENT RATE HAS CHANGED, CURRENT RATES CAN BE FOUND [HERE] (https://accounting.ucr.edu/travel-entertainment/mileage-reimbursement-rates)*
 
 
-```{r concur5, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r concur5, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "75%"}
 
 knitr::include_graphics("images/concur5.png")
 ```
 
 -Continue adding expected expenses until you’ve covered your bases, and then submit request.
 
-```{r concur6, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r concur6, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "75%"}
 
 knitr::include_graphics("images/concur6.png")
 ```

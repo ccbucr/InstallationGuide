@@ -16,7 +16,7 @@ If you already have R installed, you may want to update the version of R you are
 
 In order to update R, you have to find your installed version of R and run it on its own, outside of RStudio. This is easy if you have an R desktop shortcut, but not too hard if you hunt around a bit in your Applications folder. 
 
-```{r rupdate, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Caution message: Do not just upgrade R to a new minor (or major) version in the middle of a project. This will take a bit of work and time, maybe an hour if you have a lot of packages installed, as this will require re-installing packages to a new library folder."}
+```{r rupdate, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "100%", fig.alt="Caution message: Do not just upgrade R to a new minor (or major) version in the middle of a project. This will take a bit of work and time, maybe an hour if you have a lot of packages installed, as this will require re-installing packages to a new library folder."}
 
 knitr::include_graphics("images/rupdate.png")
 ```
@@ -30,7 +30,7 @@ Double click the R icon to start up R. It will open the R Console and a menu. Cl
 
 In order to follow the bulk save R package instructions, you will need to have R Studio installed, and be familiar with the terminal and console panels.**
 
-```{r renv, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Caution message: Before you jump into upgrading R versions and packages, make sure that any important projects are protected. Make sure that your important ongoing projects use the {renv} package to preserve their Environment, and that you have taken a recent snapshot with renv::snapshot()"}
+```{r renv, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "100%", fig.alt="Caution message: Before you jump into upgrading R versions and packages, make sure that any important projects are protected. Make sure that your important ongoing projects use the {renv} package to preserve their Environment, and that you have taken a recent snapshot with renv::snapshot()"}
 
 knitr::include_graphics("images/renv.png")
 ```
@@ -119,7 +119,7 @@ RStudio is a software (considered an Integrated  Development Environment, or IDE
 
 Open RStudio (logo you’ll click on shown below). **If you are prompted to install Command Line Tools, do it.**
 
-```{r rstudio, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="Image of R Studio logo, which is a white captial R encased in a light blue circle."}
+```{r rstudio, auto_pdf = TRUE, fig.align = 'center', out.width= "50%", fig.alt = "Image of R Studio logo, which is a white captial R encased in a light blue circle."}
 
 knitr::include_graphics("images/rstudio.png")
 ```

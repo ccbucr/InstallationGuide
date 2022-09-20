@@ -23,14 +23,14 @@ Instructions for how to sign in to ArcGIS Online via UCR.
 
 - **Step 2:** Click on the ‘Sign In’ link at the top right hand corner of the landing page.
 
-```{r arcgisonline, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 4, fig.alt="Screen shot of UCR ArcGIS Online sign in page."}
+```{r arcgisonline, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="Screen shot of UCR ArcGIS Online sign in page."}
 
 knitr::include_graphics("images/esri_arcgisonline.png")
 ```
 
 - **Step 3:** Select the **UCR University of California, Riverside Enterprise login** (blue button) option. 
 
-```{r ucrenterprise, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3, fig.alt="Screen shot of UCR ArcGIS Online Enterprise Account sign in page."}
+```{r ucrenterprise, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "60%", fig.alt="Screen shot of UCR ArcGIS Online Enterprise Account sign in page."}
 
 knitr::include_graphics("images/esri_ucrenterprise.png")
 ```
@@ -38,7 +38,7 @@ knitr::include_graphics("images/esri_ucrenterprise.png")
 
 - **Step 4:** Sign in with UCR Net ID and Password
 
-```{r ucrid, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3, fig.alt="Screen shot of UCR Net ID and Password sign in prompt."}
+```{r ucrid, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "55%", fig.alt="Screen shot of UCR Net ID and Password sign in prompt."}
 
 knitr::include_graphics("images/esri_ucrid.png")
 ```
@@ -51,7 +51,7 @@ Instructions for how to download ArcGIS Pro from UCR's ArcGIS Online.
 
 - **Step 2:**  Click on the `Sign In` link at the top right hand corner of the landing page.
 
-```{r esrisignin, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 4, fig.alt="Screen shot of UCR ArcGIS Online sign in page."}
+```{r esrisignin, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="Screen shot of UCR ArcGIS Online sign in page."}
 
 knitr::include_graphics("images/esri_signin.png")
 ```
@@ -64,7 +64,7 @@ knitr::include_graphics("images/esri_signin.png")
 
 - **Step 6:** Scroll down, next to ArcGIS Pro, click `Download ArcGIS Pro`.
 
-```{r esripro, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 4, fig.alt="Screen shot of UCR ArcGIS Online and Pro account license options and ArcGIS Pro download button."}
+```{r esripro, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="Screen shot of UCR ArcGIS Online and Pro account license options and ArcGIS Pro download button."}
 
 knitr::include_graphics("images/esri_pro.png")
 ```
@@ -77,21 +77,21 @@ This was the installation process prior to 2020. If there are issues with the ab
 
 - **Step 2:** Under the Information Technology section, select **Request Services & Software** link.
 
-```{r servicelink, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3, fig.alt="Screen shot of UCR ServiceLink homepage information technology section."}
+```{r servicelink, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="Screen shot of UCR ServiceLink homepage information technology section."}
 
 knitr::include_graphics("images/ServiceLink.png")
 ```
 
 - **Step 3:** Scroll down to the **Software Request** card and select link.  
 
-```{r softwarerequest, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r softwarerequest, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "45%"}
 
 knitr::include_graphics("images/softwarerequest.png")
 ```
 
 - **Step 4:** Complete the Software Request form using your UCR NetId and UCR email, then select **Submit**. 
 
-```{r requestsubmit, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3}
+```{r requestsubmit, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%"}
 
 knitr::include_graphics("images/requestsubmit.png")
 ```

@@ -27,13 +27,13 @@ In order to access the CCB NAS, there just a few steps:
     1. Open File Explorer on Windows 11.
     2. Click on `This PC` from the left pane.
     3. Click the `See More` (three-dotted) button in the command bar and select the “Map network drive” option.
-```{r nasmap, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Screen shot of PC file path to map network drive."}
+```{r nasmap, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "80%", fig.alt="Screen shot of PC file path to map network drive."}
 
 knitr::include_graphics("images/nas_map.png")
 ```
     4. Use the `Drive` drop-down menu and choose a letter to assign the drive.
     5. In the `Folder` field, enter the network path to the shared folder, `\\CCBNAS.dyn.ucr.edu\pdo`. (Or click the Browse button to browse the folder to map as a network drive, and click the OK button.)
-```{r naspath, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r naspath, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "75%"}
 
 knitr::include_graphics("images/nas_path.png")
 ```
@@ -52,7 +52,7 @@ If you run into issues, first read over this [blog post for a common linkage iss
     1. On your Windows 10 PC, open Windows Explorer.
     2. Click on This Computer.
     3. Click on Map network drive.
-```{r nasmap10, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r nasmap10, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "80%"}
 
 knitr::include_graphics("images/nas_map10.png")
 ```
@@ -71,7 +71,7 @@ The mapped network drive will now appear within Windows Explorer as local storag
     
 There should be a connection set to the CCB NAS at the folder level.
 
-```{r nasmac, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r nasmac, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "50%"}
 
 knitr::include_graphics("images/nas_mac.png")
 ```
@@ -103,7 +103,7 @@ Git is an open-source distributed version control system, which allows you to ma
   8. Enter the command below to create a Git bare repository under the folder you created in step 6:
   `git init --bare`
 
-```{r gitroot, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r gitroot, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "85%"}
 
 knitr::include_graphics("images/git_root.png")
 ```
@@ -116,7 +116,7 @@ knitr::include_graphics("images/git_root.png")
   4. Go to **Package Center > Installed** and open the **Git Server** package.
   5. Allow the user to access repositories via git-shell.
 
-```{r gitnote, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3}
+```{r gitnote, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "85%"}
 
 knitr::include_graphics("images/git_usernote.png")
 ```
@@ -140,7 +140,7 @@ Microsoft 360 training resources can be found [here](https://support.microsoft.c
 
 ## Slack
 
-```{r slack, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 0.5, fig.alt="Image of Slack logo, light blue, bright green, red, and mustard yellow symbol with lower case slack spelled out in black font."}
+```{r slack, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "30%", fig.alt="Image of Slack logo, light blue, bright green, red, and mustard yellow symbol with lower case slack spelled out in black font."}
 
 knitr::include_graphics("images/slack.png")
 ```
@@ -210,7 +210,7 @@ Launch a call in Slack with the /teams-calls slash command. Before joining, get 
 
 ## Trello
 
-```{r trello, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Image of Trello logo, blue 3 bold blue lines and trello in black font."}
+```{r trello, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "30%", fig.alt="Image of Trello logo, blue 3 bold blue lines and trello in black font."}
 
 knitr::include_graphics("images/trello.png")
 ```
@@ -223,7 +223,7 @@ Zoom is a great tool to schedule virtual meetings, and the CCB hosts Zoom-based 
 
 - **Step 1**: Download the Zoom application via [UC Riverside's Zoom service page](https://ucr.zoom.us/) - just select the **Download** button!
 
-```{r zoomdownload, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2, fig.alt="Image of UC Riverside's Zoom Service page that has 4 buttons that prompts users to either Sign In, Sign In, Download, Join, Host."}
+```{r zoomdownload, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="Image of UC Riverside's Zoom Service page that has 4 buttons that prompts users to either Sign In, Sign In, Download, Join, Host."}
 
 knitr::include_graphics("images/zoomdownload.png")
 ```
@@ -233,19 +233,19 @@ knitr::include_graphics("images/zoomdownload.png")
 
 - **Step 3**: Click the *Sign In with SSO* button, then enter `ucr` in the *company domain* section. 
 
-```{r sso, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2, fig.alt="Image of Zoom Account Sign In prompt displaying 4 buttons: SSO, Apple, Google, Facebook"}
+```{r sso, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "60%", fig.alt="Image of Zoom Account Sign In prompt displaying 4 buttons: SSO, Apple, Google, Facebook"}
 
 knitr::include_graphics("images/zoomsso.png")
 ```
 
-```{r domain, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2}
+```{r domain, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%"}
 
 knitr::include_graphics("images/zoomdomain.png")
 ```
 
 - **Step 4**: You will then be prompted to sign in, this time using your UCR NetId. The program may open up an authentication window requesting your UCR NetId as shown below:
 
-```{r zoomcred, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 2}
+```{r zoomcred, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "60%"}
 
 knitr::include_graphics("images/zoomcred.png")
 ```
@@ -266,20 +266,20 @@ The Center for Conservation Biology shares research references through Zotero so
 
 To install Zotero and the extension, please follow UC Riverside's installation instructions [here](https://guides.lib.ucr.edu/c.php?g=171064). *Note*: These instructions are for a **Windows** machine, but it is a similar process for Macs. 
 
-```{r zotero, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6}
+```{r zotero, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "80%"}
 
 knitr::include_graphics("images/zoteroinstall.png")
 ```
 
 
-```{r zoteroextension, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6}
+```{r zoteroextension, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "80%"}
 
 knitr::include_graphics("images/zoteroextension.png")
 ```
 
 The next step is to create a Zotero account and enable syncing to enable extension use and to be able to join the [CCB Zotero Reference Group](https://www.zotero.org/groups/4734848/ccbucr). Make sure to use your using the UCR email address when setting up the Zotero account. 
 
-```{r zoterosyncing, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6}
+```{r zoterosyncing, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "80%"}
 
 knitr::include_graphics("images/zoterosyncing.png")
 ```

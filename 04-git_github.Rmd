@@ -64,7 +64,7 @@ Once Git has been configured to commit to your GitHub account, a **Personal Acce
 
 If the `usethis` package is installed correctly, at the end of the stream of text there should be a message similar to the image below:
 
-```{r usethis, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Installation download message in RStudio console that reads The downloaded binary packages are in this file path."}
+```{r usethis, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "80%", fig.alt="Installation download message in RStudio console that reads The downloaded binary packages are in this file path."}
 
 knitr::include_graphics("images/usethis.png")
 ```
@@ -77,7 +77,7 @@ knitr::include_graphics("images/usethis.png")
   
 This should take you to the **Settings/Developer settings** section of your GitHub account:
 
-```{r pat, echo = F, auto_pdf = TRUE, fig.align = 'left', fig.height = 3, fig.alt="Image of GitHub settings webpage."}
+```{r pat, echo = F, auto_pdf = TRUE, fig.align = 'left', out.width= "80%", fig.alt="Image of GitHub settings webpage."}
 
 knitr::include_graphics("images/pat.png")
 ```
@@ -107,7 +107,7 @@ To learn more about Scopes, visit [the GitHub Scopes for OAUth Apps page](https:
 
 - Once Scopes are selected, click on the green `Generate token` button: 
 
-```{r generatepat, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3}
+```{r generatepat, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "80%"}
 
 knitr::include_graphics("images/generatepat.png")
 ```
@@ -121,7 +121,7 @@ knitr::include_graphics("images/generatepat.png")
 
 You will be prompted to paste the PAT into the console:
 
-```{r pastepat, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3}
+```{r pastepat, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "80%"}
 
 knitr::include_graphics("images/paste_pat.png")
 ```
@@ -135,7 +135,7 @@ Paste the PAT at the end of the line `Enter password or token:` and press enter.
 This command should return your GitHub account information (see example below).
 
 
-```{r gitsitrep, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 3}
+```{r gitsitrep, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "80%"}
 
 knitr::include_graphics("images/gitsitrep.png")
 ```

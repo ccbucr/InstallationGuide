@@ -53,7 +53,7 @@ In your Console, type either of these commands depending on which type of render
 
 **Note:** If there is an error during rendering, Google what the error message means! You should be able to find an answer on [stack overflow](https://stackoverflow.com/) or other tech support site. One of the most common errors during rendering is that not all dependencies (aka packages) have been installed on your local computer. 
 
-```{r rendererror, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.cap="An common error message in the RStudio console: Error in library(here): there is no package called `here`. If you see this library error message, all you need to do is install the required package! The additional warning messages are notifications that R should be updated to be compatiable with the current packages. These will not hender the render."}
+```{r rendererror, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "85%", fig.cap="An common error message in the RStudio console: Error in library(here): there is no package called `here`. If you see this library error message, all you need to do is install the required package! The additional warning messages are notifications that R should be updated to be compatiable with the current packages. These will not hender the render."}
 
 knitr::include_graphics("images/bookdown_here.png")
 ```
@@ -65,18 +65,18 @@ Once you have rendered updates using the console commands above:
 - select **Build Bookdown**
 - once the build is complete (the final line should read `Output created: docs/index/html`), commit, pull and push updates to GitHub via the **Git** tab. 
 
-```{r bookdown, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+```{r bookdown, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="environment panel in RStudio with the build tab selected"}
 
 knitr::include_graphics("images/build.png")
 ```
 
 
-```{r gitselect, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+```{r gitselect, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="environment panel in RStudio with the build tab selected"}
 
 knitr::include_graphics("images/select.png")
 ```
 
-```{r gitcommit, echo = F, auto_pdf = TRUE, fig.align = 'center', fig.height = 6, fig.alt="environment panel in RStudio with the build tab selected"}
+```{r gitcommit, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.alt="environment panel in RStudio with the build tab selected"}
 
 knitr::include_graphics("images/commit.png")
 ```
