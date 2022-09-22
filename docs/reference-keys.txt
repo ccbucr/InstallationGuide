@@ -59,6 +59,8 @@ esri-resources
 organization
 file-naming
 directory-organization
+recommendations-for-directory-organization
+folder-organization-examples
 additional-resources
 data-management
 tidy-data

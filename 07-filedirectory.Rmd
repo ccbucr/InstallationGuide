@@ -19,6 +19,7 @@ knitr::include_graphics("images/case_horst.jpeg")
 - Always use the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format in file names: **YYYYMMDD**. For example, in the file name *20230131_DTLA_RA.csv* January 31, 2023 is represented as **20230131**;
 - Preserve the 3-letter file extension for application-specific codes of file format (e.g. .doc, .xls, .mov, .tif);
 - With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;
+- Name all files to reflect their content or function. For example, use names such as `tortoise_count_table.csv`, `manuscript.Rmd`, or `vegetation_analysis.r`. Do **not** use general nomenclature with sequential numbers (e.g., `result1.csv`, `result2.csv`) or a location in a final manuscript (e.g., `fig_3_a.png`), since those numbers will almost certainly change as the project evolves;
 - Include versioning of file names where appropriate (ex: filename_rev20230131.doc).
 
 - Order the elements in a file name in the most appropriate way to retrieve the record. For example, 
@@ -33,8 +34,160 @@ knitr::include_graphics("images/case_horst.jpeg")
 
 The amount of data and files research organizations create and store has grown significantly due to technological advances in field data collection tools and open-source software. As the amount of data collected and reports generated increases, it is necessary to establish a clear, logical directory organization framework.  
 
+### Recommendations for Directory Organization
+
+The following recommendations were pulled from @Spreckelsen_2020. 
+
+1. **Put each project in its own directory**
+
+Create a new folder for each new project and name that folder after the project. Some researchers create a separate project for each manuscript they are working on, while others group all research on a common theme or data set into a single project.
+As a rule of thumb, divide work into projects based on the overlap in data and code files. If 2 research efforts share no data or code, they will probably be easiest to manage independently. If they share more than half of their data and code, they are probably best managed together, while if you are building tools that are used in several projects, the common code should probably be in a project of its own. Projects do often require their own organizational model, but below are general recommendations on how you can structure data, code, analysis outputs, and other files. The important concept is that it is useful to organize the project by the types of files and that consistency helps you effectively find and use things later.
+
+2. **Put text documents associated with the project in a 'document' directory.** 
+
+This includes files for manuscripts, documentation for source code, and/or an electronic lab notebook recording your experiments. Subdirectories may be created for these different classes of files in large projects. Create subdirectories within the `document` folder to account for the various types of documents required for each project. For example, does this project include pre-proposals for funding? If so, create a subfolder `proposal`. If the project is grant funded, create a `report` folder to save the various reports required for the funding. 
+
+3. **Raw Data and Analysis Results**
+  - **Put raw data and metadata in a `data` directory** 
+
+The data directory might require subdirectories to organize raw data based on time, method of collection, or other metadata most relevant to your analysis. These files should include the raw .xls and .csv files, plus additional .txt & .md files.
+
+  - **Put files generated during cleanup and analysis in a `results` directory**
+
+The `results` directory will usually require additional subdirectories for all but the simplest projects. *Generated files* are considered intermediate files, such as cleaned data, statistical tables, and final publication-ready figures or tables and should be separated clearly by file-naming conventions or placed into different subdirectorie. 
+
+4. **Put project source code in the 'repository' directory.** 
+
+The `respository`, also contains all of the code written for the project. This includes programs written in interpreted languages such as R or Python; as well as shell scripts, snippets of SQL used to pull information from databases; and other code needed to regenerate the results.
+This directory may contain **two** conceptually distinct types of files that should be distinguished either by clear file names or by additional subdirectories.
+
+  - The first type is files or groups of files that perform the core analysis of the research, such as data cleaning or statistical analyses. These files can be thought of as the "scientific guts" of the project.
+  - The second type of file in `respository` is controller or driver scripts that contain all the analysis steps for the entire project from start to finish, with particular parameters and data input/output commands. A controller script for a simple project, for example, may read a raw data table, import and apply several cleanup and analysis functions from the other files in this directory, and create and save a numeric result. For a small project with 1 main output and all the code is in R, save R files in a `R` folder. 
+  
+5. **Images and Visualizations**
+
+Photos, screenshots, and plots or other types of data visualizations should be saved in a separate `images` project sub-directory. 
+  
+6. **Put project scratch work and analysis in a 'sandbox' directory.** 
+
+Create a `sandbox` directory within the appropriate project folder for experimental project work. A `sandbox` folder is useful in a the `src` or `r` folder as it can serve as location to save test code or tutorials to conduct analysis.
+
+7. **Create an `archive` folder for out-of-date data or versions**
+
+An `archive` folder serves as a repository for long-term data retention. Data and reference materials stored in the `archive` folder are no longer the most relevant versions, but important reference files that should be preserved but not utilized for analysis. 
+
+### Folder Organization Examples:
+
+1) Data Analysis Project 
+
+**Simple Project**
+```
+my-simple-project/
+├── InputData          <- Folder containing data that will be processed
+├── OutputData         <- Folder containing data that has been processed
+├── Figures            <- Folder containing with figures or tables summarizing the results
+├── Code               <- Folder the scripts or programs to do the analysis
+├── LICENSE            <- File explaining the terms under which data/code is being made available
+├── README.txt         <- File documenting the analysis, and (ideally) the purpose of each file.
+```
+
+**Advanced Projects**
+
+Many kinds of input data, documentation, and code.
+
+```
+my-advanced-project/
+├── repository/
+├── AUTHORS.md         <- File: List of people that contributed to the project (Markdown format)
+├── LICENSE            <- File: Plain text file explaining the usage terms/license of the data/code file (CC-By, MIT, GNU, etc.)
+├── README.md          <- File: Readme file (Markdown format)
+├── bin                <- Folder: Your compiled model code can be stored here (not tracked by git)
+├── config             <- Folder: Configuration files, e.g., for doxygen or for your model if needed
+├── data               <- Folder: Data for this project
+│   ├── external       <- Folder: Data from third party sources.
+│   ├── interim        <- Folder: Intermediate data that has been transformed.
+│   ├── processed      <- Folder: The final, canonical data sets for modeling.
+│   └── raw            <- Folder: The original, immutable data dump.
+├── docs               <- Folder: Documentation, e.g., doxygen or scientific papers (not tracked by git)
+├── notebooks          <- Folder: Ipython or R notebooks
+├── reports            <- Folder: Manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
+│   └── figures        <- Folder: Figures for the manuscript or reports
+└── src                <- Folder: Source code for this project
+    ├── R           <- Folder: scripts and programs to process data
+    ├── external       <- Folder: Any external source code, e.g., other projects, or external libraries
+    ├── models         <- Folder: Source code for your own model
+    ├── tools          <- Folder: Any helper scripts go here
+    └── visualization  <- Folder: Visualisation scripts, e.g., matplotlib, ggplot2 related
+```
+
+```
+my-advanced-project_002/
+├── repository/
+│   ├── images/
+│   │   ├── image-01.jpg
+│   │   └── image-02.jpg
+│   ├── templates/
+│   │   ├── page.html
+│   │   └── post.html
+│   └── index.html
+|   |── r/
+│   |   ├── function.r
+|   |   ├── analysis.r
+|   |   ├── report.Rmd
+│   ├── data/
+│   |   ├── function.r
+│   |   ├── function.r
+│   ├── myproject.Rproj
+└── README.md
+```
 
 
+2) Vegetation Monitoring Project 
+
+```
+vegetation/
+DesertTortoiseLinkageArea/
+├── images/
+│   ├── RelevePlots
+│   │   ├── DTLA_plot001-01.jpg
+│   │   └── DTLA_plot001-02.jpg
+│   ├── PlantId
+│   │   ├── AlloniaIncarnata_BerdooCyn_2022-001.jpg
+│   │   └── AlloniaIncarnata_BerdooCyn_2022-002.jpg
+├── repositories/
+│   ├── DTLA
+│   │   │── r/
+│   │   │   ├── function.r
+│   │   │   ├── analysis.r
+│   │   │   ├── report.Rmd
+│   │   ├── data/
+│   │   │   ├── data.csv
+│   │   │   ├── data.csv
+│   │   ├── myproject.Rproj
+│   │   ├── README.md
+├── documents/
+│   ├── DTLA
+│   │   │── _archive/
+│   │   │   │── geodatabase/
+│   │   │   │── report_drafts/
+│   │   │── reports/
+│   │   │   ├── 2021AnnualReport.doc
+│   │   │   ├── 2021AnnualReport.doc
+│   │   │   ├── 2021AnnualReport.doc
+│   │── reference/
+│   │   │── CNPS_RapidAssessmentProtocol/
+│   │   │   ├── 2017_CNPSRapidAssessmentProtocol.pdf
+│   │   │   ├── 2018_CNPSRapidAssessmentProtocol.pdf
+│   │   │   ├── 2020_CNPSRapidAssessmentProtocol.pdf
+│   │   │── Species/
+│   │   │   ├── PlantIdentificationGuides
+│   │   │   │   ├── 2022_JOTRSpeciesGuide.pdf
+│   │   │   ├── SpeciesInformation
+│   │   │   │   ├── AlloniaIncarnata
+│   │   │   │   │   ├── AlloniaIncarnataSpeciesInfo.pdf
+└── recycle/
+
+```
 
 ### Additional Resources
 

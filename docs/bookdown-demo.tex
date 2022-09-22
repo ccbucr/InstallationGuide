@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Research Unit Resource Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Fellow}
-\date{2022-09-21}
+\date{2022-09-22}
 
 \begin{document}
 \maketitle
@@ -1492,6 +1492,8 @@ When creating file names, best practices dictate that you should:
 \item
   With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;
 \item
+  Name all files to reflect their content or function. For example, use names such as \texttt{tortoise\_count\_table.csv}, \texttt{manuscript.Rmd}, or \texttt{vegetation\_analysis.r}. Do \textbf{not} use general nomenclature with sequential numbers (e.g., \texttt{result1.csv}, \texttt{result2.csv}) or a location in a final manuscript (e.g., \texttt{fig\_3\_a.png}), since those numbers will almost certainly change as the project evolves;
+\item
   Include versioning of file names where appropriate (ex: filename\_rev20230131.doc).
 \item
   Order the elements in a file name in the most appropriate way to retrieve the record. For example,
@@ -1515,6 +1517,228 @@ When creating file names, best practices dictate that you should:
 \section{Directory Organization}\label{directory-organization}}
 
 The amount of data and files research organizations create and store has grown significantly due to technological advances in field data collection tools and open-source software. As the amount of data collected and reports generated increases, it is necessary to establish a clear, logical directory organization framework.
+
+\hypertarget{recommendations-for-directory-organization}{%
+\subsection{Recommendations for Directory Organization}\label{recommendations-for-directory-organization}}
+
+The following recommendations were pulled from \citet{Spreckelsen_2020}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Put each project in its own directory}
+\end{enumerate}
+
+Create a new folder for each new project and name that folder after the project. Some researchers create a separate project for each manuscript they are working on, while others group all research on a common theme or data set into a single project.
+As a rule of thumb, divide work into projects based on the overlap in data and code files. If 2 research efforts share no data or code, they will probably be easiest to manage independently. If they share more than half of their data and code, they are probably best managed together, while if you are building tools that are used in several projects, the common code should probably be in a project of its own. Projects do often require their own organizational model, but below are general recommendations on how you can structure data, code, analysis outputs, and other files. The important concept is that it is useful to organize the project by the types of files and that consistency helps you effectively find and use things later.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{Put text documents associated with the project in a `document' directory.}
+\end{enumerate}
+
+This includes files for manuscripts, documentation for source code, and/or an electronic lab notebook recording your experiments. Subdirectories may be created for these different classes of files in large projects. Create subdirectories within the \texttt{document} folder to account for the various types of documents required for each project. For example, does this project include pre-proposals for funding? If so, create a subfolder \texttt{proposal}. If the project is grant funded, create a \texttt{report} folder to save the various reports required for the funding.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Raw Data and Analysis Results}
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Put raw data and metadata in a \texttt{data} directory}
+\end{itemize}
+
+The data directory might require subdirectories to organize raw data based on time, method of collection, or other metadata most relevant to your analysis. These files should include the raw .xls and .csv files, plus additional .txt \& .md files.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Put files generated during cleanup and analysis in a \texttt{results} directory}
+\end{itemize}
+
+The \texttt{results} directory will usually require additional subdirectories for all but the simplest projects. \emph{Generated files} are considered intermediate files, such as cleaned data, statistical tables, and final publication-ready figures or tables and should be separated clearly by file-naming conventions or placed into different subdirectorie.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  \textbf{Put project source code in the `repository' directory.}
+\end{enumerate}
+
+The \texttt{respository}, also contains all of the code written for the project. This includes programs written in interpreted languages such as R or Python; as well as shell scripts, snippets of SQL used to pull information from databases; and other code needed to regenerate the results.
+This directory may contain \textbf{two} conceptually distinct types of files that should be distinguished either by clear file names or by additional subdirectories.
+
+\begin{itemize}
+\tightlist
+\item
+  The first type is files or groups of files that perform the core analysis of the research, such as data cleaning or statistical analyses. These files can be thought of as the ``scientific guts'' of the project.
+\item
+  The second type of file in \texttt{respository} is controller or driver scripts that contain all the analysis steps for the entire project from start to finish, with particular parameters and data input/output commands. A controller script for a simple project, for example, may read a raw data table, import and apply several cleanup and analysis functions from the other files in this directory, and create and save a numeric result. For a small project with 1 main output and all the code is in R, save R files in a \texttt{R} folder.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \textbf{Images and Visualizations}
+\end{enumerate}
+
+Photos, screenshots, and plots or other types of data visualizations should be saved in a separate \texttt{images} project sub-directory.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \textbf{Put project scratch work and analysis in a `sandbox' directory.}
+\end{enumerate}
+
+Create a \texttt{sandbox} directory within the appropriate project folder for experimental project work. A \texttt{sandbox} folder is useful in a the \texttt{src} or \texttt{r} folder as it can serve as location to save test code or tutorials to conduct analysis.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  \textbf{Create an \texttt{archive} folder for out-of-date data or versions}
+\end{enumerate}
+
+An \texttt{archive} folder serves as a repository for long-term data retention. Data and reference materials stored in the \texttt{archive} folder are no longer the most relevant versions, but important reference files that should be preserved but not utilized for analysis.
+
+\hypertarget{folder-organization-examples}{%
+\subsection{Folder Organization Examples:}\label{folder-organization-examples}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\tightlist
+\item
+  Data Analysis Project
+\end{enumerate}
+
+\textbf{Simple Project}
+
+\begin{verbatim}
+my-simple-project/
+├── InputData          <- Folder containing data that will be processed
+├── OutputData         <- Folder containing data that has been processed
+├── Figures            <- Folder containing with figures or tables summarizing the results
+├── Code               <- Folder the scripts or programs to do the analysis
+├── LICENSE            <- File explaining the terms under which data/code is being made available
+├── README.txt         <- File documenting the analysis, and (ideally) the purpose of each file.
+\end{verbatim}
+
+\textbf{Advanced Projects}
+
+Many kinds of input data, documentation, and code.
+
+\begin{verbatim}
+my-advanced-project/
+├── repository/
+├── AUTHORS.md         <- File: List of people that contributed to the project (Markdown format)
+├── LICENSE            <- File: Plain text file explaining the usage terms/license of the data/code file (CC-By, MIT, GNU, etc.)
+├── README.md          <- File: Readme file (Markdown format)
+├── bin                <- Folder: Your compiled model code can be stored here (not tracked by git)
+├── config             <- Folder: Configuration files, e.g., for doxygen or for your model if needed
+├── data               <- Folder: Data for this project
+│   ├── external       <- Folder: Data from third party sources.
+│   ├── interim        <- Folder: Intermediate data that has been transformed.
+│   ├── processed      <- Folder: The final, canonical data sets for modeling.
+│   └── raw            <- Folder: The original, immutable data dump.
+├── docs               <- Folder: Documentation, e.g., doxygen or scientific papers (not tracked by git)
+├── notebooks          <- Folder: Ipython or R notebooks
+├── reports            <- Folder: Manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
+│   └── figures        <- Folder: Figures for the manuscript or reports
+└── src                <- Folder: Source code for this project
+    ├── R           <- Folder: scripts and programs to process data
+    ├── external       <- Folder: Any external source code, e.g., other projects, or external libraries
+    ├── models         <- Folder: Source code for your own model
+    ├── tools          <- Folder: Any helper scripts go here
+    └── visualization  <- Folder: Visualisation scripts, e.g., matplotlib, ggplot2 related
+\end{verbatim}
+
+\begin{verbatim}
+my-advanced-project_002/
+├── repository/
+│   ├── images/
+│   │   ├── image-01.jpg
+│   │   └── image-02.jpg
+│   ├── templates/
+│   │   ├── page.html
+│   │   └── post.html
+│   └── index.html
+|   |── r/
+│   |   ├── function.r
+|   |   ├── analysis.r
+|   |   ├── report.Rmd
+│   ├── data/
+│   |   ├── function.r
+│   |   ├── function.r
+│   ├── myproject.Rproj
+└── README.md
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Vegetation Monitoring Project
+\end{enumerate}
+
+\begin{verbatim}
+vegetation/
+DesertTortoiseLinkageArea/
+├── images/
+│   ├── RelevePlots
+│   │   ├── DTLA_plot001-01.jpg
+│   │   └── DTLA_plot001-02.jpg
+│   ├── PlantId
+│   │   ├── AlloniaIncarnata_BerdooCyn_2022-001.jpg
+│   │   └── AlloniaIncarnata_BerdooCyn_2022-002.jpg
+├── repositories/
+│   ├── DTLA
+│   │   │── r/
+│   │   │   ├── function.r
+│   │   │   ├── analysis.r
+│   │   │   ├── report.Rmd
+│   │   ├── data/
+│   │   │   ├── data.csv
+│   │   │   ├── data.csv
+│   │   ├── myproject.Rproj
+│   │   ├── README.md
+├── documents/
+│   ├── DTLA
+│   │   │── _archive/
+│   │   │   │── geodatabase/
+│   │   │   │── report_drafts/
+│   │   │── reports/
+│   │   │   ├── 2021AnnualReport.doc
+│   │   │   ├── 2021AnnualReport.doc
+│   │   │   ├── 2021AnnualReport.doc
+│   │── reference/
+│   │   │── CNPS_RapidAssessmentProtocol/
+│   │   │   ├── 2017_CNPSRapidAssessmentProtocol.pdf
+│   │   │   ├── 2018_CNPSRapidAssessmentProtocol.pdf
+│   │   │   ├── 2020_CNPSRapidAssessmentProtocol.pdf
+│   │   │── Species/
+│   │   │   ├── PlantIdentificationGuides
+│   │   │   │   ├── 2022_JOTRSpeciesGuide.pdf
+│   │   │   ├── SpeciesInformation
+│   │   │   │   ├── AlloniaIncarnata
+│   │   │   │   │   ├── AlloniaIncarnataSpeciesInfo.pdf
+└── recycle/
+\end{verbatim}
 
 \hypertarget{additional-resources}{%
 \subsection{Additional Resources}\label{additional-resources}}

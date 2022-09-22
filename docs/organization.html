@@ -115,6 +115,7 @@ Figure 7.1: Types of font cases (L to R, clockwise): Screaming Snake Case, Camel
 <li><p>Always use the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> date format in file names: <strong>YYYYMMDD</strong>. For example, in the file name <em>20230131_DTLA_RA.csv</em> January 31, 2023 is represented as <strong>20230131</strong>;</p></li>
 <li><p>Preserve the 3-letter file extension for application-specific codes of file format (e.g. .doc, .xls, .mov, .tif);</p></li>
 <li><p>With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;</p></li>
+<li><p>Name all files to reflect their content or function. For example, use names such as <code>tortoise_count_table.csv</code>, <code>manuscript.Rmd</code>, or <code>vegetation_analysis.r</code>. Do <strong>not</strong> use general nomenclature with sequential numbers (e.g., <code>result1.csv</code>, <code>result2.csv</code>) or a location in a final manuscript (e.g., <code>fig_3_a.png</code>), since those numbers will almost certainly change as the project evolves;</p></li>
 <li><p>Include versioning of file names where appropriate (ex: filename_rev20230131.doc).</p></li>
 <li>
 <p>Order the elements in a file name in the most appropriate way to retrieve the record. For example,</p>
@@ -135,9 +136,159 @@ Figure 7.1: Types of font cases (L to R, clockwise): Screaming Snake Case, Camel
 <span class="header-section-number">7.2</span> Directory Organization<a class="anchor" aria-label="anchor" href="#directory-organization"><i class="fas fa-link"></i></a>
 </h2>
 <p>The amount of data and files research organizations create and store has grown significantly due to technological advances in field data collection tools and open-source software. As the amount of data collected and reports generated increases, it is necessary to establish a clear, logical directory organization framework.</p>
-<div id="additional-resources" class="section level3" number="7.2.1">
+<div id="recommendations-for-directory-organization" class="section level3" number="7.2.1">
 <h3>
-<span class="header-section-number">7.2.1</span> Additional Resources<a class="anchor" aria-label="anchor" href="#additional-resources"><i class="fas fa-link"></i></a>
+<span class="header-section-number">7.2.1</span> Recommendations for Directory Organization<a class="anchor" aria-label="anchor" href="#recommendations-for-directory-organization"><i class="fas fa-link"></i></a>
+</h3>
+<p>The following recommendations were pulled from <span class="citation">Spreckelsen et al. (<a href="references.html#ref-Spreckelsen_2020" role="doc-biblioref">2020</a>)</span>.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Put each project in its own directory</strong></li>
+</ol>
+<p>Create a new folder for each new project and name that folder after the project. Some researchers create a separate project for each manuscript they are working on, while others group all research on a common theme or data set into a single project.
+As a rule of thumb, divide work into projects based on the overlap in data and code files. If 2 research efforts share no data or code, they will probably be easiest to manage independently. If they share more than half of their data and code, they are probably best managed together, while if you are building tools that are used in several projects, the common code should probably be in a project of its own. Projects do often require their own organizational model, but below are general recommendations on how you can structure data, code, analysis outputs, and other files. The important concept is that it is useful to organize the project by the types of files and that consistency helps you effectively find and use things later.</p>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Put text documents associated with the project in a ‘document’ directory.</strong></li>
+</ol>
+<p>This includes files for manuscripts, documentation for source code, and/or an electronic lab notebook recording your experiments. Subdirectories may be created for these different classes of files in large projects. Create subdirectories within the <code>document</code> folder to account for the various types of documents required for each project. For example, does this project include pre-proposals for funding? If so, create a subfolder <code>proposal</code>. If the project is grant funded, create a <code>report</code> folder to save the various reports required for the funding.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><strong>Raw Data and Analysis Results</strong></li>
+</ol>
+<ul>
+<li><strong>Put raw data and metadata in a <code>data</code> directory</strong></li>
+</ul>
+<p>The data directory might require subdirectories to organize raw data based on time, method of collection, or other metadata most relevant to your analysis. These files should include the raw .xls and .csv files, plus additional .txt &amp; .md files.</p>
+<ul>
+<li><strong>Put files generated during cleanup and analysis in a <code>results</code> directory</strong></li>
+</ul>
+<p>The <code>results</code> directory will usually require additional subdirectories for all but the simplest projects. <em>Generated files</em> are considered intermediate files, such as cleaned data, statistical tables, and final publication-ready figures or tables and should be separated clearly by file-naming conventions or placed into different subdirectorie.</p>
+<ol start="4" style="list-style-type: decimal">
+<li><strong>Put project source code in the ‘repository’ directory.</strong></li>
+</ol>
+<p>The <code>respository</code>, also contains all of the code written for the project. This includes programs written in interpreted languages such as R or Python; as well as shell scripts, snippets of SQL used to pull information from databases; and other code needed to regenerate the results.
+This directory may contain <strong>two</strong> conceptually distinct types of files that should be distinguished either by clear file names or by additional subdirectories.</p>
+<ul>
+<li>The first type is files or groups of files that perform the core analysis of the research, such as data cleaning or statistical analyses. These files can be thought of as the “scientific guts” of the project.</li>
+<li>The second type of file in <code>respository</code> is controller or driver scripts that contain all the analysis steps for the entire project from start to finish, with particular parameters and data input/output commands. A controller script for a simple project, for example, may read a raw data table, import and apply several cleanup and analysis functions from the other files in this directory, and create and save a numeric result. For a small project with 1 main output and all the code is in R, save R files in a <code>R</code> folder.</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li><strong>Images and Visualizations</strong></li>
+</ol>
+<p>Photos, screenshots, and plots or other types of data visualizations should be saved in a separate <code>images</code> project sub-directory.</p>
+<ol start="6" style="list-style-type: decimal">
+<li><strong>Put project scratch work and analysis in a ‘sandbox’ directory.</strong></li>
+</ol>
+<p>Create a <code>sandbox</code> directory within the appropriate project folder for experimental project work. A <code>sandbox</code> folder is useful in a the <code>src</code> or <code>r</code> folder as it can serve as location to save test code or tutorials to conduct analysis.</p>
+<ol start="7" style="list-style-type: decimal">
+<li><strong>Create an <code>archive</code> folder for out-of-date data or versions</strong></li>
+</ol>
+<p>An <code>archive</code> folder serves as a repository for long-term data retention. Data and reference materials stored in the <code>archive</code> folder are no longer the most relevant versions, but important reference files that should be preserved but not utilized for analysis.</p>
+</div>
+<div id="folder-organization-examples" class="section level3" number="7.2.2">
+<h3>
+<span class="header-section-number">7.2.2</span> Folder Organization Examples:<a class="anchor" aria-label="anchor" href="#folder-organization-examples"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: decimal">
+<li>Data Analysis Project</li>
+</ol>
+<p><strong>Simple Project</strong></p>
+<pre><code>my-simple-project/
+├── InputData          &lt;- Folder containing data that will be processed
+├── OutputData         &lt;- Folder containing data that has been processed
+├── Figures            &lt;- Folder containing with figures or tables summarizing the results
+├── Code               &lt;- Folder the scripts or programs to do the analysis
+├── LICENSE            &lt;- File explaining the terms under which data/code is being made available
+├── README.txt         &lt;- File documenting the analysis, and (ideally) the purpose of each file.</code></pre>
+<p><strong>Advanced Projects</strong></p>
+<p>Many kinds of input data, documentation, and code.</p>
+<pre><code>my-advanced-project/
+├── repository/
+├── AUTHORS.md         &lt;- File: List of people that contributed to the project (Markdown format)
+├── LICENSE            &lt;- File: Plain text file explaining the usage terms/license of the data/code file (CC-By, MIT, GNU, etc.)
+├── README.md          &lt;- File: Readme file (Markdown format)
+├── bin                &lt;- Folder: Your compiled model code can be stored here (not tracked by git)
+├── config             &lt;- Folder: Configuration files, e.g., for doxygen or for your model if needed
+├── data               &lt;- Folder: Data for this project
+│   ├── external       &lt;- Folder: Data from third party sources.
+│   ├── interim        &lt;- Folder: Intermediate data that has been transformed.
+│   ├── processed      &lt;- Folder: The final, canonical data sets for modeling.
+│   └── raw            &lt;- Folder: The original, immutable data dump.
+├── docs               &lt;- Folder: Documentation, e.g., doxygen or scientific papers (not tracked by git)
+├── notebooks          &lt;- Folder: Ipython or R notebooks
+├── reports            &lt;- Folder: Manuscript source, e.g., LaTeX, Markdown, etc., or any project reports
+│   └── figures        &lt;- Folder: Figures for the manuscript or reports
+└── src                &lt;- Folder: Source code for this project
+    ├── R           &lt;- Folder: scripts and programs to process data
+    ├── external       &lt;- Folder: Any external source code, e.g., other projects, or external libraries
+    ├── models         &lt;- Folder: Source code for your own model
+    ├── tools          &lt;- Folder: Any helper scripts go here
+    └── visualization  &lt;- Folder: Visualisation scripts, e.g., matplotlib, ggplot2 related</code></pre>
+<pre><code>my-advanced-project_002/
+├── repository/
+│   ├── images/
+│   │   ├── image-01.jpg
+│   │   └── image-02.jpg
+│   ├── templates/
+│   │   ├── page.html
+│   │   └── post.html
+│   └── index.html
+|   |── r/
+│   |   ├── function.r
+|   |   ├── analysis.r
+|   |   ├── report.Rmd
+│   ├── data/
+│   |   ├── function.r
+│   |   ├── function.r
+│   ├── myproject.Rproj
+└── README.md</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Vegetation Monitoring Project</li>
+</ol>
+<pre><code>vegetation/
+DesertTortoiseLinkageArea/
+├── images/
+│   ├── RelevePlots
+│   │   ├── DTLA_plot001-01.jpg
+│   │   └── DTLA_plot001-02.jpg
+│   ├── PlantId
+│   │   ├── AlloniaIncarnata_BerdooCyn_2022-001.jpg
+│   │   └── AlloniaIncarnata_BerdooCyn_2022-002.jpg
+├── repositories/
+│   ├── DTLA
+│   │   │── r/
+│   │   │   ├── function.r
+│   │   │   ├── analysis.r
+│   │   │   ├── report.Rmd
+│   │   ├── data/
+│   │   │   ├── data.csv
+│   │   │   ├── data.csv
+│   │   ├── myproject.Rproj
+│   │   ├── README.md
+├── documents/
+│   ├── DTLA
+│   │   │── _archive/
+│   │   │   │── geodatabase/
+│   │   │   │── report_drafts/
+│   │   │── reports/
+│   │   │   ├── 2021AnnualReport.doc
+│   │   │   ├── 2021AnnualReport.doc
+│   │   │   ├── 2021AnnualReport.doc
+│   │── reference/
+│   │   │── CNPS_RapidAssessmentProtocol/
+│   │   │   ├── 2017_CNPSRapidAssessmentProtocol.pdf
+│   │   │   ├── 2018_CNPSRapidAssessmentProtocol.pdf
+│   │   │   ├── 2020_CNPSRapidAssessmentProtocol.pdf
+│   │   │── Species/
+│   │   │   ├── PlantIdentificationGuides
+│   │   │   │   ├── 2022_JOTRSpeciesGuide.pdf
+│   │   │   ├── SpeciesInformation
+│   │   │   │   ├── AlloniaIncarnata
+│   │   │   │   │   ├── AlloniaIncarnataSpeciesInfo.pdf
+└── recycle/
+</code></pre>
+</div>
+<div id="additional-resources" class="section level3" number="7.2.3">
+<h3>
+<span class="header-section-number">7.2.3</span> Additional Resources<a class="anchor" aria-label="anchor" href="#additional-resources"><i class="fas fa-link"></i></a>
 </h3>
 <ul>
 <li>
@@ -200,10 +351,10 @@ Figure 7.2: Tidy data allows for efficient data science, easy collaboration, and
 </ul>
 <p>The R package, <code>tidyverse</code>, is one of the best tools to tidy data! The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.</p>
 <p>Install the complete tidyverse with:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span><span class="op">)</span></span></code></pre></div>
 <p>Then load the <strong>tidyverse</strong> package in a code chunk with the command:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span></code></pre></div>
 <p>The packages contained within the <a href="https://www.tidyverse.org/packages/"><strong>tidyverse</strong></a> are:</p>
 <ul>
@@ -365,7 +516,11 @@ Figure 7.3: Data Science workflow utilizing Tidyverse packages. Art Credit: Dr.�
 <li><a class="nav-link" href="#organization"><span class="header-section-number">7</span> Directory Organization &amp; Data Project Development</a></li>
 <li><a class="nav-link" href="#file-naming"><span class="header-section-number">7.1</span> File Naming</a></li>
 <li>
-<a class="nav-link" href="#directory-organization"><span class="header-section-number">7.2</span> Directory Organization</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#additional-resources"><span class="header-section-number">7.2.1</span> Additional Resources</a></li></ul>
+<a class="nav-link" href="#directory-organization"><span class="header-section-number">7.2</span> Directory Organization</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#recommendations-for-directory-organization"><span class="header-section-number">7.2.1</span> Recommendations for Directory Organization</a></li>
+<li><a class="nav-link" href="#folder-organization-examples"><span class="header-section-number">7.2.2</span> Folder Organization Examples:</a></li>
+<li><a class="nav-link" href="#additional-resources"><span class="header-section-number">7.2.3</span> Additional Resources</a></li>
+</ul>
 </li>
 <li>
 <a class="nav-link" href="#data-management"><span class="header-section-number">7.3</span> Data Management</a><ul class="nav navbar-nav">
@@ -391,7 +546,7 @@ Figure 7.3: Data Science workflow utilizing Tidyverse packages. Art Credit: Dr.�
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-21.</p>
+    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-22.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
