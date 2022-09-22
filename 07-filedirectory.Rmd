@@ -1,4 +1,4 @@
-# File Directory Organization {#organization}
+# Directory Organization & Data Project Development {#organization}
 
 ## File Naming
 
@@ -29,7 +29,185 @@ knitr::include_graphics("images/case_horst.jpeg")
   - **Examples:** `20170217_CVStormwaterVAP.csv`, `20221231_CVMC_CRCA01_Proposal_LCS.doc`
 
 
-## Folder Organization
+## Directory Organization
+
+The amount of data and files research organizations create and store has grown significantly due to technological advances in field data collection tools and open-source software. As the amount of data collected and reports generated increases, it is necessary to establish a clear, logical directory organization framework.  
+
+
+
+
+### Additional Resources
+
+- [Gentzkow M, Shapiro JM. Code and Data for the Social Sciences: A Practitioner's Guide; 2014](https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf). https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf.
+- [Hampton S.E, et al.  Skills and Knowledge for Data-Intensive Environmental Research. BioScience, Volume 67, Issue 6, June 2017, Pages 546–557.](https://academic.oup.com/bioscience/article/67/6/546/3784601)
+- [Noble WS. A Quick Guide to Organizing Computational Biology Projects. PLoS Comput Biol. 2009;5(7).](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
 
 
 ## Data Management
+
+@Wilson_2017 recommend following these data management practices:
+
+- Save the raw data.
+- Ensure that raw data are backed up in more than one location.
+- Create the data you wish to see in the world.
+- Create analysis-friendly data.
+- Record all the steps used to process data.
+- Anticipate the need to use multiple tables, and use a unique identifier for every record.
+- Submit data to a reputable DOI-issuing repository so that others can access and cite it (ex: [DataOne](https://www.dataone.org/), [KNB](https://knb.ecoinformatics.org/), and [NCEI](https://www.ncei.noaa.gov/access/search/index).
+
+
+
+### Tidy Data
+
+**Tidy data** is one of the most important concepts for any data scientist. It provides predictable organization for data that makes coding, analysis, and collaboration easier. 
+
+Tidy data satisfies the following conditions:
+
+- Each observation is in a row
+- Each variable in a column
+- Each value is in a single cell
+
+```{r tidydata, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "90%", fig.cap= "Tidy data allows for efficient data science, easy collaboration, and ensures reproducibility and reuse. Art Credit: Dr. Allison Horst, UCSB"}
+
+knitr::include_graphics("images/tidydata_horst.png")
+```
+
+@Broman_2018 state the core principles for tidy data are:
+
+- be consistent with data collection and entry, 
+- write dates like YYYY-MM-DD, 
+- don't leave any cells empty, 
+- put just one thing in a cell, 
+- organize the data as a single rectangle
+  - with subjects as rows and variables as columns, 
+  - and with a single header row, 
+- create a data dictionary, 
+- don't include calculations in the raw data files, 
+- don't use font color or highlighting as data, 
+- choose good names for things, 
+- make backups, 
+- use data validation to avoid data entry errors, 
+- and save the data in **plain text files** (i.e. .csv, .txt).
+
+The R package, `tidyverse`, is one of the best tools to tidy data! The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
+
+Install the complete tidyverse with:
+
+```{r, eval=FALSE, echo=TRUE}
+install.packages("tidyverse")
+```
+
+Then load the **tidyverse** package in a code chunk with the command:
+
+```{r, eval=FALSE, echo=TRUE}
+library(tidyverse)
+```
+
+The packages contained within the [**tidyverse**](https://www.tidyverse.org/packages/) are: 
+
+- [ggplot2](https://ggplot2.tidyverse.org/) is a system for creating graphics for your data, based on The Grammar of Graphics. Plot your data with ggplot2!
+- [dplyr](https://dplyr.tidyverse.org/) is a data manipulation package that provides a consistent set of verbs to manipilate data:
+  - `mutate()` adds new variables that are functions of existing variables
+  - `select()` picks variables based on their names.
+  - `filter()` picks cases based on their values.
+  - `summarise()` reduces multiple values down to a single summary.
+  - `arrange()` changes the ordering of the rows.
+- [tidyr](https://tidyr.tidyverse.org/) is the tidying data workhorse package within the **tidyverse**. Use **tidyr** to wrangle, pivot, and convert or replace missing data.
+- [readr](https://readr.tidyverse.org/) is a fast way to read rectangular data from delimited files, such as comma-separated values (CSV) and tab-separated values (TSV). 
+- [purrr](https://purrr.tidyverse.org/) provides a complete and consistent set of tools for working with functions and vectors.
+- [tibble](https://tibble.tidyverse.org/) is a version of `data.frame`, but they  do less (i.e. they don’t change variable names or types, and don’t do partial matching) and complain more (e.g. when a variable does not exist). 
+- [stringr](https://stringr.tidyverse.org/) provides a cohesive set of functions designed to make working with strings as easy as possible. 
+- [forcats](https://forcats.tidyverse.org/) provides a suite of tools that solve common problems with factors, including changing the order of levels or the values.
+  - `fct_reorder()`: Reordering a factor by another variable.
+  - `fct_infreq()`: Reordering a factor by the frequency of values.
+  - `fct_relevel()`: Changing the order of a factor by hand.
+  - `fct_lump()`: Collapsing the least/most frequent values of a factor into “other”. 
+
+```{r tidyverse, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "100%", fig.cap= "Data Science workflow utilizing Tidyverse packages. Art Credit: Dr. Olivier Gimenez"}
+
+knitr::include_graphics("images/tidyverse.png")
+```
+
+### Project Development and Collaboration
+
+The foundation of developing and organizing a project is to design it to make it easy for new collaborators to join and for current coworkers to collaborate seemlessly. This involves making it easy for people to set up a local workspace so that they can contribute, help them find what to contribute, and make the organization process clear so that they know how to contribute.
+
+Steps to consider when developing a research project:
+
+1. **Create an overview of your project.**
+
+Have a short file in the project's home directory that explains the purpose of the project. This file (generally README.txt or README.md) should contain the project's:
+
+- title, 
+- a brief description, 
+- up-to-date contact and/or author information, 
+- and an example or 2 of how to run various cleaning or analysis tasks,
+- describes what is needed for the project and use or contribute to it, i.e., dependencies that need to be installed, tests that can be run to ensure that software has been installed correctly, and guidelines or checklists that the project adheres to.
+
+It is often the first thing users and collaborators on your project will look at, so make it explicit how you want people to engage with the project. 
+
+2. **Create a shared "to-do" list.** 
+
+This can be a plain text file called something like notes.txt or todo.txt, or utilize GitHub project management tools to create a new issue for each to-do item. Describe the items clearly so that the tasks are clear and easily understood.
+
+3. **Decide on communication strategies.** 
+
+Make explicit decisions about (and publish where appropriate) how members of the project will communicate with each other and with externals users/collaborators. This includes the location and technology for email lists, chat channels, voice/video conferencing, documentation, and meeting notes, as well as which of these channels will be public or private.
+
+4. **Make the license explicit.** 
+
+Create a LICENSE file in the project's home directory that clearly states what license(s) apply to the project's software, data, and manuscripts. The one most frequently recommended is the **Creative Common** licenses for data and text.
+
+5. **Ensure the project is citable.** 
+
+Include a `CITATION` file in the project's home directory that describes how to cite this project as a whole and where to find (and how to cite) any data sets, code, and figures. Below is an example `CITATION` file for the Ecodata Retriever (https://github.com/weecology/retriever):
+
+`Please cite this work as:
+Morris, B.D. and E.P. White. 2013. "The EcoData Retriever: improving access to existing ecological data". PLoS ONE 8:e65848.`
+
+
+*Guidance above taken from @Wilson_2017.*
+
+
+
+### FAIR Data Management Principles
+
+In 2016, the **FAIR Guiding Principles for scientific data management and stewardship** were published in *Scientific Data*. The authors intended to provide guidelines to improve the **F**indability, **A**ccessibility, **I**nteroperability, and **R**euse of digital assets [@Wilkinson_2016]. 
+
+In this article, the authors outline the **FAIR** Guiding Principles as: 
+
+1. To be **F**indable:
+    - F1. (meta)data are assigned a globally unique and persistent identifier
+    - F2. data are described with rich metadata (defined by R1 below)
+    - F3. metadata clearly and explicitly include the identifier of the data it describes
+    - F4. (meta)data are registered or indexed in a searchable resource
+2. To be **A**ccessible:
+    - A1. (meta)data are retrievable by their identifier using a standardized communications protocol
+      - A1.1 the protocol is open, free, and universally implementable
+      - A1.2 the protocol allows for an authentication and authorization procedure, where necessary
+    - A2. metadata are accessible, even when the data are no longer available
+3. To be **I**nteroperable:
+    - I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+    - I2. (meta)data use vocabularies that follow FAIR principles
+    - I3. (meta)data include qualified references to other (meta)data
+4. To be **R**eusable:
+    - R1. meta(data) are richly described with a plurality of accurate and relevant attributes
+      - R1.1. (meta)data are released with a clear and accessible data usage license
+      - R1.2. (meta)data are associated with detailed provenance
+      - R1.3. (meta)data meet domain-relevant community standards
+
+
+
+### Additional Resources
+
+For more information on tidy data and data management:
+
+- Julia Lowndes & Allison Horst's [Tidy Data blog](https://www.openscapes.org/blog/2020/10/12/tidy-data/)
+- Hadley Wickham [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf)
+- Grolemund & Wickham [R for Data Science](https://r4ds.had.co.nz/)
+- Lowndes, J.S., et al. [Our Path to Better Science in Less Time Using Open Data Science Tools.](https://www.nature.com/articles/s41559-017-0160)
+
+
+
+
+

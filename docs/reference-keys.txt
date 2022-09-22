@@ -2,6 +2,8 @@ fig:rendererror
 fig:nice-fig
 tab:nice-tab
 fig:case
+fig:tidydata
+fig:tidyverse
 intro
 computer-requirements
 software-installation
@@ -26,6 +28,7 @@ referencing-bookdown-chapters
 formatting-figures
 citations
 alt-text-for-accessibility
+migrating-to-quarto-from-bookdown
 git
 github
 git-1
@@ -55,8 +58,13 @@ archived-ucr-esri-arcgis-desktop-and-pro-installation-instructions
 esri-resources
 organization
 file-naming
-folder-organization
+directory-organization
+additional-resources
 data-management
+tidy-data
+project-development-and-collaboration
+fair-data-management-principles
+additional-resources-1
 equipment
 concur
 submitting-a-trip-request---before-the-trip

@@ -53,7 +53,7 @@ In your Console, type either of these commands depending on which type of render
 
 **Note:** If there is an error during rendering, Google what the error message means! You should be able to find an answer on [stack overflow](https://stackoverflow.com/) or other tech support site. One of the most common errors during rendering is that not all dependencies (aka packages) have been installed on your local computer. 
 
-```{r rendererror, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "85%", fig.cap="An common error message in the RStudio console: Error in library(here): there is no package called `here`. If you see this library error message, all you need to do is install the required package! The additional warning messages are notifications that R should be updated to be compatiable with the current packages. These will not hender the render."}
+```{r rendererror, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "95%", fig.cap="An common error message in the RStudio console: Error in library(here): there is no package called `here`. If you see this library error message, all you need to do is install the required package! The additional warning messages are notifications that R should be updated to be compatiable with the current packages. These will not hender the render."}
 
 knitr::include_graphics("images/bookdown_here.png")
 ```
@@ -119,4 +119,10 @@ You can easily write citations using .bib files within this repository formatted
 ### Alt Text for Accessibility
 
 [Use the knitr package to add alt text to graphics in R Markdown files](https://www.rstudio.com/blog/knitr-fig-alt/)
+
+### Migrating to Quarto from Bookdown
+
+Love `bookdown`? Check out `Quarto`! To learn how to convert `bookdown` documents to `Quarto`, check out this blogpost on [Openscapes](https://www.openscapes.org/blog/2022/07/21/quarto-migrate/) 
+
+
 

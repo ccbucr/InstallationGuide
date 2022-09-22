@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Research Unit Resource Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Fellow}
-\date{2022-09-20}
+\date{2022-09-21}
 
 \begin{document}
 \maketitle
@@ -530,7 +530,7 @@ In your Console, type either of these commands depending on which type of render
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.85\linewidth]{images/bookdown_here} 
+{\centering \includegraphics[width=0.95\linewidth]{images/bookdown_here} 
 
 }
 
@@ -633,6 +633,11 @@ You can easily write citations using .bib files within this repository formatted
 \subsection{Alt Text for Accessibility}\label{alt-text-for-accessibility}}
 
 \href{https://www.rstudio.com/blog/knitr-fig-alt/}{Use the knitr package to add alt text to graphics in R Markdown files}
+
+\hypertarget{migrating-to-quarto-from-bookdown}{%
+\subsection{Migrating to Quarto from Bookdown}\label{migrating-to-quarto-from-bookdown}}
+
+Love \texttt{bookdown}? Check out \texttt{Quarto}! To learn how to convert \texttt{bookdown} documents to \texttt{Quarto}, check out this blogpost on \href{https://www.openscapes.org/blog/2022/07/21/quarto-migrate/}{Openscapes}
 
 \hypertarget{git}{%
 \chapter{Git Installation \& GitHub Account}\label{git}}
@@ -1443,7 +1448,7 @@ Here are few resources that provide tutorials and workshops on how to use ESRI s
 \end{itemize}
 
 \hypertarget{organization}{%
-\chapter{File Directory Organization}\label{organization}}
+\chapter{Directory Organization \& Data Project Development}\label{organization}}
 
 \hypertarget{file-naming}{%
 \section{File Naming}\label{file-naming}}
@@ -1506,11 +1511,352 @@ When creating file names, best practices dictate that you should:
   \end{itemize}
 \end{itemize}
 
-\hypertarget{folder-organization}{%
-\section{Folder Organization}\label{folder-organization}}
+\hypertarget{directory-organization}{%
+\section{Directory Organization}\label{directory-organization}}
+
+The amount of data and files research organizations create and store has grown significantly due to technological advances in field data collection tools and open-source software. As the amount of data collected and reports generated increases, it is necessary to establish a clear, logical directory organization framework.
+
+\hypertarget{additional-resources}{%
+\subsection{Additional Resources}\label{additional-resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf}{Gentzkow M, Shapiro JM. Code and Data for the Social Sciences: A Practitioner's Guide; 2014}. \url{https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf}.
+\item
+  \href{https://academic.oup.com/bioscience/article/67/6/546/3784601}{Hampton S.E, et al.~Skills and Knowledge for Data-Intensive Environmental Research. BioScience, Volume 67, Issue 6, June 2017, Pages 546--557.}
+\item
+  \href{https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424}{Noble WS. A Quick Guide to Organizing Computational Biology Projects. PLoS Comput Biol. 2009;5(7).}
+\end{itemize}
 
 \hypertarget{data-management}{%
 \section{Data Management}\label{data-management}}
+
+\citet{Wilson_2017} recommend following these data management practices:
+
+\begin{itemize}
+\tightlist
+\item
+  Save the raw data.
+\item
+  Ensure that raw data are backed up in more than one location.
+\item
+  Create the data you wish to see in the world.
+\item
+  Create analysis-friendly data.
+\item
+  Record all the steps used to process data.
+\item
+  Anticipate the need to use multiple tables, and use a unique identifier for every record.
+\item
+  Submit data to a reputable DOI-issuing repository so that others can access and cite it (ex: \href{https://www.dataone.org/}{DataOne}, \href{https://knb.ecoinformatics.org/}{KNB}, and \href{https://www.ncei.noaa.gov/access/search/index}{NCEI}.
+\end{itemize}
+
+\hypertarget{tidy-data}{%
+\subsection{Tidy Data}\label{tidy-data}}
+
+\textbf{Tidy data} is one of the most important concepts for any data scientist. It provides predictable organization for data that makes coding, analysis, and collaboration easier.
+
+Tidy data satisfies the following conditions:
+
+\begin{itemize}
+\tightlist
+\item
+  Each observation is in a row
+\item
+  Each variable in a column
+\item
+  Each value is in a single cell
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/tidydata_horst} 
+
+}
+
+\caption{Tidy data allows for efficient data science, easy collaboration, and ensures reproducibility and reuse. Art Credit: Dr. Allison Horst, UCSB}\label{fig:tidydata}
+\end{figure}
+
+\citet{Broman_2018} state the core principles for tidy data are:
+
+\begin{itemize}
+\tightlist
+\item
+  be consistent with data collection and entry,
+\item
+  write dates like YYYY-MM-DD,
+\item
+  don't leave any cells empty,
+\item
+  put just one thing in a cell,
+\item
+  organize the data as a single rectangle
+
+  \begin{itemize}
+  \tightlist
+  \item
+    with subjects as rows and variables as columns,
+  \item
+    and with a single header row,
+  \end{itemize}
+\item
+  create a data dictionary,
+\item
+  don't include calculations in the raw data files,
+\item
+  don't use font color or highlighting as data,
+\item
+  choose good names for things,
+\item
+  make backups,
+\item
+  use data validation to avoid data entry errors,
+\item
+  and save the data in \textbf{plain text files} (i.e.~.csv, .txt).
+\end{itemize}
+
+The R package, \texttt{tidyverse}, is one of the best tools to tidy data! The tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.
+
+Install the complete tidyverse with:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{install.packages}\NormalTok{(}\StringTok{"tidyverse"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Then load the \textbf{tidyverse} package in a code chunk with the command:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+The packages contained within the \href{https://www.tidyverse.org/packages/}{\textbf{tidyverse}} are:
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://ggplot2.tidyverse.org/}{ggplot2} is a system for creating graphics for your data, based on The Grammar of Graphics. Plot your data with ggplot2!
+\item
+  \href{https://dplyr.tidyverse.org/}{dplyr} is a data manipulation package that provides a consistent set of verbs to manipilate data:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{mutate()} adds new variables that are functions of existing variables
+  \item
+    \texttt{select()} picks variables based on their names.
+  \item
+    \texttt{filter()} picks cases based on their values.
+  \item
+    \texttt{summarise()} reduces multiple values down to a single summary.
+  \item
+    \texttt{arrange()} changes the ordering of the rows.
+  \end{itemize}
+\item
+  \href{https://tidyr.tidyverse.org/}{tidyr} is the tidying data workhorse package within the \textbf{tidyverse}. Use \textbf{tidyr} to wrangle, pivot, and convert or replace missing data.
+\item
+  \href{https://readr.tidyverse.org/}{readr} is a fast way to read rectangular data from delimited files, such as comma-separated values (CSV) and tab-separated values (TSV).
+\item
+  \href{https://purrr.tidyverse.org/}{purrr} provides a complete and consistent set of tools for working with functions and vectors.
+\item
+  \href{https://tibble.tidyverse.org/}{tibble} is a version of \texttt{data.frame}, but they do less (i.e.~they don't change variable names or types, and don't do partial matching) and complain more (e.g.~when a variable does not exist).
+\item
+  \href{https://stringr.tidyverse.org/}{stringr} provides a cohesive set of functions designed to make working with strings as easy as possible.
+\item
+  \href{https://forcats.tidyverse.org/}{forcats} provides a suite of tools that solve common problems with factors, including changing the order of levels or the values.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \texttt{fct\_reorder()}: Reordering a factor by another variable.
+  \item
+    \texttt{fct\_infreq()}: Reordering a factor by the frequency of values.
+  \item
+    \texttt{fct\_relevel()}: Changing the order of a factor by hand.
+  \item
+    \texttt{fct\_lump()}: Collapsing the least/most frequent values of a factor into ``other''.
+  \end{itemize}
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/tidyverse} 
+
+}
+
+\caption{Data Science workflow utilizing Tidyverse packages. Art Credit: Dr. Olivier Gimenez}\label{fig:tidyverse}
+\end{figure}
+
+\hypertarget{project-development-and-collaboration}{%
+\subsection{Project Development and Collaboration}\label{project-development-and-collaboration}}
+
+The foundation of developing and organizing a project is to design it to make it easy for new collaborators to join and for current coworkers to collaborate seemlessly. This involves making it easy for people to set up a local workspace so that they can contribute, help them find what to contribute, and make the organization process clear so that they know how to contribute.
+
+Steps to consider when developing a research project:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Create an overview of your project.}
+\end{enumerate}
+
+Have a short file in the project's home directory that explains the purpose of the project. This file (generally README.txt or README.md) should contain the project's:
+
+\begin{itemize}
+\tightlist
+\item
+  title,
+\item
+  a brief description,
+\item
+  up-to-date contact and/or author information,
+\item
+  and an example or 2 of how to run various cleaning or analysis tasks,
+\item
+  describes what is needed for the project and use or contribute to it, i.e., dependencies that need to be installed, tests that can be run to ensure that software has been installed correctly, and guidelines or checklists that the project adheres to.
+\end{itemize}
+
+It is often the first thing users and collaborators on your project will look at, so make it explicit how you want people to engage with the project.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \textbf{Create a shared ``to-do'' list.}
+\end{enumerate}
+
+This can be a plain text file called something like notes.txt or todo.txt, or utilize GitHub project management tools to create a new issue for each to-do item. Describe the items clearly so that the tasks are clear and easily understood.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  \textbf{Decide on communication strategies.}
+\end{enumerate}
+
+Make explicit decisions about (and publish where appropriate) how members of the project will communicate with each other and with externals users/collaborators. This includes the location and technology for email lists, chat channels, voice/video conferencing, documentation, and meeting notes, as well as which of these channels will be public or private.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  \textbf{Make the license explicit.}
+\end{enumerate}
+
+Create a LICENSE file in the project's home directory that clearly states what license(s) apply to the project's software, data, and manuscripts. The one most frequently recommended is the \textbf{Creative Common} licenses for data and text.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \textbf{Ensure the project is citable.}
+\end{enumerate}
+
+Include a \texttt{CITATION} file in the project's home directory that describes how to cite this project as a whole and where to find (and how to cite) any data sets, code, and figures. Below is an example \texttt{CITATION} file for the Ecodata Retriever (\url{https://github.com/weecology/retriever}):
+
+\texttt{Please\ cite\ this\ work\ as:\ Morris,\ B.D.\ and\ E.P.\ White.\ 2013.\ "The\ EcoData\ Retriever:\ improving\ access\ to\ existing\ ecological\ data".\ PLoS\ ONE\ 8:e65848.}
+
+\emph{Guidance above taken from \citet{Wilson_2017}.}
+
+\hypertarget{fair-data-management-principles}{%
+\subsection{FAIR Data Management Principles}\label{fair-data-management-principles}}
+
+In 2016, the \textbf{FAIR Guiding Principles for scientific data management and stewardship} were published in \emph{Scientific Data}. The authors intended to provide guidelines to improve the \textbf{F}indability, \textbf{A}ccessibility, \textbf{I}nteroperability, and \textbf{R}euse of digital assets \citep{Wilkinson_2016}.
+
+In this article, the authors outline the \textbf{FAIR} Guiding Principles as:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  To be \textbf{F}indable:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    F1. (meta)data are assigned a globally unique and persistent identifier
+  \item
+    F2. data are described with rich metadata (defined by R1 below)
+  \item
+    F3. metadata clearly and explicitly include the identifier of the data it describes
+  \item
+    F4. (meta)data are registered or indexed in a searchable resource
+  \end{itemize}
+\item
+  To be \textbf{A}ccessible:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A1. (meta)data are retrievable by their identifier using a standardized communications protocol
+
+    \begin{itemize}
+    \tightlist
+    \item
+      A1.1 the protocol is open, free, and universally implementable
+    \item
+      A1.2 the protocol allows for an authentication and authorization procedure, where necessary
+    \end{itemize}
+  \item
+    A2. metadata are accessible, even when the data are no longer available
+  \end{itemize}
+\item
+  To be \textbf{I}nteroperable:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+  \item
+    I2. (meta)data use vocabularies that follow FAIR principles
+  \item
+    I3. (meta)data include qualified references to other (meta)data
+  \end{itemize}
+\item
+  To be \textbf{R}eusable:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    R1. meta(data) are richly described with a plurality of accurate and relevant attributes
+
+    \begin{itemize}
+    \tightlist
+    \item
+      R1.1. (meta)data are released with a clear and accessible data usage license
+    \item
+      R1.2. (meta)data are associated with detailed provenance
+    \item
+      R1.3. (meta)data meet domain-relevant community standards
+    \end{itemize}
+  \end{itemize}
+\end{enumerate}
+
+\hypertarget{additional-resources-1}{%
+\subsection{Additional Resources}\label{additional-resources-1}}
+
+For more information on tidy data and data management:
+
+\begin{itemize}
+\tightlist
+\item
+  Julia Lowndes \& Allison Horst's \href{https://www.openscapes.org/blog/2020/10/12/tidy-data/}{Tidy Data blog}
+\item
+  Hadley Wickham \href{https://vita.had.co.nz/papers/tidy-data.pdf}{Tidy Data}
+\item
+  Grolemund \& Wickham \href{https://r4ds.had.co.nz/}{R for Data Science}
+\item
+  Lowndes, J.S., et al.~\href{https://www.nature.com/articles/s41559-017-0160}{Our Path to Better Science in Less Time Using Open Data Science Tools.}
+\end{itemize}
 
 \hypertarget{equipment}{%
 \chapter{Equipment}\label{equipment}}

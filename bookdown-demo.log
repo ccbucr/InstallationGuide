@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  20 SEP 2022 14:16
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  21 SEP 2022 23:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -992,20 +992,23 @@ Underfull \vbox (badness 2027) has occurred while \output is active []
 [16]
 File: images/select.png Graphic file (type bmp)
 <images/select.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[17]
 File: images/commit.png Graphic file (type bmp)
 <images/commit.png>
-[17]
 
 LaTeX Warning: Reference `methods' on page 18 undefined on input line 574.
 
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
-[18] [19] [20
+[18] [19] [20]
+Chapter 4.
+[21
 
 ]
-Chapter 4.
-[21]
-Overfull \hbox (110.94pt too wide) in paragraph at lines 730--733
+Overfull \hbox (110.94pt too wide) in paragraph at lines 735--738
 []\TU/lmtt/m/n/10 user.name=janedoe user.email=janedoe@ucr.edu core.excludesfil
 e=/Users/janedoe/.gitignore 
  []
@@ -1047,13 +1050,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/nas_mac.png Graphic file (type bmp)
 <images/nas_mac.png>
 [30]
-Underfull \hbox (badness 3989) in paragraph at lines 1029--1034
+Underfull \hbox (badness 3989) in paragraph at lines 1034--1039
 \TU/lmr/m/n/10 via SSH: \TU/lmtt/m/n/10 ssh [Synology NAS admin user name]@[Syn
 ology NAS IP
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 1029--1034
+Underfull \hbox (badness 2318) in paragraph at lines 1034--1039
 \TU/lmtt/m/n/10 address or hostname] -p [The port number of SSH] \TU/lmr/m/n/10
  For example,
  []
@@ -1134,26 +1137,68 @@ Chapter 7.
 File: images/case_horst.jpeg Graphic file (type bmp)
 <images/case_horst.jpeg>
 
-Overfull \hbox (36.09503pt too wide) in paragraph at lines 1490--1492
+Overfull \hbox (36.09503pt too wide) in paragraph at lines 1495--1497
 []\TU/lmr/m/n/10 Include versioning of file names where appropriate (ex: filena
 me_rev20230131.doc). 
  []
 
 [47]
-Overfull \hbox (103.73698pt too wide) in paragraph at lines 1505--1506
+Overfull \hbox (103.73698pt too wide) in paragraph at lines 1510--1511
 []\TU/lmr/bx/n/10 Examples: \TU/lmtt/m/n/10 20170217_CVStormwaterVAP.csv\TU/lmr
 /m/n/10 , \TU/lmtt/m/n/10 20221231_CVMC_CRCA01_Proposal_LCS.doc 
  []
 
-[48]
-Chapter 8.
-[49
 
-] [50
+Overfull \hbox (48.74562pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 48 \TU/lmr/m/sl/10 CHAPTER 7.  DIRECTORY ORGANIZATION & DATA PRO
+JECT DEVELOPMENT
+ []
+
+[48]
+File: images/tidydata_horst.png Graphic file (type bmp)
+<images/tidydata_horst.png>
+[49]
+Overfull \hbox (48.74562pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 50 \TU/lmr/m/sl/10 CHAPTER 7.  DIRECTORY ORGANIZATION & DATA PRO
+JECT DEVELOPMENT
+ []
+
+[50]
+File: images/tidyverse.png Graphic file (type bmp)
+<images/tidyverse.png>
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+[]\TU/lmtt/m/n/10 Please cite this work as: Morris, B.D. and E.P. White. 2013. 
+"The
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1767
+\TU/lmtt/m/n/10 EcoData Retriever: improving access to existing ecological data
+".
+ []
+
+
+Overfull \hbox (48.74562pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 52 \TU/lmr/m/sl/10 CHAPTER 7.  DIRECTORY ORGANIZATION & DATA PRO
+JECT DEVELOPMENT
+ []
+
+[52] [53]
+Overfull \hbox (48.74562pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 54 \TU/lmr/m/sl/10 CHAPTER 7.  DIRECTORY ORGANIZATION & DATA PRO
+JECT DEVELOPMENT
+ []
+
+[54
+
+]
+Chapter 8.
+[55] [56
 
 ]
 Chapter 9.
-[51]
+[57]
 File: images/concur1.png Graphic file (type bmp)
 <images/concur1.png>
 File: images/concur2a.jpg Graphic file (type bmp)
@@ -1161,35 +1206,35 @@ File: images/concur2a.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 1057) has occurred while \output is active []
 
-[52]
+[58]
 File: images/concur3.png Graphic file (type bmp)
 <images/concur3.png>
 File: images/concur4.png Graphic file (type bmp)
 <images/concur4.png>
-[53]
+[59]
 File: images/concur5.png Graphic file (type bmp)
 <images/concur5.png>
 File: images/concur6.png Graphic file (type bmp)
 <images/concur6.png>
-[54] [55] [56
+[60] [61] [62
 
 ]
 Chapter 10.
 
-Underfull \hbox (badness 1735) in paragraph at lines 1638--1638
+Underfull \hbox (badness 1735) in paragraph at lines 1984--1984
 []\TU/lmr/bx/n/14.4 We are committed to prioritizing and
  []
 
-[57]
+[63]
 Underfull \vbox (badness 2443) has occurred while \output is active []
 
-[58]
+[64]
 Overfull \hbox (92.14124pt too wide) has occurred while \output is active
 \TU/lmr/m/sl/10 10.5.  WE RECOGNIZE THAT FIELDWORK CAN BE INTENSE, EMOTIONAL AN
-D TIRING. \TU/lmr/m/n/10 59
+D TIRING. \TU/lmr/m/n/10 65
  []
 
-[59] (./bookdown-demo.bbl [60]) [61
+[65] (./bookdown-demo.bbl [66]) [67
 
 ] (./bookdown-demo.aux)
 
@@ -1197,12 +1242,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 20315 strings out of 476919
- 356534 string characters out of 5821840
- 844460 words of memory out of 5000000
- 39908 multiletter control sequences out of 15000+600000
+ 20354 strings out of 476919
+ 357403 string characters out of 5821840
+ 846221 words of memory out of 5000000
+ 39945 multiletter control sequences out of 15000+600000
  410027 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 98i,9n,122p,1032b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,9n,122p,1032b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on bookdown-demo.pdf (61 pages).
+Output written on bookdown-demo.pdf (67 pages).
