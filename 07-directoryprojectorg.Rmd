@@ -56,7 +56,7 @@ The data directory might require subdirectories to organize raw data based on ti
 
 The `results` directory will usually require additional subdirectories for all but the simplest projects. *Generated files* are considered intermediate files, such as cleaned data, statistical tables, and final publication-ready figures or tables and should be separated clearly by file-naming conventions or placed into different subdirectorie. 
 
-4. **Put project source code in the 'repository' directory.** 
+4. **Put project source code in the `repository` directory.** 
 
 The `respository`, also contains all of the code written for the project. This includes programs written in interpreted languages such as R or Python; as well as shell scripts, snippets of SQL used to pull information from databases; and other code needed to regenerate the results.
 This directory may contain **two** conceptually distinct types of files that should be distinguished either by clear file names or by additional subdirectories.
@@ -68,7 +68,7 @@ This directory may contain **two** conceptually distinct types of files that sho
 
 Photos, screenshots, and plots or other types of data visualizations should be saved in a separate `images` project sub-directory. 
   
-6. **Put project scratch work and analysis in a 'sandbox' directory.** 
+6. **Put project scratch work and analysis in a `sandbox` directory.** 
 
 Create a `sandbox` directory within the appropriate project folder for experimental project work. A `sandbox` folder is useful in a the `src` or `r` folder as it can serve as location to save test code or tutorials to conduct analysis.
 
