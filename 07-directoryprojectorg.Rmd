@@ -4,30 +4,59 @@
 
 When creating file names, best practices dictate that you should:
 
-- Create meaningful but brief names;
+- Create meaningful but brief names. Limit a file name to 25 characters, if possible;
 - Use file names to classify types of files 
   - ex: `20230131_DTLA_RA.csv` file name classifies this file as Rapid Assessment vegetation monitoring data  from the Desert Tortoise Linkage Area and was created on Jan. 31, 2023;
 - Avoid using spaces, dots and special characters (ex: & or ? or !);
-- Use capital letters to delimit words, not spaces or underscores for data files, *as much as possible* (ex: 20170217_CVStormwaterVAP.csv);
+- Use capital letters to delimit words (aka UpperCamelCase), not spaces or underscores for **data files**.(ex: `20170217CVStormwaterVAP.csv`);
 
 ```{r case, echo = F, auto_pdf = TRUE, fig.align = 'center', out.width= "75%", fig.cap= "Types of font cases (L to R, clockwise): Screaming Snake Case, Camel Case, Upper Camel, Snake Case, Kebab Case. Art Credit: Dr. Allison Horst, UCSB"}
 
 knitr::include_graphics("images/case_horst.jpeg")
 ```
 
-- Use hyphens (-) or underscores (_) to separate elements in a file name for documents;
+- Use dashes (-) or underscores (_) to separate elements in a file name for **documents** (ex: `20231212_CVMC_CRCA01_Proposal_LCS.doc`);
 - Always use the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) date format in file names: **YYYYMMDD**. For example, in the file name *20230131_DTLA_RA.csv* January 31, 2023 is represented as **20230131**;
 - Preserve the 3-letter file extension for application-specific codes of file format (e.g. .doc, .xls, .mov, .tif);
 - With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;
 - Name all files to reflect their content or function. For example, use names such as `tortoise_count_table.csv`, `manuscript.Rmd`, or `vegetation_analysis.r`. Do **not** use general nomenclature with sequential numbers (e.g., `result1.csv`, `result2.csv`) or a location in a final manuscript (e.g., `fig_3_a.png`), since those numbers will almost certainly change as the project evolves;
-- Include versioning of file names where appropriate (ex: filename_rev20230131.doc).
+- Include versioning of file names where appropriate, indicating the version with `rev` the date (ex: CVMC_CRCA01_Proposal_LCS_rev20230131.doc).
+  - this is a bit different from the standardized **date first** file naming. It is recommended to **avoid** *starting* the filename with a version number .The CCB lab can set the versioning to `CVMC_CRCA01_Proposal_LCS_rev20230131.doc`, but for the final document, name it `20231212_CVMC_CRCA01_Proposal_LCS.doc`.
+  - *Final copies of tabular data* should be stored as a copy without macros or formulas, in a non-proprietary format such as comma or tab separated values (.csv or .txt) [@Smithsonian_2021].
 
 - Order the elements in a file name in the most appropriate way to retrieve the record. For example, 
-  - file name with the date, 
-  - the project name (or acronym) or project location should be first, 
-  - then the type of data or file (either RA or Report),
-  - then version or author,
-  - **Examples:** `20170217_CVStormwaterVAP.csv`, `20221231_CVMC_CRCA01_Proposal_LCS.doc`
+  - file name with the date first, 
+  - the project name or project location (acronyms are very helpful here) should be second, 
+  - then the type of data or file (either RA or Report or Brochure),
+  - then version and/or author,
+
+### File Name Examples
+
+- Vegetation assessment data collected on February 17, 2017 at the Coachella Valley Stormwater Channel: `20170217_CVStormwaterVAP.csv`, 
+- Coachella Valley Mountain Conservancy Climate Resistance & Community Access Grant Program (Proposal No. CRCA-01) proposal document authored by Lynn Sweet and finalized & submitted on December 31, 2022: `20221231_CVMC-CRCA01_Proposal_LCS.doc`
+- Journal articles: `2020_Thorne_VegetationRefugiaInformClimate-adaptiveLandManagement.pdf`. 
+
+### ESRI File Naming Guidelines & Unique Exceptions
+
+When naming objects, folders, databases to be used by ESRI software, there are some unique considerations that contradict the above file naming guidelines! 
+
+- **Avoid long pathnames.** 
+Try to "flatten" folder structures so that file pathnames under 128 characters. The absolute Windows pathname limit (MAXPATH) is 260 characters. 
+
+- **Start with a letter.** 
+*Never* begin an ArcGIS object name (table, field, relationship class, mxd file, folder, etc) with a number or any other non-alpha character. 
+
+- **No reserved words, aka common coding function words.** 
+Avoid names that may conflict with SQL or other language's reserved words. For example: `OBJECTID`, `VALUE`, `COUNT`, `NOT`, `OR`, `ON`, `IN`, `OVER`, `SELECT`.  This is to avoid confusing both people and SQL or Python or R.
+
+- **Be brief.** 
+All field names should contain **10 characters or less**. This is a dBase limit, so it applies to .dbf files AND shapefiles. For that reason it's best practice in case you need to go "through" a dbf based format. Coverage and grid names have a limit of 13 characters, but 10 is safer. If you really want a longer name around or one with special characters, use the alias.
+
+- **Raster dataset names MUST start with a letter**
+Raster names can be particularly problematic and it is best to keep the filename **under 14 characters** to support Esri grid format, and special characters in the path (space, &, -) may cause raster exports and tools to fail with cryptic error messages (like 999999).
+
+- **Use code in scripting to check names.** 
+The arcpy methods `ValidateFieldName` and `ValidateTableName` can be used at parameter validation time, or in your code, to prevent users of your tool from inserting invalid output names. The `CreateScratchName` method if provided the proper arguments, will generate valid dataset names.
 
 
 ## Directory Organization

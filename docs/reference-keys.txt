@@ -58,6 +58,8 @@ archived-ucr-esri-arcgis-desktop-and-pro-installation-instructions
 esri-resources
 organization
 file-naming
+file-name-examples
+esri-file-naming-guidelines-unique-exceptions
 directory-organization
 recommendations-for-directory-organization
 folder-organization-examples

@@ -7,14 +7,14 @@
 <title>Chapter 7 Directory Organization &amp; Data Project Development | Center for Conservation Biology | UC Riverside</title>
 <meta name="author" content="Lynn Sweet | Principal Investigator, Assistant Research Ecologist">
 <meta name="author" content="Julia Parish | Data Science Fellow">
-<meta name="description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files ex: 20230131_DTLA_RA.csv file name...">
+<meta name="description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names. Limit a file name to 25 characters, if possible; Use file names to classify...">
 <meta name="generator" content="bookdown 0.28 with bs4_book()">
 <meta property="og:title" content="Chapter 7 Directory Organization &amp; Data Project Development | Center for Conservation Biology | UC Riverside">
 <meta property="og:type" content="book">
-<meta property="og:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files ex: 20230131_DTLA_RA.csv file name...">
+<meta property="og:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names. Limit a file name to 25 characters, if possible; Use file names to classify...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 7 Directory Organization &amp; Data Project Development | Center for Conservation Biology | UC Riverside">
-<meta name="twitter:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names; Use file names to classify types of files ex: 20230131_DTLA_RA.csv file name...">
+<meta name="twitter:description" content="7.1 File Naming When creating file names, best practices dictate that you should: Create meaningful but brief names. Limit a file name to 25 characters, if possible; Use file names to classify...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -95,14 +95,14 @@
 </h2>
 <p>When creating file names, best practices dictate that you should:</p>
 <ul>
-<li>Create meaningful but brief names;</li>
+<li>Create meaningful but brief names. Limit a file name to 25 characters, if possible;</li>
 <li>Use file names to classify types of files
 <ul>
 <li>ex: <code>20230131_DTLA_RA.csv</code> file name classifies this file as Rapid Assessment vegetation monitoring data from the Desert Tortoise Linkage Area and was created on Jan. 31, 2023;</li>
 </ul>
 </li>
 <li>Avoid using spaces, dots and special characters (ex: &amp; or ? or !);</li>
-<li>Use capital letters to delimit words, not spaces or underscores for data files, <em>as much as possible</em> (ex: 20170217_CVStormwaterVAP.csv);</li>
+<li>Use capital letters to delimit words (aka UpperCamelCase), not spaces or underscores for <strong>data files</strong>.(ex: <code>20170217CVStormwaterVAP.csv</code>);</li>
 </ul>
 <div class="figure" style="text-align: center">
 <span style="display:block;" id="fig:case"></span>
@@ -111,25 +111,58 @@ Figure 7.1: Types of font cases (L to R, clockwise): Screaming Snake Case, Camel
 </p>
 </div>
 <ul>
-<li><p>Use hyphens (-) or underscores (_) to separate elements in a file name for documents;</p></li>
-<li><p>Always use the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> date format in file names: <strong>YYYYMMDD</strong>. For example, in the file name <em>20230131_DTLA_RA.csv</em> January 31, 2023 is represented as <strong>20230131</strong>;</p></li>
-<li><p>Preserve the 3-letter file extension for application-specific codes of file format (e.g. .doc, .xls, .mov, .tif);</p></li>
-<li><p>With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;</p></li>
-<li><p>Name all files to reflect their content or function. For example, use names such as <code>tortoise_count_table.csv</code>, <code>manuscript.Rmd</code>, or <code>vegetation_analysis.r</code>. Do <strong>not</strong> use general nomenclature with sequential numbers (e.g., <code>result1.csv</code>, <code>result2.csv</code>) or a location in a final manuscript (e.g., <code>fig_3_a.png</code>), since those numbers will almost certainly change as the project evolves;</p></li>
-<li><p>Include versioning of file names where appropriate (ex: filename_rev20230131.doc).</p></li>
-<li>
-<p>Order the elements in a file name in the most appropriate way to retrieve the record. For example,</p>
+<li>Use dashes (-) or underscores (_) to separate elements in a file name for <strong>documents</strong> (ex: <code>20231212_CVMC_CRCA01_Proposal_LCS.doc</code>);</li>
+<li>Always use the <a href="https://www.iso.org/iso-8601-date-and-time-format.html">ISO 8601</a> date format in file names: <strong>YYYYMMDD</strong>. For example, in the file name <em>20230131_DTLA_RA.csv</em> January 31, 2023 is represented as <strong>20230131</strong>;</li>
+<li>Preserve the 3-letter file extension for application-specific codes of file format (e.g. .doc, .xls, .mov, .tif);</li>
+<li>With sequential numbering (e.g., 1, 2, 3, etc.), use leading zeros to accommodate multi-digit versions. For example, use 01-10 for 1-10, 001-100 for 1-100, and so on;</li>
+<li>Name all files to reflect their content or function. For example, use names such as <code>tortoise_count_table.csv</code>, <code>manuscript.Rmd</code>, or <code>vegetation_analysis.r</code>. Do <strong>not</strong> use general nomenclature with sequential numbers (e.g., <code>result1.csv</code>, <code>result2.csv</code>) or a location in a final manuscript (e.g., <code>fig_3_a.png</code>), since those numbers will almost certainly change as the project evolves;</li>
+<li>Include versioning of file names where appropriate, indicating the version with <code>rev</code> the date (ex: CVMC_CRCA01_Proposal_LCS_rev20230131.doc).
 <ul>
-<li>file name with the date,</li>
-<li>the project name (or acronym) or project location should be first,</li>
-<li>then the type of data or file (either RA or Report),</li>
-<li>then version or author,</li>
+<li>this is a bit different from the standardized <strong>date first</strong> file naming. It is recommended to <strong>avoid</strong> <em>starting</em> the filename with a version number .The CCB lab can set the versioning to <code>CVMC_CRCA01_Proposal_LCS_rev20230131.doc</code>, but for the final document, name it <code>20231212_CVMC_CRCA01_Proposal_LCS.doc</code>.</li>
 <li>
-<strong>Examples:</strong> <code>20170217_CVStormwaterVAP.csv</code>, <code>20221231_CVMC_CRCA01_Proposal_LCS.doc</code>
+<em>Final copies of tabular data</em> should be stored as a copy without macros or formulas, in a non-proprietary format such as comma or tab separated values (.csv or .txt) <span class="citation">(<a href="references.html#ref-Smithsonian_2021" role="doc-biblioref">Smithsonian 2021</a>)</span>.</li>
+</ul>
 </li>
+<li>Order the elements in a file name in the most appropriate way to retrieve the record. For example,
+<ul>
+<li>file name with the date first,</li>
+<li>the project name or project location (acronyms are very helpful here) should be second,</li>
+<li>then the type of data or file (either RA or Report or Brochure),</li>
+<li>then version and/or author,</li>
 </ul>
 </li>
 </ul>
+<div id="file-name-examples" class="section level3" number="7.1.1">
+<h3>
+<span class="header-section-number">7.1.1</span> File Name Examples<a class="anchor" aria-label="anchor" href="#file-name-examples"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>Vegetation assessment data collected on February 17, 2017 at the Coachella Valley Stormwater Channel: <code>20170217_CVStormwaterVAP.csv</code>,</li>
+<li>Coachella Valley Mountain Conservancy Climate Resistance &amp; Community Access Grant Program (Proposal No. CRCA-01) proposal document authored by Lynn Sweet and finalized &amp; submitted on December 31, 2022: <code>20221231_CVMC-CRCA01_Proposal_LCS.doc</code>
+</li>
+<li>Journal articles: <code>2020_Thorne_VegetationRefugiaInformClimate-adaptiveLandManagement.pdf</code>.</li>
+</ul>
+</div>
+<div id="esri-file-naming-guidelines-unique-exceptions" class="section level3" number="7.1.2">
+<h3>
+<span class="header-section-number">7.1.2</span> ESRI File Naming Guidelines &amp; Unique Exceptions<a class="anchor" aria-label="anchor" href="#esri-file-naming-guidelines-unique-exceptions"><i class="fas fa-link"></i></a>
+</h3>
+<p>When naming objects, folders, databases to be used by ESRI software, there are some unique considerations that contradict the above file naming guidelines!</p>
+<ul>
+<li><p><strong>Avoid long pathnames.</strong>
+Try to “flatten” folder structures so that file pathnames under 128 characters. The absolute Windows pathname limit (MAXPATH) is 260 characters.</p></li>
+<li><p><strong>Start with a letter.</strong>
+<em>Never</em> begin an ArcGIS object name (table, field, relationship class, mxd file, folder, etc) with a number or any other non-alpha character.</p></li>
+<li><p><strong>No reserved words, aka common coding function words.</strong>
+Avoid names that may conflict with SQL or other language’s reserved words. For example: <code>OBJECTID</code>, <code>VALUE</code>, <code>COUNT</code>, <code>NOT</code>, <code>OR</code>, <code>ON</code>, <code>IN</code>, <code>OVER</code>, <code>SELECT</code>. This is to avoid confusing both people and SQL or Python or R.</p></li>
+<li><p><strong>Be brief.</strong>
+All field names should contain <strong>10 characters or less</strong>. This is a dBase limit, so it applies to .dbf files AND shapefiles. For that reason it’s best practice in case you need to go “through” a dbf based format. Coverage and grid names have a limit of 13 characters, but 10 is safer. If you really want a longer name around or one with special characters, use the alias.</p></li>
+<li><p><strong>Raster dataset names MUST start with a letter</strong>
+Raster names can be particularly problematic and it is best to keep the filename <strong>under 14 characters</strong> to support Esri grid format, and special characters in the path (space, &amp;, -) may cause raster exports and tools to fail with cryptic error messages (like 999999).</p></li>
+<li><p><strong>Use code in scripting to check names.</strong>
+The arcpy methods <code>ValidateFieldName</code> and <code>ValidateTableName</code> can be used at parameter validation time, or in your code, to prevent users of your tool from inserting invalid output names. The <code>CreateScratchName</code> method if provided the proper arguments, will generate valid dataset names.</p></li>
+</ul>
+</div>
 </div>
 <div id="directory-organization" class="section level2" number="7.2">
 <h2>
@@ -514,7 +547,12 @@ Figure 7.3: Data Science workflow utilizing Tidyverse packages. Art Credit: Dr.�
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#organization"><span class="header-section-number">7</span> Directory Organization &amp; Data Project Development</a></li>
-<li><a class="nav-link" href="#file-naming"><span class="header-section-number">7.1</span> File Naming</a></li>
+<li>
+<a class="nav-link" href="#file-naming"><span class="header-section-number">7.1</span> File Naming</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#file-name-examples"><span class="header-section-number">7.1.1</span> File Name Examples</a></li>
+<li><a class="nav-link" href="#esri-file-naming-guidelines-unique-exceptions"><span class="header-section-number">7.1.2</span> ESRI File Naming Guidelines &amp; Unique Exceptions</a></li>
+</ul>
+</li>
 <li>
 <a class="nav-link" href="#directory-organization"><span class="header-section-number">7.2</span> Directory Organization</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#recommendations-for-directory-organization"><span class="header-section-number">7.2.1</span> Recommendations for Directory Organization</a></li>
