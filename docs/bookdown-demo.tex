@@ -145,7 +145,7 @@
 \makeatother
 \subtitle{Research Unit Resource Guide}
 \author{Lynn Sweet \textbar{} Principal Investigator, Assistant Research Ecologist \and Julia Parish \textbar{} Data Science Fellow}
-\date{2022-09-22}
+\date{2022-09-28}
 
 \begin{document}
 \maketitle
@@ -1460,7 +1460,7 @@ When creating file names, best practices dictate that you should:
 \item
   Create meaningful but brief names. Limit a file name to 25 characters, if possible;
 \item
-  Use file names to classify types of files
+  Use file names to classify types of files;
 
   \begin{itemize}
   \tightlist
@@ -1557,6 +1557,25 @@ When naming objects, folders, databases to be used by ESRI software, there are s
 \item
   \textbf{Use code in scripting to check names.}
   The arcpy methods \texttt{ValidateFieldName} and \texttt{ValidateTableName} can be used at parameter validation time, or in your code, to prevent users of your tool from inserting invalid output names. The \texttt{CreateScratchName} method if provided the proper arguments, will generate valid dataset names.
+\end{itemize}
+
+\hypertarget{addtional-resources-for-geodatabase-file-management}{%
+\subsubsection{Addtional Resources for Geodatabase File Management}\label{addtional-resources-for-geodatabase-file-management}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://sites.google.com/site/ochaimwiki/file-and-dataset-naming-manual/file-naming-convention}{The United Nations Office for the Coordination of Humanitarian Affairs} has an informative wiki page regarding how they organize and name spatial files.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The OCHA has an inspiring \emph{dummy directory} structure \href{https://sites.google.com/site/ochaimwiki/file-and-dataset-naming-manual/file-structure}{here}
+  \end{itemize}
+\item
+  \href{https://edac.unm.edu/}{Earth Data Analysis Center} created a \href{https://slideplayer.com/slide/8981458/}{helpful file naming and metadata creation presentation}.
+\item
+  \href{https://ucsd.libguides.com/gis/data-source}{UCSD GIS \& Geospatial Resource list}
 \end{itemize}
 
 \hypertarget{directory-organization}{%
@@ -1759,8 +1778,11 @@ DesertTortoiseLinkageArea/
 │   │   │   ├── analysis.r
 │   │   │   ├── report.Rmd
 │   │   ├── data/
-│   │   │   ├── data.csv
-│   │   │   ├── data.csv
+│   │   │   ├── processeddataplot001.csv
+│   │   │   ├── processeddataplot002.csv
+│   │   │   ├── rawdata/
+│   │   │   │   ├── rawdataplot001.csv
+│   │   │   │   ├── rawdataplot002.csv
 │   │   ├── myproject.Rproj
 │   │   ├── README.md
 ├── documents/

@@ -96,7 +96,7 @@
 <p>When creating file names, best practices dictate that you should:</p>
 <ul>
 <li>Create meaningful but brief names. Limit a file name to 25 characters, if possible;</li>
-<li>Use file names to classify types of files
+<li>Use file names to classify types of files;
 <ul>
 <li>ex: <code>20230131_DTLA_RA.csv</code> file name classifies this file as Rapid Assessment vegetation monitoring data from the Desert Tortoise Linkage Area and was created on Jan. 31, 2023;</li>
 </ul>
@@ -162,6 +162,23 @@ Raster names can be particularly problematic and it is best to keep the filename
 <li><p><strong>Use code in scripting to check names.</strong>
 The arcpy methods <code>ValidateFieldName</code> and <code>ValidateTableName</code> can be used at parameter validation time, or in your code, to prevent users of your tool from inserting invalid output names. The <code>CreateScratchName</code> method if provided the proper arguments, will generate valid dataset names.</p></li>
 </ul>
+<div id="addtional-resources-for-geodatabase-file-management" class="section level4" number="7.1.2.1">
+<h4>
+<span class="header-section-number">7.1.2.1</span> Addtional Resources for Geodatabase File Management<a class="anchor" aria-label="anchor" href="#addtional-resources-for-geodatabase-file-management"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>
+<a href="https://sites.google.com/site/ochaimwiki/file-and-dataset-naming-manual/file-naming-convention">The United Nations Office for the Coordination of Humanitarian Affairs</a> has an informative wiki page regarding how they organize and name spatial files.
+<ul>
+<li>The OCHA has an inspiring <em>dummy directory</em> structure <a href="https://sites.google.com/site/ochaimwiki/file-and-dataset-naming-manual/file-structure">here</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="https://edac.unm.edu/">Earth Data Analysis Center</a> created a <a href="https://slideplayer.com/slide/8981458/">helpful file naming and metadata creation presentation</a>.</li>
+<li><a href="https://ucsd.libguides.com/gis/data-source">UCSD GIS &amp; Geospatial Resource list</a></li>
+</ul>
+</div>
 </div>
 </div>
 <div id="directory-organization" class="section level2" number="7.2">
@@ -292,8 +309,11 @@ DesertTortoiseLinkageArea/
 │   │   │   ├── analysis.r
 │   │   │   ├── report.Rmd
 │   │   ├── data/
-│   │   │   ├── data.csv
-│   │   │   ├── data.csv
+│   │   │   ├── processeddataplot001.csv
+│   │   │   ├── processeddataplot002.csv
+│   │   │   ├── rawdata/
+│   │   │   │   ├── rawdataplot001.csv
+│   │   │   │   ├── rawdataplot002.csv
 │   │   ├── myproject.Rproj
 │   │   ├── README.md
 ├── documents/
@@ -584,7 +604,7 @@ Figure 7.3: Data Science workflow utilizing Tidyverse packages. Art Credit: Dr.�
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-22.</p>
+    <p>"<strong>Center for Conservation Biology | UC Riverside</strong>: Research Unit Resource Guide" was written by Lynn Sweet | Principal Investigator, Assistant Research Ecologist, Julia Parish | Data Science Fellow. It was last built on 2022-09-28.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

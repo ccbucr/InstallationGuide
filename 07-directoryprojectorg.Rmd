@@ -5,7 +5,7 @@
 When creating file names, best practices dictate that you should:
 
 - Create meaningful but brief names. Limit a file name to 25 characters, if possible;
-- Use file names to classify types of files 
+- Use file names to classify types of files;
   - ex: `20230131_DTLA_RA.csv` file name classifies this file as Rapid Assessment vegetation monitoring data  from the Desert Tortoise Linkage Area and was created on Jan. 31, 2023;
 - Avoid using spaces, dots and special characters (ex: & or ? or !);
 - Use capital letters to delimit words (aka UpperCamelCase), not spaces or underscores for **data files**.(ex: `20170217CVStormwaterVAP.csv`);
@@ -58,6 +58,13 @@ Raster names can be particularly problematic and it is best to keep the filename
 - **Use code in scripting to check names.** 
 The arcpy methods `ValidateFieldName` and `ValidateTableName` can be used at parameter validation time, or in your code, to prevent users of your tool from inserting invalid output names. The `CreateScratchName` method if provided the proper arguments, will generate valid dataset names.
 
+
+#### Addtional Resources for Geodatabase File Management
+
+- [The United Nations Office for the Coordination of Humanitarian Affairs](https://sites.google.com/site/ochaimwiki/file-and-dataset-naming-manual/file-naming-convention) has an informative wiki page regarding how they organize and name spatial files. 
+   - The OCHA has an inspiring *dummy directory* structure [here](https://sites.google.com/site/ochaimwiki/file-and-dataset-naming-manual/file-structure)
+- [Earth Data Analysis Center](https://edac.unm.edu/) created a [helpful file naming and metadata creation presentation](https://slideplayer.com/slide/8981458/). 
+- [UCSD GIS & Geospatial Resource list](https://ucsd.libguides.com/gis/data-source)
 
 ## Directory Organization
 
@@ -190,8 +197,11 @@ DesertTortoiseLinkageArea/
 │   │   │   ├── analysis.r
 │   │   │   ├── report.Rmd
 │   │   ├── data/
-│   │   │   ├── data.csv
-│   │   │   ├── data.csv
+│   │   │   ├── processeddataplot001.csv
+│   │   │   ├── processeddataplot002.csv
+│   │   │   ├── rawdata/
+│   │   │   │   ├── rawdataplot001.csv
+│   │   │   │   ├── rawdataplot002.csv
 │   │   ├── myproject.Rproj
 │   │   ├── README.md
 ├── documents/

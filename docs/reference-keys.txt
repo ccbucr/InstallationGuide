@@ -60,6 +60,7 @@ organization
 file-naming
 file-name-examples
 esri-file-naming-guidelines-unique-exceptions
+addtional-resources-for-geodatabase-file-management
 directory-organization
 recommendations-for-directory-organization
 folder-organization-examples
