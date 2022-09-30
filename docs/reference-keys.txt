@@ -33,6 +33,7 @@ git
 github
 git-1
 personal-access-token
+git-learning-resource
 projmgmt
 ucr-vpn---globalprotect
 ccb-nas-server

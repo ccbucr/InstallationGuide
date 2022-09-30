@@ -129,7 +129,11 @@ The CCB team utilizes a number of Google applications for project management, da
 
 **Google Drive:** CCB utilizes *Shared Drive* folders as a file sharing application. You must request access to the shared drive folder from the lab P.I. 
 
-**Google Sites:** There is a [CCB Google Site](https://sites.google.com/ucr.edu/ccbucr/home) that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future. 
+**Google Sites:** 
+
+The CCB's Desert Climate Research Initiative (DCRI) | Iniciativa de Resiliencia Climática del Desierto (IRCD) has a [Google Sites](https://sites.google.com/ucr.edu/ccb-dcri/home) that provides information on the Center's climate and community resilience work. 
+
+There is a [CCB Google Site](https://sites.google.com/ucr.edu/ccbucr/home) that is in draft form at the moment. This site may serve as an intranet or provide public facing information in the future. 
 
 ## Microsoft 360 Suite
 

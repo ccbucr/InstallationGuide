@@ -8,6 +8,10 @@ Navigate to [github.com](https://github.com/), and create an account! Please use
 
 Review this article on choosing a GitHub username: [happygitwithr.com/github-acct.html](happygitwithr.com/github-acct.html). 
 
+Want a cool Octocat icon for your GitHub account? Check out these icons:
+- [Octodex](https://octodex.github.com/)
+- [Build Your Own Octocat](https://myoctocat.com/)
+
 Once you have created a GitHub account, join the [CCB's GitHub Organization](https://github.com/ccbucr). Please email the CCB PI to request they invite you to the organization. 
 
 ## Git 
@@ -54,7 +58,7 @@ If when installing or updating Git, the default branch was not set to `main` (it
 
 For more information on configuring Git: [check out this Git reference](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-## Personal Access Token
+### Personal Access Token
 
 Once Git has been configured to commit to your GitHub account, a **Personal Access Token (PAT)** must be created for **each computer you intend to use**. A PAT is an alternative password authentication method for Git to access GitHub accounts.
 
@@ -141,3 +145,16 @@ knitr::include_graphics("images/gitsitrep.png")
 ```
 
 For more information on PATs, check out [GitHub's PAT information page](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token). 
+
+
+### Git Learning Resource
+
+- [Happy Git and GitHub for the useR](https://happygitwithr.com/index.html)
+- [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud)
+- LinkedIn Learning
+  - [Git Essential Training: The Basics](https://www.linkedin.com/learning/git-essential-training-the-basics/use-git-version-control-software-to-manage-project-code?autoplay=true&u=26135898)
+  - [Git from Scratch](https://www.linkedin.com/learning/git-from-scratch/git-from-scratch?autoplay=true&u=26135898)
+  - [Learning Git and GitHub](https://www.linkedin.com/learning/learning-git-and-github-14213624/travel-the-multiverse-with-git-and-github?autoplay=true&u=26135898)
+  - [Git: Branches, Merges, and Remotes](https://www.linkedin.com/learning/git-branches-merges-and-remotes/unlock-powerful-code-management-and-collaboration-tools-in-git?autoplay=true&u=26135898)
+
+

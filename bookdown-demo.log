@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  28 SEP 2022 09:55
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2021.12.2)  30 SEP 2022 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1008,7 +1008,7 @@ Chapter 4.
 [21
 
 ]
-Overfull \hbox (110.94pt too wide) in paragraph at lines 735--738
+Overfull \hbox (110.94pt too wide) in paragraph at lines 739--742
 []\TU/lmtt/m/n/10 user.name=janedoe user.email=janedoe@ucr.edu core.excludesfil
 e=/Users/janedoe/.gitignore 
  []
@@ -1050,13 +1050,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/nas_mac.png Graphic file (type bmp)
 <images/nas_mac.png>
 [30]
-Underfull \hbox (badness 3989) in paragraph at lines 1034--1039
+Underfull \hbox (badness 3989) in paragraph at lines 1063--1068
 \TU/lmr/m/n/10 via SSH: \TU/lmtt/m/n/10 ssh [Synology NAS admin user name]@[Syn
 ology NAS IP
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 1034--1039
+Underfull \hbox (badness 2318) in paragraph at lines 1063--1068
 \TU/lmtt/m/n/10 address or hostname] -p [The port number of SSH] \TU/lmr/m/n/10
  For example,
  []
@@ -1082,7 +1082,7 @@ File: images/zoomsso.png Graphic file (type bmp)
 File: images/zoomdomain.png Graphic file (type bmp)
 <images/zoomdomain.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1067) has occurred while \output is active []
 
 [35]
 File: images/zoomcred.png Graphic file (type bmp)
@@ -1137,31 +1137,31 @@ Chapter 7.
 File: images/case_horst.jpeg Graphic file (type bmp)
 <images/case_horst.jpeg>
 
-Underfull \hbox (badness 5175) in paragraph at lines 1496--1498
+Underfull \hbox (badness 5175) in paragraph at lines 1529--1531
 \TU/lmr/m/n/10 names such as \TU/lmtt/m/n/10 tortoise_count_table.csv\TU/lmr/m/
 n/10 , \TU/lmtt/m/n/10 manuscript.Rmd\TU/lmr/m/n/10 , or
  []
 
 [47]
-Overfull \hbox (10.64502pt too wide) in paragraph at lines 1498--1499
+Overfull \hbox (10.64502pt too wide) in paragraph at lines 1531--1532
 \TU/lmr/m/n/10 with \TU/lmtt/m/n/10 rev \TU/lmr/m/n/10 the date (ex: CVMC_CRCA0
 1_Proposal_LCS_rev20230131.doc). 
  []
 
 
-Underfull \hbox (badness 1694) in paragraph at lines 1503--1505
+Underfull \hbox (badness 1694) in paragraph at lines 1536--1538
 []\TU/lmr/m/n/10 this is a bit different from the standardized \TU/lmr/bx/n/10 
 date first \TU/lmr/m/n/10 file
  []
 
 
-Underfull \hbox (badness 1616) in paragraph at lines 1503--1505
+Underfull \hbox (badness 1616) in paragraph at lines 1536--1538
 \TU/lmr/m/n/10 naming. It is recommended to \TU/lmr/bx/n/10 avoid \TU/lmr/m/it/
 10 starting \TU/lmr/m/n/10 the filename
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 1529--1531
+Underfull \hbox (badness 1028) in paragraph at lines 1562--1564
 []\TU/lmr/m/n/10 Vegetation assessment data collected on February 17, 2017 at t
 he
  []
@@ -1173,7 +1173,7 @@ JECT DEVELOPMENT
  []
 
 [48]
-Overfull \hbox (116.11502pt too wide) in paragraph at lines 1533--1534
+Overfull \hbox (116.11502pt too wide) in paragraph at lines 1566--1567
 []\TU/lmr/m/n/10 Journal articles: \TU/lmtt/m/n/10 2020_Thorne_VegetationRefugi
 aInformClimate-adaptiveLandManagement.pdf\TU/lmr/m/n/10 . 
  []
@@ -1189,7 +1189,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (20.4pt too wide) in paragraph at lines 1704--1704
+Overfull \hbox (20.4pt too wide) in paragraph at lines 1737--1737
 []\TU/lmtt/m/n/10 ├── InputData          <- Folder containing data that will be
  processed[] 
  []
@@ -1198,7 +1198,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (25.65pt too wide) in paragraph at lines 1704--1704
+Overfull \hbox (25.65pt too wide) in paragraph at lines 1737--1737
 []\TU/lmtt/m/n/10 ├── OutputData         <- Folder containing data that has bee
 n processed[] 
  []
@@ -1207,7 +1207,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (120.15pt too wide) in paragraph at lines 1704--1704
+Overfull \hbox (120.15pt too wide) in paragraph at lines 1737--1737
 []\TU/lmtt/m/n/10 ├── Figures            <- Folder containing with figures or t
 ables summarizing the results[] 
  []
@@ -1216,7 +1216,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (41.4pt too wide) in paragraph at lines 1704--1704
+Overfull \hbox (41.4pt too wide) in paragraph at lines 1737--1737
 []\TU/lmtt/m/n/10 ├── Code               <- Folder the scripts or programs to d
 o the analysis[] 
  []
@@ -1225,7 +1225,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (156.9pt too wide) in paragraph at lines 1704--1704
+Overfull \hbox (156.9pt too wide) in paragraph at lines 1737--1737
 []\TU/lmtt/m/n/10 ├── LICENSE            <- File explaining the terms under whi
 ch data/code is being made available[] 
  []
@@ -1234,7 +1234,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (151.65pt too wide) in paragraph at lines 1704--1704
+Overfull \hbox (151.65pt too wide) in paragraph at lines 1737--1737
 []\TU/lmtt/m/n/10 ├── README.txt         <- File documenting the analysis, and 
 (ideally) the purpose of each file.[] 
  []
@@ -1246,7 +1246,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (151.65pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (151.65pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 ├── AUTHORS.md         <- File: List of people that contribut
 ed to the project (Markdown format)[] 
  []
@@ -1255,7 +1255,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (319.65pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (319.65pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 ├── LICENSE            <- File: Plain text file explaining th
 e usage terms/license of the data/code file (CC-By, MIT, GNU, etc.)[] 
  []
@@ -1267,7 +1267,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (162.15pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (162.15pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 ├── bin                <- Folder: Your compiled model code ca
 n be stored here (not tracked by git)[] 
  []
@@ -1276,7 +1276,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (172.65pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (172.65pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 ├── config             <- Folder: Configuration files, e.g., 
 for doxygen or for your model if needed[] 
  []
@@ -1293,7 +1293,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (54.7pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (54.7pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 │   ├── interim        <- Folder: Intermediate data that has 
 been transformed.[] 
  []
@@ -1303,7 +1303,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (54.7pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (54.7pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 │   ├── processed      <- Folder: The final, canonical data s
 ets for modeling.[] 
  []
@@ -1313,7 +1313,7 @@ Missing character: There is no └ (U+2514) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (2.2pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (2.2pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 │   └── raw            <- Folder: The original, immutable dat
 a dump.[] 
  []
@@ -1322,7 +1322,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (193.65pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (193.65pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 ├── docs               <- Folder: Documentation, e.g., doxyge
 n or scientific papers (not tracked by git)[] 
  []
@@ -1334,7 +1334,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (193.65pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (193.65pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 ├── reports            <- Folder: Manuscript source, e.g., La
 TeX, Markdown, etc., or any project reports[] 
  []
@@ -1344,7 +1344,7 @@ Missing character: There is no └ (U+2514) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (17.95pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (17.95pt too wide) in paragraph at lines 1766--1766
 []\TU/lmtt/m/n/10 │   └── figures        <- Folder: Figures for the manuscript 
 or reports[] 
  []
@@ -1359,7 +1359,7 @@ Missing character: There is no ├ (U+251C) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (188.4pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (188.4pt too wide) in paragraph at lines 1766--1766
 []    \TU/lmtt/m/n/10 ├── external       <- Folder: Any external source code, e
 .g., other projects, or external libraries[] 
  []
@@ -1374,7 +1374,7 @@ Missing character: There is no └ (U+2514) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 Missing character: There is no ─ (U+2500) in font [lmmono10-regular]:!
 
-Overfull \hbox (120.15pt too wide) in paragraph at lines 1733--1733
+Overfull \hbox (120.15pt too wide) in paragraph at lines 1766--1766
 []    \TU/lmtt/m/n/10 └── visualization  <- Folder: Visualisation scripts, e.g.
 , matplotlib, ggplot2 related[] 
  []
@@ -1695,13 +1695,13 @@ JECT DEVELOPMENT
  []
 
 [56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 2058--2059
+Underfull \hbox (badness 10000) in paragraph at lines 2091--2092
 []\TU/lmtt/m/n/10 Please cite this work as: Morris, B.D. and E.P. White. 2013. 
 "The
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2058--2059
+Underfull \hbox (badness 10000) in paragraph at lines 2091--2092
 \TU/lmtt/m/n/10 EcoData Retriever: improving access to existing ecological data
 ".
  []
@@ -1749,7 +1749,7 @@ File: images/concur6.png Graphic file (type bmp)
 ]
 Chapter 10.
 
-Underfull \hbox (badness 1735) in paragraph at lines 2276--2276
+Underfull \hbox (badness 1735) in paragraph at lines 2309--2309
 []\TU/lmr/bx/n/14.4 We are committed to prioritizing and
  []
 
@@ -1771,8 +1771,8 @@ LaTeX Warning: There were undefined references.
  ) 
 Here is how much of TeX's memory you used:
  20365 strings out of 476919
- 357741 string characters out of 5821840
- 849657 words of memory out of 5000000
+ 357758 string characters out of 5821840
+ 849720 words of memory out of 5000000
  39956 multiletter control sequences out of 15000+600000
  410027 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
