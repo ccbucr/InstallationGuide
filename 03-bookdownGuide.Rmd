@@ -24,6 +24,7 @@ install.packages("bookdown")
 
 You may need to install additional packages if you do not currently have them in order to render the Resource Guide bookdown:
 
+- `downlit`
 - `formatR`
 - `here`
 - `kableExtra`
